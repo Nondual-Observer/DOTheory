@@ -1,5 +1,9 @@
 # DOT: Distinction Observable Theory
 
+> Neti, neti — not this, not this.
+>
+> — Yājñavalkya, *Bṛhadāraṇyaka Upaniṣad*
+
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/Theory-CC%20BY--NC--SA%204.0-blue.svg)](LICENSE-THEORY.md)
 [![License: Apache-2.0](https://img.shields.io/badge/Code-Apache--2.0-yellow.svg)](LICENSE)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20257220.svg)](https://doi.org/10.5281/zenodo.20257220)
@@ -158,7 +162,9 @@ boundary to the rank-3 octahedral scene.
 This volume also contains the main shift of the new version: former
 prohibitions are read as conditions of scene holding and as directions of
 reduction. Distinction receives a boundary meaning, and the observer is
-understood as an invariant of the scene.
+understood as an invariant of the scene. The updated form treats each
+rank-3 axis as one invariant manifested by a pair and held by a triadic
+scheme.
 
 ### Volume 1. Strict Rank-3 Core
 

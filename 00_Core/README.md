@@ -7,7 +7,8 @@ Reading order:
 
 1. [`DOT_Volume_0_Foundations_EN.md`](DOT_Volume_0_Foundations_EN.md)  
    Foundations: distinction, scene, observer, active boundary, rank \(3\),
-   axes, metacube, and a short view of higher ranks.
+   axes as invariants manifested by pairs, metacube, and a short view of
+   higher ranks.
 
 2. [`DOT_Volume_1_Strict_Rank_3_Core_EN.md`](DOT_Volume_1_Strict_Rank_3_Core_EN.md)  
    Strict rank-3 core: \(U_3\), relations \(R_1,R_2,R_3\), octahedron,

@@ -2,13 +2,16 @@
 
 # Volume 0. Foundations
 
+> Neti, neti — not this, not this.
+>
+> — Yājñavalkya, *Bṛhadāraṇyaka Upaniṣad*
+
 This volume is the entry point into DOT. It introduces the basic language:
 distinction, scene, observer, polar pair, active boundary, first complete
 scene, axes, metacube reading, and the first view of higher ranks.
 
-The aim of the volume is not to collect familiar mathematical objects.
-The aim is to show how these objects appear from one structural question:
-how can a distinction be held as a scene?
+The aim of the volume is to show how familiar mathematical objects appear
+from one structural question: how can a distinction be held as a scene?
 
 The strict core of DOT is finite. Every construction in the core is given
 on a finite carrier with explicitly stated relations and operators. The
@@ -25,8 +28,8 @@ The first section introduces the minimal conceptual layer: distinction,
 scene, holding, reduction, and observer. The second section constructs the
 rank carriers and explains the active boundary. The third section builds
 the first complete scene \(U_3\). The fourth section explains axes,
-projective factor, and the metacube reading of rank \(3\). The final
-section gives a map of higher ranks and of the later volumes.
+invariants, the metacube reading, and the readings of rank \(3\). The
+final section gives a map of higher ranks and of the later volumes.
 
 The terminology is introduced at the point where it is needed. Standard
 mathematical constructions are used in their usual meaning; DOT adds a
@@ -112,8 +115,7 @@ The octahedral skeleton is
 
 DOT studies held distinction.
 
-A distinction is not only the statement that two positions are different.
-In DOT, a distinction is a structurally held non-coincidence of positions.
+A distinction in DOT is a structurally held non-coincidence of positions.
 It requires positions, a separation between them, relations that hold this
 separation, and a trace by which the distinction can be read or recovered.
 
@@ -657,7 +659,7 @@ The first complete scene has:
 These three structures live on the same six positions. Their compatibility
 is the finite core of the first full DOT scene.
 
-# Part IV. Axes, Projective Factor, and Metacube Reading
+# Part IV. Axes, Invariants, and Readings
 
 # §16. Limiting Axes
 
@@ -716,10 +718,10 @@ At this point the names are labels of the three complementary axes. Their
 interpretive content is introduced after the finite structure has been
 fixed.
 
-# §18. Metacube Reading of Rank \(3\)
+# §18. Axis as Invariant Manifested by a Pair
 
-Rank \(3\) can be read as a metacube of three primitive pairs of
-distinction:
+After the three axes have been named, the full rank-3 carrier receives a
+metacube reading:
 
 \[
 Q_3=D\times F\times C.
@@ -728,16 +730,104 @@ Q_3=D\times F\times C.
 The active carrier \(U_3\) consists of the six mixed modes between the two
 total limits \(000\) and \(111\).
 
-In the current reading:
+At this point \(D,F,C\) are names of the three points of the projective
+factor \(U_3/\kappa\), hence names of the three invariant axes of the
+first complete scene.
 
-- \(D\) marks the discrete/extended pair;
-- \(F\) marks the object/action pair;
-- \(C\) marks the whole/boundary pair.
+Each axis has three levels of reading:
 
-This is not an additional carrier. It is a reading of the already built
-rank-3 carrier and its three axes.
+\[
+\begin{array}{c|c}
+\text{level} & \text{what is given} \\
+\hline
+1 & \text{one invariant of the axis} \\
+2 & \text{two sides of its manifestation on } U_3 \\
+3 & \text{three structural places: side, invariant, opposite side}
+\end{array}
+\]
 
-# §19. Four Readings of Rank \(3\)
+For an axis \(H_A=\{A,\kappa(A)\}\):
+
+\[
+O_A\leadsto \{A,\kappa(A)\}\leadsto (A,O_A,\kappa(A)).
+\]
+
+Here \(O_A\) is the invariant of the axis. It is not added to the carrier
+as a new vertex. It specifies the standpoint from which \(A\) and
+\(\kappa(A)\) are read as the two sides of one axis.
+
+Thus the number \(6\) in \(U_3\) has two compatible readings:
+
+\[
+|U_3|=3\times 2.
+\]
+
+There are three axial invariants, each manifested by two sides on the
+active carrier. There is also a level reading:
+
+\[
+1\cdot 2\cdot 3.
+\]
+
+Here \(1\) is the invariant of the axis, \(2\) is its paired
+manifestation, and \(3\) is the minimal triadic scheme of holding: one
+side, the invariant itself, and the opposite side.
+
+Rank \(3\) is the first rank that holds three axial invariants together.
+Rank \(1\) has one full polar carrier. Rank \(2\) has an active inner pair
+between the limits. Rank \(3\) has three axes, three relations
+\(R_1,R_2,R_3\), three modes of holding, and one common invariant of the
+complete scene.
+
+# §19. Triadicity of the Invariant and the Two Chambers
+
+The two-chamber structure \(R_2=K_3\sqcup K_3\) shows how the triadicity
+of the invariant unfolds on the active carrier.
+
+The first layer is
+
+\[
+S_1^{(3)}=\{100,010,001\}.
+\]
+
+It singles out one side of one of the three axes.
+
+The second layer is
+
+\[
+S_2^{(3)}=\{110,101,011\}.
+\]
+
+It singles out the complement of one side, that is, the opposite edge in
+the simplicial reading.
+
+Complementarity exchanges the layers:
+
+\[
+\kappa(S_1^{(3)})=S_2^{(3)},\qquad
+\kappa(S_2^{(3)})=S_1^{(3)}.
+\]
+
+In the logical reading this gives a De Morgan form. In the boundary
+reading it exchanges boundary and coboundary. In the cyclic reading it is
+the half-period \(T^3=\kappa\).
+
+Action and boundary are two modes of the same triadic scheme:
+
+\[
+\text{action: source }|\text{ transition }|\text{ result},
+\]
+
+\[
+\text{boundary: inside }|\text{ edge }|\text{ outside}.
+\]
+
+Both records have the same form: two sides and an intervening place by
+which they are held as one structure. Object and action are therefore two
+readings of one invariant. The object is the reading from the side of a
+stable carrier; the action is the reading from the side of transition.
+
+# §20. Four Readings of Rank \(3\)
 
 The first complete scene has several compatible readings.
 
@@ -753,12 +843,40 @@ octahedron, while \(R_3\) is the system of opposite pairs.
 In the cyclic and analytic reading, \(T\) is the generator of a six-step
 cycle and \(T^3=\kappa\) is the half-period law.
 
-These readings are projections of one finite scene, not different
-scenes.
+These readings are projections of one finite scene.
+
+# §21. Observer of the Complete Scene
+
+At this point the construction has produced
+
+\[
+U_3,\quad R_1,R_2,R_3,\quad \kappa,\quad T,\quad \partial,\quad \delta.
+\]
+
+The observer of the first complete scene can now be written as
+
+\[
+O_3^{\mathrm{adm}}
+=\bigcap_{A\in\mathcal A_{S_3}}\operatorname{Inv}(A).
+\]
+
+The notation \(O_3^{\mathrm{adm}}\) marks the admissibility invariant of
+rank \(3\), not the set of axes \(I_3^{\mathrm{axes}}\).
+
+A minimal operator reading is
+
+\[
+O_3^{\mathrm{adm}}\sim(\kappa,\partial,T).
+\]
+
+Here \(\kappa\) holds limiting complementarity, \(\partial\) holds the
+recoverable boundary trace, and \(T\) holds cyclic transition. Concrete
+computations of the separate invariants are carried out in the later
+volumes.
 
 # Part V. Map of Higher Unfoldings
 
-# §20. Axis Types in Higher Ranks
+# §22. Axis Types in Higher Ranks
 
 For \(U_n\), an axis is a complementary cut
 
@@ -782,7 +900,7 @@ types appear:
 The self-dual type \((2,2)\) is new. It is the middle layer of the
 tetrahedral boundary and carries the octahedral slice of rank \(4\).
 
-# §21. Ranks \(4\) and \(5\) as Pointers
+# §23. Ranks \(4\) and \(5\) as Pointers
 
 Rank \(4\) has active carrier
 
@@ -816,7 +934,7 @@ and the quotient by complementarity gives
 U_5/\kappa\cong PG(3,2).
 \]
 
-# §22. General Projective and Arithmetic Law
+# §24. General Projective and Arithmetic Law
 
 In general:
 
@@ -846,7 +964,7 @@ thresholds appear at ranks
 These ranks form a cyclic-constructible horizon rather than the strict
 core of the theory.
 
-# §23. What the Next Volumes Unfold
+# §25. What the Next Volumes Unfold
 
 Volume 1 proves the rank-3 core in strict finite form.
 
@@ -860,7 +978,7 @@ Volume 5 develops the Fano-tetrahedral reading of rank \(4\).
 
 Volume 6 develops cycles, circle, and topological avatars.
 
-# §24. Summary of Volume 0
+# §26. Summary of Volume 0
 
 The foundation of DOT can be summarized as follows.
 
@@ -898,6 +1016,19 @@ The octahedral skeleton is
 
 \[
 (U_3,R_1\cup R_2)\cong K_{2,2,2}.
+\]
+
+The quotient \(U_3/\kappa\) gives three axes. Each axis is read as one
+invariant manifested by a pair and held by a triadic scheme:
+
+\[
+O_A\leadsto \{A,\kappa(A)\}\leadsto (A,O_A,\kappa(A)).
+\]
+
+The observer of the first complete scene has the minimal operator reading
+
+\[
+O_3^{\mathrm{adm}}\sim(\kappa,\partial,T).
 \]
 
 The later volumes unfold the same structure through higher ranks,
