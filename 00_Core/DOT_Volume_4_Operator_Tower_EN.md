@@ -2,8 +2,6 @@
 
 # Volume 4. Operator Tower
 
-Status: first English translation pass.
-
 Volumes 0-3 built active carriers, the strict rank-3 scene, higher-rank
 projective architecture, and boundary operators.
 
@@ -40,7 +38,12 @@ is the operator carrier.
 The mathematical content is standard finite set functoriality, Boolean
 functions, affine functions over \(\mathbb F_2\), involutions, and the
 Klein four-group. The DOT-specific content is the reappearance of the
-octahedral law inside operator levels.
+octahedral law inside operator levels and the operator form of the
+inter-rank principle:
+
+\[
+\boxed{\text{the content of a level becomes the grammar of the next level}.}
+\]
 
 ---
 
@@ -195,6 +198,15 @@ Q_{n+1}.
 \]
 
 This is the functorial form of binary rank growth.
+
+It is compatible with the axial inter-rank law from Volume 2:
+
+\[
+Q_n^*\cong U_{n+1}/\kappa_{n+1}.
+\]
+
+At the state level, configurations become axes of the next scene. At the
+operator level, readings of a carrier become positions in a new carrier.
 
 ---
 
@@ -484,9 +496,8 @@ The rank-8 carrier has a central balanced layer of size
 The affine subcarrier intersects this balanced layer in a special finite
 configuration.
 
-In the old operator document, this is the place where another
-octahedral-like structure appears after restriction to the right
-operator-invariant subset.
+After restriction to the right operator-invariant subset, another
+octahedral-like structure appears here.
 
 ---
 
@@ -584,7 +595,13 @@ Volume 2:
 U_n/\kappa\cong PG(n-2,2)
 \]
 
-as projective axial factor.
+as projective axial factor, together with
+
+\[
+Q_n^*\cong U_{n+1}/\kappa_{n+1}
+\]
+
+as inter-rank axial lift.
 
 Volume 3:
 
@@ -614,6 +631,7 @@ Volume 4 establishes:
 - output negation and input complement;
 - the Klein four-group;
 - self-dual and balanced functions;
+- the operator form of the inter-rank growth principle;
 - the recurrence of the octahedral law at operator levels.
 
 ---
@@ -676,3 +694,12 @@ produce six-state layers in which the octahedral law reappears.
 The result is an operator tower in which the first complete scene of DOT
 is not isolated; it repeats at higher operator levels.
 
+Together with the inter-rank lift, Volume 4 gives two coordinated growth
+forms:
+
+\[
+\begin{array}{c|c}
+\text{inter-rank lift} & \text{configurations become axes}\\
+\text{operator tower} & \text{readings become positions}
+\end{array}
+\]

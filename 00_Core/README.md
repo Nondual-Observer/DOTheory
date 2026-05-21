@@ -16,26 +16,31 @@ Reading order:
 
 3. [`DOT_Volume_2_Higher_Ranks_Projective_Architecture_EN.md`](DOT_Volume_2_Higher_Ranks_Projective_Architecture_EN.md)  
    Higher ranks and projective architecture: \(U_n\), shells, axes,
-   complementarity, projective factors, ranks \(4\) and \(5\).
+   complementarity, projective factors, ranks \(4\) and \(5\), and the
+   inter-rank lift \(Q_n^*\cong U_{n+1}/\kappa_{n+1}\).
 
 4. [`DOT_Volume_3_Boundary_Operators_Scene_Reductions_EN.md`](DOT_Volume_3_Boundary_Operators_Scene_Reductions_EN.md)  
    Boundary operators and scene reductions: \(\partial,\delta\),
    \(\kappa\partial=\delta\kappa\), and reductions
-   \(\rho_D,\rho_F,\rho_C\).
+   \(\rho_D,\rho_F,\rho_C\). The reduction \(\rho_D\) is tied to the
+   axial factor \(U_n/\kappa_n\cong Q_{n-1}^*\).
 
 5. [`DOT_Volume_4_Operator_Tower_EN.md`](DOT_Volume_4_Operator_Tower_EN.md)  
    Operator tower: power functor, operator functor, Klein four-group,
-   self-dual functions, and the rank-8 affine subcarrier.
+   self-dual functions, the rank-8 affine subcarrier, and the operator
+   form of the principle that the content of a level becomes the grammar
+   of the next level.
 
 6. [`DOT_Volume_5_Fano_Tetrahedron_Chamber_Duality_EN.md`](DOT_Volume_5_Fano_Tetrahedron_Chamber_Duality_EN.md)  
    Fano, tetrahedron, and chamber duality: tetrahedral rank \(4\),
-   barycentric reading, middle octahedral layer, and Fano plane.
+   barycentric reading, middle octahedral layer, and Fano plane. The Fano
+   plane is also read as \(Q_3^*\cong U_4/\kappa_4\).
 
 7. [`DOT_Volume_6_Cycles_Circle_Topological_Avatars_EN.md`](DOT_Volume_6_Cycles_Circle_Topological_Avatars_EN.md)  
    Cycles, circle, and topological avatars: \(C_6\), \(T^6\), \(T^3\),
-   roots of unity, Möbius type, Hopf pairs, and Borromean triad.
+   roots of unity, Möbius type, Hopf pairs, Borromean triad, strict
+   cycles, and cyclic avatars of higher ranks.
 
-Volumes 0-6 now have first English translation passes. The Russian corpus
-has been moved to the adjacent folder
-`../TNR_GitHub_Math_Bridges_2026-04-30_RU` for comparison and later
-line-level revision.
+Volumes 0-6 give the English main corpus. The adjacent Russian corpus is
+kept as the source corpus:
+`../TNR_GitHub_Math_Bridges_2026-04-30_RU`.

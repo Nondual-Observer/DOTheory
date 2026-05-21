@@ -2,8 +2,6 @@
 
 # Volume 2. Higher Ranks and Projective Architecture
 
-Status: first English translation pass.
-
 Volume 0 introduced the foundation of DOT. Volume 1 unfolded the first
 complete scene:
 
@@ -14,7 +12,9 @@ S_3=(U_3;R_1,R_2,R_3).
 \]
 
 This volume builds the next strict layer: higher active carriers, shell
-decomposition, limiting complementarity, axes, and projective factors.
+decomposition, limiting complementarity, axes, projective factors, and the
+rank-to-rank lift by which configurations of one rank become axes of the
+next rank.
 
 The main line is
 
@@ -48,7 +48,15 @@ U_n/\kappa\cong PG(n-2,2)
 }
 \]
 
-as the projective axial factor.
+as the projective axial factor, and
+
+\[
+\boxed{
+Q_{n-1}^*\cong U_n/\kappa_n
+}
+\]
+
+as the inter-rank axial lift.
 
 The constructions in this volume are standard finite combinatorics:
 Boolean cubes, subsets, simplex faces, shell layers, complementarity,
@@ -70,9 +78,10 @@ Reading order:
 3. limiting complementarity \(\kappa\);
 4. axes and axis types \((k,n-k)\);
 5. projective factor \(U_n/\kappa\);
-6. rank \(4\): tetrahedral boundary and Fano plane;
-7. rank \(5\): four-simplex boundary and \(PG(3,2)\);
-8. the general rank principle.
+6. inter-rank lift \(Q_{n-1}^*\cong U_n/\kappa_n\);
+7. rank \(4\): tetrahedral boundary and Fano plane;
+8. rank \(5\): four-simplex boundary and \(PG(3,2)\);
+9. the general rank principle.
 
 ---
 
@@ -149,7 +158,7 @@ At rank \(5\), the types are
 (1,4),\qquad (2,3).
 \]
 
-Thus higher ranks do not only add more states; they add new kinds of cuts.
+Thus higher ranks add more states together with new kinds of cuts.
 
 ---
 
@@ -346,7 +355,37 @@ Thus the axial factor of the active scene is projective.
 
 ---
 
-# 6. Rank \(4\): Active Boundary of the Tetrahedron
+# 6. Inter-Rank Reading of the Projective Factor
+
+The complement quotient also has a rank-to-rank meaning.
+
+For the full carrier:
+
+\[
+Q_{n-1}\cong Q_n/\kappa_n.
+\]
+
+For the active carrier:
+
+\[
+\boxed{
+Q_{n-1}^*\cong U_n/\kappa_n.
+}
+\]
+
+Here \(Q_{n-1}^*=Q_{n-1}\setminus\{\varnothing\}\).
+
+The empty configuration of \(Q_{n-1}\) lifts to the limiting axis
+\(\{\varnothing,J_n\}\), which is absent from \(U_n\). The upper
+configuration \(J_{n-1}\) remains as an internal axis of \(U_n\).
+
+Thus the previous rank is preserved as the axial grammar of the next
+rank. This is the inter-rank invariant of development used later for
+reductions, operator towers, Fano readings, and cyclic avatars.
+
+---
+
+# 7. Rank \(4\): Active Boundary of the Tetrahedron
 
 At rank \(4\),
 
@@ -390,7 +429,7 @@ Thus rank \(4\) is the active boundary of a tetrahedron.
 
 ---
 
-# 7. Middle Layer of Rank \(4\)
+# 8. Middle Layer of Rank \(4\)
 
 The middle shell is
 
@@ -422,7 +461,7 @@ octahedral form becomes an internal layer of a higher scene.
 
 ---
 
-# 8. Rank \(4\) and the Fano Plane
+# 9. Rank \(4\) and the Fano Plane
 
 The complement quotient of \(U_4\) has
 
@@ -456,7 +495,7 @@ active tetrahedral boundary by complementarity.
 
 ---
 
-# 9. Outer Shell and Cycles of Rank \(4\)
+# 10. Outer Shell and Cycles of Rank \(4\)
 
 The outer shell of rank \(4\) is
 
@@ -489,7 +528,7 @@ This is the first rank with more than one type of axis.
 
 ---
 
-# 10. Rank \(5\): Active Boundary of the Four-Simplex
+# 11. Rank \(5\): Active Boundary of the Four-Simplex
 
 At rank \(5\),
 
@@ -530,7 +569,7 @@ four-simplex \(\Delta^4\).
 
 ---
 
-# 11. Middle Layers of Rank \(5\)
+# 12. Middle Layers of Rank \(5\)
 
 The two middle shells are
 
@@ -572,7 +611,7 @@ structure.
 
 ---
 
-# 12. Rank \(5\) and \(PG(3,2)\)
+# 13. Rank \(5\) and \(PG(3,2)\)
 
 The complement quotient has
 
@@ -604,9 +643,9 @@ edge-triangle pairs.
 
 ---
 
-# 13. Nonzero Carrier \(Q_5^*\) and Cycle \(C_{31}\)
+# 14. Nonzero Carrier \(Q_5^*\) and Cycle \(C_{31}\)
 
-Another carrier used in the old corpus is
+Another useful carrier is
 
 \[
 Q_5^*=Q_5\setminus\{00000\}.
@@ -637,7 +676,7 @@ In the Singer reading, one obtains a cyclic structure of length \(31\).
 
 ---
 
-# 14. General Rank Law
+# 15. General Rank Law
 
 For every \(n\ge 2\):
 
@@ -671,9 +710,15 @@ U_n/\kappa\cong PG(n-2,2).
 
 This is the basic projective-rank law of DOT.
 
+The same factor is the axial lift of the previous rank:
+
+\[
+Q_{n-1}^*\cong U_n/\kappa_n.
+\]
+
 ---
 
-# 15. Reductions and Higher Ranks
+# 16. Reductions and Higher Ranks
 
 The higher-rank principle can be stated as:
 
@@ -691,12 +736,11 @@ octahedral form appears as the middle layer \(S_2^{(4)}\).
 At rank \(5\), the projective factor becomes \(PG(3,2)\), and the middle
 layers contain \(J(5,2)\) and the Petersen graph.
 
-Thus rank growth is not just cardinal growth. It is structural
-unfolding.
+Thus rank growth is structural unfolding, not cardinal growth alone.
 
 ---
 
-# 16. Boundary of This Volume
+# 17. Boundary of This Volume
 
 Volume 2 fixes:
 
@@ -705,6 +749,7 @@ Volume 2 fixes:
 - complementarity;
 - axes and axis types;
 - projective factors;
+- inter-rank lift \(Q_{n-1}^*\cong U_n/\kappa_n\);
 - ranks \(4\) and \(5\) as first higher examples.
 
 It does not yet develop:
@@ -775,7 +820,12 @@ The quotient by this pairing is projective:
 U_n/\kappa\cong PG(n-2,2).
 \]
 
+The same quotient is the lifted nonempty carrier of the previous rank:
+
+\[
+Q_{n-1}^*\cong U_n/\kappa_n.
+\]
+
 Rank \(4\) gives the tetrahedral boundary and the Fano plane. Rank \(5\)
 gives the four-simplex boundary, the Petersen graph in the middle layer,
 and \(PG(3,2)\).
-

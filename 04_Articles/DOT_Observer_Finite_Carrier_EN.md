@@ -12,7 +12,7 @@ Thinking about what is needed for a process of distinction to persist, I arrived
 
 Somewhere here the Distinction Observable Theory began.
 
-This article is an introductory route into the earlier DOT formulation. The current Russian DOT corpus is located in [00_Core](../00_Core); the earlier English DOT documents are preserved in the external repository backup as historical sources.
+This article is an introductory route into an earlier DOT formulation. The current DOT corpus is located in [00_Core](../00_Core).
 
 ![White and black](../assets/bw.png)
 
@@ -108,7 +108,7 @@ P^F prohibits tracelessness     -> trace is held
 P^C prohibits external ground   -> internal autonomy is held
 ```
 
-Thus the prohibitions become not only negative conditions, but also sources of positive regimes.
+Thus the prohibitions become boundary conditions that generate positive regimes.
 
 ## 5. Boundary as the Third Participant
 
@@ -484,10 +484,10 @@ This architecture can then unfold in different directions: color, arithmetic of 
 
 ## 13. Where to Read Next
 
-The main entry of the current repository is the [Russian DOT corpus, Volumes 0–6](../00_Core). It builds the finite core from the polar pair and active boundary to the six-point octahedral scene, then to higher ranks, boundary operators, the operator tower, Fano-tetrahedral reading, and cyclic-topological avatars.
+The main entry of the current repository is the [DOT corpus, Volumes 0-6](../00_Core). It builds the finite core from the polar pair and active boundary to the six-point octahedral scene, then to higher ranks, boundary operators, the operator tower, Fano-tetrahedral reading, and cyclic-topological avatars.
 
 The [00_Core](../00_Core) folder contains the current main corpus. Volume 0 gives the beginning of the theory, Volume 1 unfolds the strict rank-3 core, and Volume 2 develops higher ranks and projective architecture.
 
-AMR is preserved as a future arithmetic branch. Its earlier materials remain in the backup of the old corpus; the current bridge map is given in [02_Bridges](../02_Bridges).
+AMR is preserved as a future arithmetic branch. The current bridge map is given in [02_Bridges](../02_Bridges).
 
 The [Bridge Notes](../02_Bridges) folder gathers external readings of the already constructed core: the color cube and chambers, binary growth, the bridge to $A_2/\mathfrak{sl}_3/\mathfrak{su}(3)$, the Hopf/Borromean layer, and the cryptographic spectral block. The [Appendix](../03_Appendix/DOT_Appendix_AF_Atlas_And_Glossary_EN.md) serves as an atlas of objects, notation, and figures.

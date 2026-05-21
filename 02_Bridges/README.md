@@ -17,8 +17,9 @@ Volumes 0-6 corpus.
 
 Earlier notes on binary growth.
 
-Status: part of this content enters Volumes 0 and 2. The folder is kept as
-a historical source.
+Status: part of this content enters Volumes 0 and 2. In the current main
+corpus it is sharpened into the inter-rank lift
+\(Q_n^*\cong U_{n+1}/\kappa_{n+1}\). The folder is kept as a source.
 
 ### 03_A2_sl3_su3
 
@@ -75,5 +76,7 @@ The main corpus already includes:
   architecture of rank \(4\);
 - from `08_Boundary_Operator_And_Distinction`: boundary operators and
   scene reductions.
+- from `02_Binary_Growth`: the rank-lift mechanism, now stated as the
+  axial inter-rank law in Volumes 0 and 2.
 
 The remaining bridges stay outside the current main corpus.

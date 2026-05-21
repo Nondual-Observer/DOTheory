@@ -1017,8 +1017,7 @@ Resilience is exactly the statement that the embedded Boolean function has no sp
 2. weight 1,
 3. weights $2,\dots,t$.
 
-So the current block graph does not merely detect CI.
-It detects the whole low-weight Walsh package:
+So the current block graph detects the whole low-weight Walsh package:
 
 - balancedness,
 - correlation immunity,
@@ -1071,9 +1070,9 @@ The present block naturally suggests several nearby continuations:
    designs and comparing the resulting low-weight sector filters;
 2. testing whether other standard cryptographic properties can be rewritten in
    the same language of vanishing or support on block-graph sectors;
-3. studying whether the sector decomposition can be used not only as a criterion,
-   but also as a classification device for families of Boolean functions with
-   prescribed low-weight Walsh behavior.
+3. studying whether the sector decomposition can be used as a classification
+   device for families of Boolean functions with prescribed low-weight Walsh
+   behavior.
 
 These directions are not needed for the current proofs, but they explain why the
 block is of independent interest beyond the single CI statement.

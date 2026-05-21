@@ -2,8 +2,6 @@
 
 # Volume 1. Strict Rank-3 Core
 
-Status: first English translation pass.
-
 Volume 0 introduced the foundation of DOT: distinction, scene, observer,
 rank, active boundary, and the first complete scene. This volume gives the
 strict finite unfolding of the first complete scene.
@@ -1659,4 +1657,3 @@ U_3/\kappa\cong PG(1,2).
 \]
 
 This is the strict finite closure of the first complete DOT scene.
-

@@ -2,13 +2,17 @@
 
 # Volume 3. Boundary Operators and Scene Reductions
 
-Status: first English translation pass.
-
 Volumes 0-2 built the active carriers, the first complete scene, higher
 rank shells, complementarity, and the projective factor
 
 \[
 U_n/\kappa\cong PG(n-2,2).
+\]
+
+They also give the inter-rank axial law
+
+\[
+Q_{n-1}^*\cong U_n/\kappa_n.
 \]
 
 Volume 3 adds the internal boundary grammar. Up to this point the
@@ -34,8 +38,8 @@ It says that limiting complementarity sends boundary to coboundary.
 
 The mathematical content is the standard simplicial chain and cochain
 grammar over \(\mathbb F_2\). The DOT-specific content is the connection
-between this grammar, active scenes, holding conditions, reductions, and
-the observer as a boundary invariant.
+between this grammar, active scenes, holding conditions, reductions,
+inter-rank lifting, and the observer as a boundary invariant.
 
 ---
 
@@ -595,9 +599,8 @@ Reductions are boundary directions of the scene as a scene:
 \rho_D,\qquad \rho_F,\qquad \rho_C.
 \]
 
-They are not the same as \(\partial\). The operator \(\partial\) acts
-inside an already held scene. Reductions describe transitions out of the
-current scene configuration.
+The operator \(\partial\) acts inside an already held scene. Reductions
+describe transitions out of the current scene configuration.
 
 ## 16.1. Reduction \(\rho_D\)
 
@@ -613,7 +616,20 @@ In a rich scene this appears as the quotient
 U_n/\kappa.
 \]
 
-On \(U_3\), this gives three axes.
+In the inter-rank reading, this axial quotient is the nonempty carrier of
+the previous rank:
+
+\[
+U_n/\kappa_n\cong Q_{n-1}^*.
+\]
+
+Thus \(\rho_D\) has two coordinated meanings: it sends positions to
+complement axes, and it returns the current scene to the axial grammar of
+the previous rank. On \(U_3\), this gives three axes:
+
+\[
+U_3/\kappa_3\cong Q_2^*=\{01,10,11\}.
+\]
 
 ## 16.2. Reduction \(\rho_F\)
 
@@ -712,8 +728,11 @@ At rank \(4\),
 U_4/\kappa\cong PG(2,2).
 \]
 
-Thus polar reduction does not merely produce three axes; it produces the
-Fano plane.
+Thus polar reduction produces the Fano plane:
+
+\[
+U_4/\kappa_4\cong Q_3^*.
+\]
 
 ## 18.2. \(\rho_F\): Boundary Chain
 
@@ -794,10 +813,17 @@ structured carrier at a higher rank.
 
 Examples:
 
-- the three axes of \(U_3/\kappa\) become the Fano factor of \(U_4\);
+- the three axes of \(U_3/\kappa\) match \(Q_2^*\);
+- \(Q_3^*\) becomes the Fano factor \(U_4/\kappa_4\);
 - the octahedral six-state form becomes the middle layer \(S_2^{(4)}\);
 - the boundary chain becomes longer and more articulated in ranks \(4\)
   and \(5\).
+
+The same statement is written compactly as:
+
+\[
+Q_{n-1}^*\cong U_n/\kappa_n.
+\]
 
 ---
 
@@ -839,6 +865,10 @@ Volume 3 establishes:
 - the compatibility \(\kappa\partial=\delta\kappa\);
 - rank examples \(3,4,5\);
 - reductions as scene-boundary directions;
+- the inter-rank reading of \(\rho_D\):
+  \[
+  \rho_D:U_n\to U_n/\kappa_n\cong Q_{n-1}^*;
+  \]
 - the boundary-invariant reading of the observer.
 
 ---
@@ -918,3 +948,8 @@ are boundary directions of the scene as a scene. This gives the boundary
 form of the rank principle: higher ranks internalize reductions of lower
 ranks.
 
+For \(\rho_D\), the rank-to-rank form is:
+
+\[
+\rho_D:U_n\to U_n/\kappa_n\cong Q_{n-1}^*.
+\]

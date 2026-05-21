@@ -2,8 +2,6 @@
 
 # Volume 5. Fano, Tetrahedron, and Chamber Duality
 
-Status: first English translation pass.
-
 This volume unfolds rank \(4\) in detail. Volume 2 introduced rank \(4\)
 as a higher active carrier; this volume develops its tetrahedral,
 octahedral, and Fano readings.
@@ -42,6 +40,17 @@ U_4/\kappa\cong PG(2,2)
 
 as the Fano plane.
 
+The same quotient has an inter-rank reading:
+
+\[
+\boxed{
+Q_3^*\cong U_4/\kappa_4.
+}
+\]
+
+The seven Fano points are the seven nonempty configurations of rank \(3\)
+lifted as complement axes of rank \(4\).
+
 The mathematical constructions are standard: tetrahedron, barycentric
 reading, opposite faces, middle layer, projective plane \(PG(2,2)\), and
 octahedral chambers. The DOT-specific content is the way these structures
@@ -60,9 +69,10 @@ Reading order:
 5. two types of limiting pairs;
 6. middle layer \(S_2^{(4)}\) as an octahedron;
 7. quotient \(U_4/\kappa\) as the Fano plane;
-8. Fano lines and lifted Fano projections;
-9. chambers of the middle octahedron;
-10. center, limiting pair, and geometric readings.
+8. the inter-rank reading \(Q_3^*\cong U_4/\kappa_4\);
+9. Fano lines and lifted Fano projections;
+10. chambers of the middle octahedron;
+11. center, limiting pair, and geometric readings.
 
 ---
 
@@ -394,6 +404,18 @@ This is the Fano plane.
 The seven points of the Fano plane correspond to the seven complement
 pairs of \(U_4\).
 
+They also correspond to the seven nonempty configurations of rank \(3\):
+
+\[
+Q_3^*=\{001,010,011,100,101,110,111\}.
+\]
+
+Thus
+
+\[
+Q_3^*\cong U_4/\kappa_4.
+\]
+
 ---
 
 # 12. Why the Factor Is the Fano Plane
@@ -429,6 +451,9 @@ tetrahedral boundary before quotienting.
 
 Thus the Fano plane receives a tetrahedral presentation.
 
+The same seven points receive an inter-rank presentation: each point is a
+rank-3 configuration lifted to a rank-4 axis.
+
 ---
 
 # 14. Fano Lines
@@ -460,6 +485,14 @@ A lifted Fano projection remembers both:
 
 Thus the Fano plane is the quotient layer, while \(U_4\) is the lifted
 two-sided carrier.
+
+In the inter-rank notation:
+
+\[
+\text{Fano point}
+\quad=\quad
+\text{nonempty rank-3 configuration lifted to a rank-4 axis}.
+\]
 
 ---
 
@@ -576,6 +609,7 @@ Strict:
 - shell decomposition \(4+6+4\);
 - complementarity \(\kappa\);
 - quotient \(U_4/\kappa\cong PG(2,2)\);
+- inter-rank identification \(Q_3^*\cong U_4/\kappa_4\);
 - middle layer \(S_2^{(4)}\).
 
 Readings:
@@ -629,6 +663,11 @@ quotient by complementarity is the Fano plane:
 U_4/\kappa\cong PG(2,2).
 \]
 
-Thus the Fano plane is the projective shadow of the active tetrahedral
-boundary.
+It also has the inter-rank form
 
+\[
+Q_3^*\cong U_4/\kappa_4.
+\]
+
+Thus the Fano plane is the projective shadow of the active tetrahedral
+boundary and the axial lift of the nonempty rank-3 carrier.

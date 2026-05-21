@@ -488,7 +488,6 @@ This set is enough to read the Mathematical Start and bridge documents without c
 |---|---|---|
 | DOT | package name | the current finite-combinatorial theory line and its controlled bridge documents |
 | DOT | file prefix | English document or English-facing theorem/package note |
-| DOT | file prefix | Russian document in the package |
 | strict core | constructed | finite core: carriers, relations, readings, recovery-data, operator packages |
 | bridge-layer | reading | external interpretation layer for an already constructed finite structure |
 | native object | constructed | object defined inside the strict core |

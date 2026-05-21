@@ -13,11 +13,15 @@ volumes.
 
 - [`DOT_Appendix_AF_Atlas_And_Glossary_EN.md`](DOT_Appendix_AF_Atlas_And_Glossary_EN.md)  
   earlier English object atlas and notation glossary from the DOT
-  package. It is kept as a reference source. In the current English DOT
-  package it still needs revision according to the terminology and order
-  of Volumes 0-6.
+  package. It is kept as a reference source for comparison with the
+  terminology and order of Volumes 0-6.
 
-## Planned Appendices
+- [`DOT_Interrank_Lift_Relations_Operators_EN.md`](DOT_Interrank_Lift_Relations_Operators_EN.md)  
+  research note on the inter-rank lift: configurations of rank \(n\)
+  become complement axes of rank \(n+1\), and the same passage organizes
+  lifted relations, boundary operators, and cyclic avatars.
+
+## Future Appendices
 
 Planned English appendices:
 

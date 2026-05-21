@@ -1,6 +1,6 @@
 # Repository Status
 
-This directory is now the English DOT working repository.
+This directory is the English DOT repository.
 
 Current abbreviation:
 
@@ -8,7 +8,7 @@ Current abbreviation:
 DOT = Distinction Observable Theory
 ```
 
-The Russian working corpus was moved beside this repository:
+The Russian source corpus is kept beside this repository:
 
 ```text
 ../TNR_GitHub_Math_Bridges_2026-04-30_RU
@@ -16,7 +16,7 @@ The Russian working corpus was moved beside this repository:
 
 ## English Main Corpus
 
-The main corpus has first English passes:
+The main corpus is:
 
 - `00_Core/DOT_Volume_0_Foundations_EN.md`
 - `00_Core/DOT_Volume_1_Strict_Rank_3_Core_EN.md`
@@ -26,10 +26,19 @@ The main corpus has first English passes:
 - `00_Core/DOT_Volume_5_Fano_Tetrahedron_Chamber_Duality_EN.md`
 - `00_Core/DOT_Volume_6_Cycles_Circle_Topological_Avatars_EN.md`
 
+## Current Synchronization
+
+The English repository has been synchronized with the current Russian
+corpus at the level of:
+
+- README and corpus maps;
+- Volumes 0-6;
+- inter-rank lift \(Q_n^*\cong U_{n+1}/\kappa_{n+1}\);
+- reductions, operator tower, Fano reading, and cyclic avatars;
+- appendix note on inter-rank lifting.
+
 ## Remaining Work
 
-- line-level English revision against the Russian side corpus;
-- translation or replacement of the remaining bridge material that was
-  kept only in the Russian side corpus;
-- English cleanup of diagnostic strings in verification scripts.
-
+- full line-level literary revision of the English volumes;
+- optional full translation of long Russian research appendices;
+- optional English cleanup of diagnostic strings in verification scripts.

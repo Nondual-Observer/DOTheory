@@ -2,8 +2,6 @@
 
 # Volume 6. Cycles, Circle, and Topological Avatars
 
-Status: first English translation pass.
-
 Volume 1 fixed the finite cyclic structure of the first complete scene:
 
 \[
@@ -36,6 +34,10 @@ R_3=3K_2\leadsto\text{three Hopf pairs},
 The strict object remains finite. Circle, roots of unity, Hopf links, and
 Borromean linkage are topological avatars of the finite core.
 
+On higher ranks, this volume separates strict cycles in \(R_1(U_n)\) from
+cyclic avatars obtained by lifting cycles on the axial factor
+\(U_n/\kappa_n\).
+
 ---
 
 # How to Read This Volume
@@ -50,7 +52,8 @@ Reading order:
 6. axes and Hopf readings;
 7. three Hopf pairs;
 8. Borromean triad of blocks;
-9. distinction between strict finite claims and topological avatars.
+9. strict cycles and cyclic avatars;
+10. distinction between strict finite claims and topological avatars.
 
 ---
 
@@ -444,6 +447,22 @@ single \(C_6\).
 In higher ranks, cycles are no longer automatically the whole
 one-distance relation. They must be selected or organized as an atlas.
 
+There are two cycle types.
+
+First, strict cycles in \(R_1(U_n)\). Their edges are ordinary
+Hamming-distance-1 edges of the active carrier.
+
+Second, cyclic avatars. Choose a cycle of length \(m\) on the axial factor
+\(U_n/\kappa_n\), then lift it to the two-sided carrier \(U_n\). If the
+lift changes side at each step, the lifted transport satisfies
+
+\[
+T^{2m}=\operatorname{id},\qquad T^m=\kappa.
+\]
+
+The rank-3 law \(T^6=\operatorname{id}, T^3=\kappa\) is the first case:
+a three-axis cycle lifts to \(C_6\).
+
 ---
 
 # 17. Boundary with Constructive Arithmetic
@@ -528,3 +547,12 @@ R_3=3K_2\leadsto\text{three Hopf pairs},
 
 Volume 6 keeps these avatars connected to the finite rank-3 core.
 
+For higher ranks, the active distinction is:
+
+\[
+\text{strict cycle in }R_1(U_n)
+\qquad
+\text{versus}
+\qquad
+\text{cyclic avatar lifted from }U_n/\kappa_n.
+\]
