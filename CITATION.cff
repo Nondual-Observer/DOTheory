@@ -5,8 +5,9 @@ type: dataset
 authors:
   - family-names: Zhuk
     given-names: Igor M.
-doi: 10.5281/zenodo.20522076
+doi: 10.5281/zenodo.20529803
+version: "6.1"
 url: "https://github.com/Nondual-Observer/DOTheory"
 repository-code: "https://github.com/Nondual-Observer/DOTheory"
-date-released: 2026-06-01
+date-released: 2026-06-03
 license: CC-BY-NC-SA-4.0
