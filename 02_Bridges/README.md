@@ -77,6 +77,39 @@ Status: current bridge to Volumes 2 and 3. Main formula:
 \(D(N_n)\setminus\{1\}\cong
 D^\circ(N_{n+1})/\kappa_{N_{n+1}}\).
 
+### 10_Observer_Duality_Readings
+
+Readings of the observer-duality (Volume 7) through external languages: Lie
+theory and Wedderburn (\(\langle\mathfrak{sl}_2,T\rangle=M_4(\mathbb
+R)\oplus M_2(\mathbb C)\), Schur–Weyl), finite field
+(\(A_{\text{field}}=\mathbb C\oplus M_{2^n-1}\), weight out of the field),
+number theory (Fermat/Mersenne as the \(\pm1\) faces), quantum information
+(the observer = a noiseless qubit, rank 3 = minimal protection),
+Euler–Fourier (the helicoid, the Erdős–Borwein torsion).
+
+Status: a layer of bridges over the corpus. The native content (weight ⟂
+orientation, the room development law) enters Volume 7; here are only the
+external readings, with scope marked (rank-3 / all-rank). Full computations
+and verifiers — in `_TNR_Research/` (single index `00_MASTER_MAP_RU.md`).
+
+### 11_Ontogenesis_Atlas
+
+Capstone appendix: the ontogenesis atlas of mathematical languages. How, from
+one primitive, rank by rank, finite mathematical languages necessarily appear
+(Boolean → plane+code → 3-space+quadrics → 4-space+generalized quadrangle → …).
+It carries: the general rank-\(n\) law (closed forms, verified n=2..8); the
+**functorial backbone** (lift endofunctor `Λ⊣π`; languages = functors along the
+orbit; development law = induction/restriction adjunction, Bratteli diagram;
+q-analog simplex↔projective; power-set functor tower) — explaining why the law is
+uniform and **pre-computable**; the **generator `gen(n)`**, validated by four
+strict cells (ranks 3–6).
+
+Status: a bridge/atlas layer over the corpus. **Frame: an atlas of the necessary
+appearance of finite mathematical languages, NOT a closure of mathematics**;
+constructibility horizon at rank 33. Three statuses (core / rigorous reading /
+avatar). Verifiers — `01_Verification/` (105 PASS); detailed sample cells and
+the index — working `_TNR_Research/` (`00_Ontogenesis_INDEX_RU.md`).
+
 ## What Enters the Main Corpus
 
 The main corpus already includes:

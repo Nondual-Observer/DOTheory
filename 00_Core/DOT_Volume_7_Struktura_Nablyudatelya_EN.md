@@ -2,9 +2,9 @@
 
 # Volume 7. The structure of the observer
 
-The subject of this volume is the observer as a structure. In Volumes 0–6 the observer is a point: the center of the scene, an invariant, a through-thread. Here the observer is considered as a structure — how its invariants are layered, how they differ, and what structure is assembled from them. The assembled structure is a representation of $\mathfrak{sl}_2$ on the Boolean lattice with the complement as Weyl involution and rotation as a separate elliptic type; and it compresses: the scene unfolds from the structure of the observer, and the center-point is its shadow. As a final step, the same generating law is applied to itself — the actions of a level become the states of the next — and the operator tower unfolds, where the octahedral law shows through on the operator floor.
+The subject of this volume is the observer as a structure. In Volumes 0–6 the observer is a point: the center of the scene, an invariant, a through-thread. Here the observer is considered as a structure — how its invariants are layered, how they differ, and what structure is assembled from them. The assembled structure is a **duality**: orientation (the rotation $T$, the choice of axis order) and weight (the Cartan grading $H$ of the $\mathfrak{sl}_2$ representation), sharing one common horizon — the boundary pair $\partial+\delta$ — and diverging on the weight. The weight is the **irreducible axis of the observer** — a direction proper to the observer, which neither the axis symmetry nor the rotation reaches; the observer-center is its fixed point (the zero weight). From this duality the scene unfolds; the helicoid (Volume 4) is its screw — two axes sharing only the horizon, hence never closing; and the same generating law, applied to itself, gives the operator tower and the development law across ranks.
 
-The volume completes the corpus by turning the gaze: from the observer in the scene to the scene from the observer. The status is marked explicitly: where the structure is rigorous, where it is synthesis, where it is open.
+The volume completes the corpus by turning the gaze: from the observer in the scene to the scene from the observer. The formerly open questions — the joining of rotation and the vertical (§8.3), the development at higher ranks (§7.6), the connection with the operator tower (§7.5) — are three faces of one fact (weight ⟂ orientation) and are resolved here. The status is marked explicitly: where the structure is rigorous, where it is synthesis, where it is open. *(Readings of this duality through external languages — Lie theory, finite fields, quantum information, Fourier — are collected separately: `02_Bridges/10_Observer_Duality_Readings`; the corpus is self-contained, these are external readings.)*
 
 ---
 
@@ -164,6 +164,8 @@ $$
 
 The observer-center is a Borromean invariant: a point held by the triple of directions, inseparable as a triple.
 
+The Borromeanness of rank 3 has an algebraic root: the symmetry of the three axes is $S_3$, and rank 3 is the **first rank where this symmetry is non-abelian** (the axis 3-cycle and a transposition of a pair do not commute). At $n=2$ the symmetry of the two axes is abelian ($S_2$, only a transposition of the pair); Borromean holding arises with the third axis. Thus "why exactly three" receives a direct answer: three is the first non-abelian number of axes, and non-abelianness is the algebraic face of Borromeanness. *(The same number is singled out by the minimality of the protected layer — see `02_Bridges/10_Observer_Duality_Readings`.)*
+
 ## §4.3. The complement links both triples
 
 The complement $\kappa$ is the hinge between the two triples of the observer. On the one hand, $\kappa = \kappa_1\kappa_2\kappa_3$ — the product of the Borromean triple of coordinate reflections. On the other, $\kappa$ is the Weyl involution of the structural triple $(\partial, \delta, H)$ and the half-turn of the rotation $T^3$.
@@ -178,7 +180,7 @@ The complement is that through which the Borromean triple of directions (generat
 
 ---
 
-# Section 5. Rotation and the hinge
+# Section 5. Rotation and the duality
 
 ## §5.1. Rotation outside sl₂
 
@@ -195,6 +197,42 @@ $$
 $$
 
 The structure of the observer encompasses all three types of movement, stitched by reflection: not a point, but a bundle of three movements on one hinge.
+
+## §5.3. Weight ⟂ orientation: the duality of the observer
+
+How exactly the rotation $T$ and the vertical $\mathfrak{sl}_2$ are joined — the formerly open question §8.3 — is resolved here (rank 3). They form **one** structure — with a common horizon and a divergence on the weight.
+
+The common horizon. On the active scene $U_3$ the boundary pair is the cycle of six states:
+
+$$
+(\partial+\delta)\big|_{U_3} = \text{adjacency of } C_6,
+$$
+
+and the traversal $T$ is the same cycle, its symmetric part coinciding with the boundary pair:
+
+$$
+\boxed{
+\operatorname{Sym} T = \tfrac12(\partial+\delta), \qquad [\,T,\ \partial+\delta\,] = 0.
+}
+$$
+
+The divergence on the weight. With the **difference** $\partial-\delta$ (the antisymmetric part of the vertical — the weight direction) the rotation does not commute:
+
+$$
+\boxed{
+[\,T,\ \partial-\delta\,] \ne 0.
+}
+$$
+
+That is, $T$ carries **orientation** (the choice of a cyclic order of the axes, $T=\rho\kappa$ — an axis 3-cycle $\rho$ through the complement), while $\mathfrak{sl}_2$ carries **weight** and is blind to the axes (any permutation of the axes commutes with $H$). They share the horizon $\partial+\delta$ and diverge exactly on the weight:
+
+$$
+\boxed{
+\text{WEIGHT } (\mathfrak{sl}_2,\ \partial-\delta,\ H)\ \perp\ \text{ORIENTATION } (T);\qquad \text{shared — the horizon } \partial+\delta.
+}
+$$
+
+This is the duality of the observer. The lock — the irreducibility of the weight to orientation — explains why the helicoid (Volume 4) is a non-closing screw: two axes share only the horizon. The weight is irreducible — a proper axis of the observer, which neither the axis symmetry nor the rotation reaches (the observer-center is its zero point, $H=0$). *(The exact matrix form of this one structure and its reading through Lie theory, finite fields and quantum information — `02_Bridges/10_Observer_Duality_Readings`; the all-rank irreducibility of the weight is proved there.)*
 
 ---
 
@@ -222,9 +260,9 @@ Formerly the scene was described by an enumeration: six points, three relations,
 
 ---
 
-# Section 7. The operator tower
+# Section 7. The operator tower and the development law
 
-The structure of the observer unfolds the scene from movements. But the movements themselves are operations on the carrier, and operations can be made into a new carrier. This is the second unfolding of the same generating law (Volume 0, §0.5): the content of a level becomes the grammar of the next, and here — the actions of one level become the states of the next. The operator tower is this self-application, and in it the octahedral law of rank 3 shows through anew on the operator floor.
+The structure of the observer unfolds the scene from movements. But the movements themselves are operations on the carrier, and operations can be made into a new carrier. This is the second unfolding of the same generating law (Volume 0, §0.5): the content of a level becomes the grammar of the next, and here — the actions of one level become the states of the next. The operator tower is this self-application; and how the weight structure itself develops with rank is the branching law (§7.5), which removes the formerly open question of "rotation at higher ranks."
 
 ## §7.1. The power-set functor and the operator carrier
 
@@ -294,9 +332,31 @@ $$
 
 that is, the active affine subcarrier of rank 8 carries the structure of the rank-4 scene — fourteen points, the same balanced layer and cross-polytope. Thus the octahedral law returns a **third time**: at rank 3 as the scene, at rank 4 as an interior layer (Volume 2), on the operator floor of rank 8 as the affine core. The self-similarity of DOT is precisely this repetition of one form at three scales: the carrier, its interior, its operators.
 
-## §7.5. The status of the tower
+## §7.5. The development law: branching of weight-multiplets
 
-The power-set functor, $\mathcal B_m \cong Q_{2^m}$, the Klein four-group, the self-dual functions and the affine subcarrier are standard finite mathematics of Boolean functions — rigorous facts. The DOT assembly adds to them one reading: these are not external constructions but the same carrier, raised to the operator floor by self-application of the power-set functor. The connection of the tower with the $\mathfrak{sl}_2$-structure of the observer (whether they combine into a larger algebra) remains open — as does the joining of $T$ with $\mathfrak{sl}_2$ at higher ranks (§8.3).
+It was formerly asked (the old §7.6) what "rotation" is at higher ranks: at rank 3 the traversal $T$ is the single cycle of the scene, but above rank 3 the active scene is no longer one cycle, and there is no single traversal. The answer: the load-bearing invariant is **the weight structure itself and the law of its development** — no single traversal is required.
+
+The $\mathfrak{sl}_2$ representation (§2) decomposes each rank into **weight-multiplets** — irreducible pieces of differing highest weight. Under the lift of rank ($n \to n+1$, the lift of Volume 3) each multiplet branches in two — into a higher and a lower neighbour:
+
+$$
+\boxed{
+\text{lift } (n\to n+1): \text{ each weight-multiplet splits in two.}
+}
+$$
+
+This is the law of development of the structure of the observer across ranks — the lift seen at the level of multiplets (the triangle of multiplicities). The base dimension of the vertical structure (the sum of squares of the multiplet sizes) grows tetrahedrally:
+
+$$
+\boxed{
+\dim\langle\mathfrak{sl}_2\rangle_n = \binom{n+3}{3} = \frac{(n+1)(n+2)(n+3)}{6}\quad(20, 35, 56, 84, \dots).
+}
+$$
+
+The orientation (rotation) is built over this at each rank by its own axis cycle, and the reflection $\kappa$ holds the polarity; the concrete traversal $T$ of rank 3 is the first case. Thus the development of the structure is defined at all ranks: the rank grows by the branching of multiplets, orientation and polarity are built up layer by layer. *(The exact dimensions of the superstructures and their reading — `02_Bridges/10_Observer_Duality_Readings`.)*
+
+## §7.6. The tower and the vertical — one structure
+
+The connection of the operator tower (§7.1–§7.4) with the $\mathfrak{sl}_2$-structure of the observer — formerly open (the old §7.5) — is the same development law: the operator carrier $\mathcal B_m \cong Q_{2^m}$ is a DOT carrier of rank $2^m$, on which the same vertical structure $\mathfrak{sl}_2$ and the same branching live. The tower is a ladder of ranks $2^m$ within one law; the Klein four-group is the doubling of polarity on the operator floor, the self-dual layer the operator zero weight. The tower and the vertical are one structure on two floors.
 
 ---
 
@@ -304,15 +364,17 @@ The power-set functor, $\mathcal B_m \cong Q_{2^m}$, the Klein four-group, the s
 
 ## §8.1. What is rigorous
 
-The representation of $\mathfrak{sl}_2$ on the Boolean lattice ($\partial, \delta, H$ with $[\delta,\partial] = H$) is classical algebraic combinatorics, rigorous (§2.1 — a direct computation). The complement as Weyl involution is rigorous (§2.3). The observer as zero weight, the poles as extreme weights, are a rigorous consequence of the weight decomposition (§3). The parity realization of the zero weight is rigorous (§3.3). The Borromeanness of the three coordinate reflections is rigorous (§4.2, Volume 1). The complementarity of $(\partial, \delta, H)$ is rigorous (§4.1). The Singer cycle as horizontal rotation is rigorous (Volume 4). The operator tower (the power-set functor, $\mathcal B_m \cong Q_{2^m}$, the Klein four-group, $\operatorname{Aff}_3 \cong Q_4$) is standard finite mathematics of Boolean functions, rigorous (§7).
+The representation of $\mathfrak{sl}_2$ on the Boolean lattice ($\partial, \delta, H$ with $[\delta,\partial] = H$) is classical algebraic combinatorics, rigorous (§2.1 — a direct computation). The complement as Weyl involution is rigorous (§2.3). The observer as zero weight, the poles as extreme weights, are a rigorous consequence of the weight decomposition (§3). The parity realization of the zero weight is rigorous (§3.3). The Borromeanness of the three coordinate reflections and its coincidence with the first non-abelianness of $S_3$ is rigorous (§4.2, Volume 1). The complementarity of $(\partial, \delta, H)$ is rigorous (§4.1). The Singer cycle as horizontal rotation is rigorous (Volume 4). The duality weight ⟂ orientation ($[T,\partial+\delta]=0$, $[T,\partial-\delta]\ne0$, rank 3) is rigorous (§5.3). The branching law of weight-multiplets and the tetrahedral dimension $\binom{n+3}{3}$ are rigorous (§7.5). The operator tower (the power-set functor, $\mathcal B_m \cong Q_{2^m}$, the Klein four-group, $\operatorname{Aff}_3 \cong Q_4$) is standard finite mathematics of Boolean functions, rigorous (§7).
 
 ## §8.2. What is synthesis
 
-The reduction of the observer to a generating structure (the scene as the unfolding of $(\mathfrak{sl}_2, T)$ on the hinge $\kappa$) is synthesis: it binds the rigorous parts into one picture. The connection of the vertical $\mathfrak{sl}_2$ and the horizontal rotation through the common $\kappa$ is rigorous element by element; the single structure uniting them is a way of reading them together, not a separate proved object. The reading of the operator tower as self-application of the power-set functor (§7) is the same synthetic binding: each floor is rigorous in itself, the unifying self-similarity is a way of reading.
+The reduction of the observer to a generating structure (the scene as the unfolding of $(\mathfrak{sl}_2, T)$ on the hinge $\kappa$) is synthesis: it binds the rigorous parts into one picture. The reading of the duality weight ⟂ orientation as the load-bearing backbone (why the screw does not close, why the observer is irreducible) is a synthetic binding of the rigorous element-by-element facts of §5.3. The reading of the operator tower and the development law as one self-application of the power-set functor (§7) is the same binding: each floor is rigorous in itself, the unifying self-similarity is a way of reading.
 
-## §8.3. What is open
+## §8.3. What is resolved and what is open
 
-Open is the joining of $T$ and $\mathfrak{sl}_2$ at higher ranks beyond the common $\kappa$: whether they form a larger algebra or remain two structures on one hinge. Open too is the joining of the operator tower with the $\mathfrak{sl}_2$-structure of the observer (§7.5). Open is the lift of the cycle along the states for $n > 3$ (Volume 4). These questions are a continuation, not a gap.
+**Resolved.** The joining of $T$ and $\mathfrak{sl}_2$: they form **one** structure — a common horizon $\partial+\delta$, a divergence on the weight ($\partial-\delta$); weight ⟂ orientation (§5.3). The development at higher ranks: the branching law of weight-multiplets (§7.5) — no single global traversal is required. The connection with the operator tower: the same law, the tower = a ladder of ranks $2^m$ (§7.6). These three formerly open questions are three faces of one fact.
+
+**Open (technical).** The exact closed form of the dimension of the orientational superstructure across ranks (irregular). The lift of a concrete traversal along the states for $n > 3$ as a single cycle (there is none — it is replaced by the branching law; the question is only the canonical sampling of an axis cycle at higher ranks). These questions are a continuation.
 
 ---
 
@@ -332,18 +394,18 @@ The observer is the zero weight: the center has $H = 0$, the poles the extreme w
 
 The observer has two triples. The structural one — $(\partial, \delta, H)$ within $\mathfrak{sl}_2$ — is complementary (any two give the third by the bracket), not Borromean; the operator one $(\kappa, T, \partial)$ is linked ($\kappa = T^3$). The generating one — the three coordinate reflections $\kappa_i$ — is Borromean: the center is fixed by the triple and not fixed by any pair. The complement is the hinge of both: $\kappa = \kappa_1\kappa_2\kappa_3$ is the product of the Borromean triple and the Weyl involution of the structural one.
 
-The rotation $T$ stands outside $\mathfrak{sl}_2$ as an elliptic type; the three types of movement — elliptic ($T$), parabolic ($\partial, \delta$), hyperbolic ($H$) — are stitched by $\kappa$.
+**The observer is a duality.** The rotation $T$ carries orientation, $\mathfrak{sl}_2$ carries weight; they share a common horizon $\partial+\delta$ and diverge on the weight ($[T,\partial+\delta]=0$, $[T,\partial-\delta]\ne0$). The weight is the irreducible axis of the observer — that which neither the axis symmetry nor the rotation reaches; the center is its zero point. The three types of movement — elliptic ($T$), parabolic ($\partial, \delta$), hyperbolic ($H$) — are stitched by $\kappa$. This duality is the backbone of the screw (Volume 4): two axes sharing only the horizon, hence not closing.
 
 The structure compresses: the scene unfolds from $(\mathfrak{sl}_2, T)$ on the hinge $\kappa$ — the poles as extreme weights, the center as zero weight, the layers as the weight decomposition, the relations as powers of the rotation. The observer becomes, from a point, a generating structure; the center-point is its shadow.
 
-The same generating law gives the operator tower: the power-set functor, applied to itself, turns the actions of a level into the states of the next, $\mathcal B_m \cong Q_{2^m}$. The complement splits into the Klein four-group $\langle C_{\text{out}}, C_{\text{in}}\rangle \cong \mathbb Z_2\times\mathbb Z_2$, the observer shows through as a self-dual layer ($f(\bar x) = \overline{f(x)}$), and the affine subcarrier of rank 8 carries the rank-4 scene ($\operatorname{Aff}_3 \cong Q_4$, $\operatorname{Aff}_3^\circ \cong U_4$) — the third return of the octahedral law and the explicit self-similarity of DOT.
+The same generating law gives the operator tower and the development law: the power-set functor, applied to itself, turns the actions of a level into the states of the next, $\mathcal B_m \cong Q_{2^m}$; and the lift branches the weight-multiplets, developing the structure across all ranks ($\dim\langle\mathfrak{sl}_2\rangle_n = \binom{n+3}{3}$). The complement splits into the Klein four-group $\langle C_{\text{out}}, C_{\text{in}}\rangle \cong \mathbb Z_2\times\mathbb Z_2$, the observer shows through as a self-dual layer ($f(\bar x) = \overline{f(x)}$), and the affine subcarrier of rank 8 carries the rank-4 scene ($\operatorname{Aff}_3 \cong Q_4$, $\operatorname{Aff}_3^\circ \cong U_4$) — the third return of the octahedral law and the explicit self-similarity of DOT.
 
 $$
 \boxed{
-\text{the observer is an } \mathfrak{sl}_2\text{-structure with rotation, stitched by the complement } \kappa; \text{ the center-point is its shadow; the scene is its unfolding.}
+\text{the observer is a duality of weight and orientation, stitched by the complement } \kappa; \text{ the weight is its irreducible axis; the center-point is its shadow; the scene is its unfolding.}
 }
 $$
 
-The corpus traverses the full path: from self-relation through the carrier, threeness, the break, the vertical, the screw, the observer and the projections — to the observer as a structure from which the scene unfolds. The volumes are one structure, seen from two ends: from the source to the projections and from the observer to the scene. Observable distinction is the finite scene, its movement and its invariant — and the invariant is the structure that unfolds the scene.
+The corpus traverses the full path: from self-relation through the carrier, threeness, the break, the vertical, the screw, the observer and the projections — to the observer as a structure from which the scene unfolds. The volumes are one structure, seen from two ends: from the source to the projections and from the observer to the scene. Observable distinction is the finite scene, its movement and its invariant — and the invariant is the duality that unfolds the scene.
 
-**Verification.** The operator tower — the Klein four-group $\langle C_{\text{out}}, C_{\text{in}}\rangle\cong\mathbb Z_2\times\mathbb Z_2$, the Boolean-function carrier $\mathcal B_m\cong Q_{2^m}$, and the affine subcarrier $\operatorname{Aff}_3\cong Q_4$, $\operatorname{Aff}_3^\circ\cong U_4$ — is checked in [`01_Verification/DOT_Core_verifier.py`](../01_Verification/DOT_Core_verifier.py) (`operator_tower_klein_affine_test`, ref `V7 §7`); the $\mathfrak{sl}_2$ interface in `sl2_sigma_core_bridge_test` (`V7 §2, §6`).
+**Verification.** The operator tower — the Klein four-group $\langle C_{\text{out}}, C_{\text{in}}\rangle\cong\mathbb Z_2\times\mathbb Z_2$, the Boolean-function carrier $\mathcal B_m\cong Q_{2^m}$, and the affine subcarrier $\operatorname{Aff}_3\cong Q_4$, $\operatorname{Aff}_3^\circ\cong U_4$ — is checked in [`01_Verification/DOT_Core_verifier.py`](../01_Verification/DOT_Core_verifier.py) (`operator_tower_klein_affine_test`, ref `V7 §7`); the $\mathfrak{sl}_2$ interface in `sl2_sigma_core_bridge_test` (`V7 §2, §6`). The duality weight ⟂ orientation ($\operatorname{Sym}T=\tfrac12(\partial+\delta)$, $[T,\partial+\delta]=0$, $[T,\partial-\delta]\ne0$, $T=\rho\kappa$) and the branching law of weight-multiplets ($\dim\langle\mathfrak{sl}_2\rangle_n=\binom{n+3}{3}$) are checked in [`01_Verification/verify_tom7_duality.py`](../01_Verification/verify_tom7_duality.py) (ref `V7 §5.3, §7.5`). External readings of the duality — `02_Bridges/10_Observer_Duality_Readings`.
