@@ -301,6 +301,40 @@ Complementarity exchanges boundary and coboundary:
 So AMR-DC gives not only an arithmetic carrier, but also an arithmetic
 avatar of the boundary grammar.
 
+## 4.3. The Möbius function as κ-parity
+
+On the squarefree carrier the Möbius function is the parity sign of the
+number of prime factors of a divisor:
+
+\[
+\mu(d_A)=(-1)^{|A|},\qquad A\subseteq J_n.
+\]
+
+Since \(|A|\) is the Hamming weight (the cube layer index), this is **exactly
+the κ-parity** — the eigenvalue of the Walsh character under the complement
+(Volume 2 §9):
+
+\[
+\kappa\,\chi_A=(-1)^{|A|}\chi_A.
+\]
+
+Thus \(\mu\) on \(D(N_n)\) is the **arithmetic face of the `±1` polarity of `κ`**:
+the alternation of sign across the cube layers. The poles \(1\) and \(N\) give
+\(+1\) and \((-1)^n\); the observer (the middle) is the zero weight.
+
+For a **multiple** \(N\) (some prime squared) \(\mu=0\). This is not a gap but a
+**boundary**: \(\mu\) vanishes exactly off the squarefree cube. Hence \(\mu\) is
+the **indicator of the AMR-DC ↔ AMR-SR boundary** (§6): \(\mu\ne0\) on the cube
+(the skin, squarefree), \(\mu=0\) off it (the core, the multiple).
+
+This closes the deferred line of Volume 9 §4.3 ("the Möbius function as a reading
+of the squarefree-vs-multiple boundary") by the precise identification \(\mu=\)
+κ-parity \(=\) the Walsh sign (Volume 2 §9; the same `±1` polarity as in Reading 6
+of Bridge 10). A reading is a translation, not a new structure; it is elementary.
+*The zeta function, the Euler product, and the squarefree density `6/π²` are a
+separate analytic horizon line; they are not developed here (outside the finite-cube
+domain).*
+
 ---
 
 # 5. Recoverability as Part of AMR
