@@ -51,18 +51,24 @@ Reversible changes split into two classes:
 So the symmetries that do not change the reading = \(B_n\) = the group that **defines** the structure. The split
 "relabel ↔ mix" is the algebra of transitions.
 
-## 5. The observer is NOT a strict fixed point (an honest correction)
+## 5. The observer as an invariant: the invariant of the forcing group \(B_n\) (as the mean)
 
-The naive "the observer is fixed by all reversible changes" is **false**:
+Sharper than the naive "fixed by all changes": the observer **is** an invariant — but of the **forcing group** \(B_n\)
+(Volume 0 §2.5), and **as the mean**, not as a point.
 
-- Walsh \(W\) **swaps** the observer's two faces — the **DC mode** (spectral face) and the **point-mass** \(\delta_0\)
-  (point face): \(W(\mathrm{DC})=\delta_0,\ W(\delta_0)=\mathrm{DC}\);
-- translation moves \(\delta_0\to\delta_w\).
+- The **DC mode** (the mean / zero frequency) is **fixed by the whole** \(B_n\) (complements, axis permutations,
+  \(\kappa\)) → the observer **is** an invariant of \(B_n\).
+- The **point-mass** \(\delta_0\) (a vertex) is **moved** by the \(B_n\)-complements → as a **state** the observer is
+  not invariant. This is exactly the corpus's "observer = invariant, **NOT** a state" (Volume 0): the invariant is the
+  **mean**, not a point.
+- **Walsh \(W\) is a duality, not a symmetry:** it gives the observer **two faces** — spectrum \(\mathrm{DC}\) ↔ point
+  \(\delta_0\) (\(W(\mathrm{DC})=\delta_0\)), **without breaking the invariance**. W-covariance = two faces of one
+  invariant; \(W\) is the discrete/continuous swap.
 
-The invariant is **not a single vector but the observer's cross-frame identity**: the pair-orbit
-\(\{\mathrm{DC},\delta_0\}\) (on which \(W^2=\mathrm{id}\)). DC is fixed by the spatial symmetries
-(translations+permutations), \(\delta_0\) by the linear ones (permutations + \(\kappa\)); **\(W\) carries the observer
-between its faces**. This is the operational form of the discrete/continuous boundary: \(W\) is its swap.
+**Closure:** \(B_n\) has a double role — its **neutrality forces \(\kappa\)** (the boundary, Volume 0 §2.5), its
+**invariant is the observer** (the centre, as the mean). One group yields both the boundary \(\kappa\) and the
+centre-observer — they are siblings. And the free transitions (§4) are the same \(B_n\): the invariants of attention =
+the observer's stabilizer = the forcing group.
 
 ## 6. Reading dynamics
 
