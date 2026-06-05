@@ -110,6 +110,26 @@ constructibility horizon at rank 33. Three statuses (core / rigorous reading /
 avatar). Verifiers — `01_Verification/` (105 PASS); detailed sample cells and
 the index — working `_TNR_Research/` (`00_Ontogenesis_INDEX_RU.md`).
 
+### 12_Projection_Dynamics
+
+Reading dynamics: projection as an **act** (the language of projection). Volume 6
+gives readings statically (a catalogue of projections); this bridge adds the verb —
+how a projection is performed, how it changes, and how a transition happens.
+Primitives: frame \(F\), projection \(\pi_F\) = snap to the nearest distinction (the
+act: lossy, idempotent, irreversible), frame-change \(g\in\{\partial,T,H,W,\kappa\}\)
+(reversible), transition (a path of changes with acts). Key law \([\pi,g]\ne0\):
+changing the frame changes the reading. The algebra of transitions: **free**
+(\([\pi,g]=0\)) ⟺ a frame-automorphism = \(B_n\) = the forcing group (Volume 0 §2.5)
+= the "invariants of attention"; **contentful** (rotations, \(W\)). The observer is
+**\(W\)-covariant, not strictly fixed** (\(W\) swaps its faces DC↔\(\delta_0\)); \(W\)
+is the discrete/continuous swap.
+
+Status: a connections/dynamics layer over Volume 6 (the static readings gain a verb).
+Standard mathematics (evolution+measurement, a category with idempotents, change of
+basis, the hyperoctahedral group); the contribution is the language of
+projection/change/transition and its laws. A parallel reading branch; the laws are
+elementary (linear algebra).
+
 ## What Enters the Main Corpus
 
 The main corpus already includes:
