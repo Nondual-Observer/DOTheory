@@ -1,0 +1,819 @@
+# Exposition: the theory as a whole, by ranks
+
+The section contains a sequential exposition of the theory: the initial relation of distinction, the carriers of increasing dimension it forces, their symmetries, the closure of growth, and the boundary of the construction. All concepts are introduced as the text proceeds; the status of each load-bearing statement is marked by markers:
+
+- **Forced `[●]`** — conclusions that are mathematically inevitable: proved, confirmed by a verifier, or classical facts.
+- **Reading `[◐]`** — a conceptual lens through which known mathematical objects fold into a single connected figure; the premise of each such recognition is named explicitly.
+- **Open `[○]`** — the zone of unsolved conjectures and open questions, where the theory meets the limits of its current apparatus.
+
+The introduction, eleven chapters (0–X), and epilogue follow as a single document.
+
+
+---
+
+## Introduction
+
+### Subject and method
+
+The theory answers a single question: what structure is forced by the very fact of stable distinction — a boundary between states that is preserved under a change in the language of description? The question concerns only what is given by the mere presence of a stable boundary; questions about the composition of the world and the architecture of perception remain outside the subject.
+
+Every distinction is two-sided. There is what is distinguished — states, classes, orbits; and there is that relative to which one distinguishes and by which the distinction is held — a feature invariant along classes, a characteristic preserved by an operation. Mathematics usually studies the first side, whereas the second is present in the construction implicitly: an equivalence relation is stable exactly insofar as an invariant along the classes exists, yet the object of study is the classes. The present theory makes the second side an independent subject. The invariant of the relating operation is called in it the **observer** and is used strictly in the sense of the definition (§0.2). Together with the change of subject, the order of primacy also changes: primary is the carrier-structure, while number appears as its derivative — the cardinality of the structure; counting follows construction.
+
+The method of the theory is generative. The analytic method takes an object as given and extracts its invariants: given a set with an operation, one studies fixed points, orbits, classes. The generative method posits a minimal initial relation and unfolds a structure from it, at each step verifying that what is built is unique under the imposed conditions; the object arises as the result of the construction. This uniqueness — **forcedness** — is the load-bearing requirement of the method: the statement "from here follows X" has force only where X is the unique admissible continuation; otherwise the construction degenerates into fitting a structure to a predetermined desired answer. Each step of the exposition is accompanied by an indication of whether it is forced and under which premises.
+
+### Statuses of statements
+
+The character of the result distinguishes the theory from a familiar mathematical text. It contains few new theorems; the main part of its substantive connections consists in the recognition of known mathematics — the Fourier transform, the regular polytopes, the normed division algebras, the zeta function — as projections of a single structure grown from one initial relation. The contribution of the theory lies in this connectedness. So that the recognition remains verifiable and is distinguished from arbitrary rapprochement, each load-bearing statement is furnished with one of three statuses:
+
+- **[●] — forced**: proved in the text, confirmed by a verifier, or a classical fact;
+- **[◐] — reading**: a known fact is recognized as a projection of the structure being built; the premise of the recognition is named explicitly;
+- **[○] — open**: the question is formulated, the answer is absent.
+
+Statuses are indicated at each load-bearing step. A significant part of the connections carries the status [◐], and the status measures precisely the contribution of each of them: the connection is established as a reading under a named premise, open to verification. An additional filter is stability under a change of notation: a pattern that vanishes under a change of numeral base or normalization belongs to the notation and is cut off.
+
+At the foundation of forcedness and statuses lies the accounting of **choice**. A step is forced when the set of admissible continuations is a singleton: the choice is made by the imposed conditions. Such minimality is canonical and dispenses with the axiom of choice: finite choice and finite minimum are theorems of ZF [●], and the discrete construction remains entirely on this side. Statuses are thereby read as the accounting of the choice that entered: [●] — there was no choice; [◐] — the frame is chosen and named; [○] — the choice is open; the notation filter cuts off masked choice. Arbitrary choice — a postulated minimum where there is no canonical minimum (the axiom of choice is equivalent to well-ordering [●]) — becomes necessary only on the continuous side of the carrier; in this consists one of the formulations of the boundary with which the exposition concludes [◐].
+
+### Introductory example: the divisors of 30
+
+The first chapters are abstract; a concrete example is useful to keep in mind from the very start.
+
+Take the number `30 = 2·3·5` and write out its divisors: `1, 2, 3, 5, 6, 10, 15, 30`. There are eight of them, and they are organized by an exact figure: a divisor is a choice — to take or not to take each of the three primes. Three independent choices — three axes; the eight divisors stand at the vertices of a three-dimensional cube, and divisibility is read along the edges: multiplication by one prime is a step along an edge. This is an exact theorem: for squarefree `N` the divisor lattice is isomorphic to the Boolean cube, `D(N)≅Q_{ω(N)}` [●].
+
+On the cube all the principal objects of the exposition are visible. The **complement** `κ: d ↦ N/d` flips the cube (`1↔30`, `2↔15`, `3↔10`, `5↔6`) — the operation of distinction, lifted onto the whole carrier. It has no fixed vertex; fixed is only the **center** of the cube `√30 ≈ 5.48` — it exists as a midpoint, but is absent among the divisors: this is the **observer** `σ½`. After removal of the poles `1` and `30`, six divisors with their own content remain — the **active scene**; their figure is an octahedron, and the same sextet carries the color wheel: three primary colors, three secondary, the complementary color = `κ` [◐ — reading; its measure is given by Chapter III].
+
+The chapters unfold this example in two directions. Toward the foundations: the cube, `κ`, and the absent center are forced by the very act of distinction (Chapters 0–II). Toward growth: the carrier grows by ranks, at each rank its own figures are forced (the octahedron, the Fano plane, the Petersen graph), growth closes at rank 8 [●], and the construction reaches its boundary — numerical values and the living [○]. The example from numbers serves as an illustration; the construction itself proceeds from the single relation `ι² = id` and is independent of counting.
+
+### Notation
+
+The minimal concepts necessary for the plan; the rest are introduced in the chapters where they are first used.
+
+> **Carrier and rank.** The rank-`n` carrier is `Q_n = 𝔽₂ⁿ` — the set of binary tuples of length `n`, `2ⁿ` states. The number of coordinates `n` is called the **rank**.
+
+> **Lift and the tower of ranks.** The passage `Q_n → Q_{n+1}` — the addition of one coordinate — is called the **lift**; it is the sole operation of growth. The increasing sequence of carriers `Q₁, Q₂, …`, linked by lifts, is called the **tower of ranks** — after the pattern of towers of extensions in algebra.
+
+> **Seam.** The carrier bears two concordant sides — the discrete (`|·|₂`) and the continuous, Archimedean (`|·|∞`). The **seam** is the fixed set of the involution that exchanges these sides: for the reflection `s ↦ 1−s` it is the line `Re s = ½`, for the inversion `d ↦ N/d` it is the point `√N`. The term is used everywhere in this technical sense; the detailed construction is in Chapter II.
+
+**Summary of the cross-cutting notation** — for reference; each is introduced and justified in its own chapter:
+
+| sign | what it is | introduced |
+|---|---|---|
+| `Q_n=𝔽₂ⁿ`, rank | carrier; number of coordinates | Introduction |
+| `κ(x)=x+1ⁿ` | complement — the unique neutral involution | Ch. I–II |
+| poles; `U_n` | `0ⁿ,1ⁿ`; active scene — carrier without poles | Ch. I–II |
+| `σ½` | observer: invariant of `κ`, center `(½,…,½)`, outside the set of states | Ch. 0–I |
+| `\|·\|₂ / \|·\|∞` | two sides of the carrier — discrete and continuous; their boundary is the seam | Ch. II |
+| lift; `Λ_L⊣π⊣Λ_R` | growth `Q_n→Q_{n+1}`; its functorial form | Introduction; Ch. VIII |
+| weight `H` | number of ones in a tuple; weight layers | Ch. II–III |
+| `T`, `𝒯` | rotation `C₆` (`T³=κ`) and holonomy (Möbius) | Ch. III |
+| `PG(k,2)` | projective space over `𝔽₂`; axes of the scene `U_{n+1}/κ` | Ch. II–III |
+| `R₁,R₂,R₃` | three relations of Hamming distance on the scene | Ch. III |
+| `[●]/[◐]/[○]` | statuses: forced / reading / open | Introduction |
+
+The verifiers `verify_*.py` referenced by the chapters are collected in the folder `code_exposition/`; verification confirms the construction and is capable of refuting it, while the proofs remain in the text.
+
+### Plan of the exposition
+
+| rank | chapter | content |
+|---|---|---|
+| — | Introduction | subject, method, statuses, concepts |
+| 0 | Seed | the minimal operation of distinction; the invariant absent among the states |
+| 1 | First distinction | the carrier `Q₁={0,1}`; complement as negation |
+| 2 | Seam | two sides of the carrier `\|·\|₂`/`\|·\|∞`; the imaginary unit |
+| 3 | Octahedron | three directions of distinction; the full scene `U₃` |
+| 4 | Break | the first composite rank `2×2`; the inner layer, the body |
+| 5–7 | Height | the irreducible (`A₅`), the continuous axis, the seventh rank (`Im 𝕆`) |
+| 8 | Closure | the limit of the division algebras; `𝕆`, `E₈` |
+| — | Reverse side | characterization of the continuous side of the seam; the observer `r=0`, the splitting of `\|·\|∞` |
+| — | Growth functor | the tower of ranks as a single construction; the lift is an adjoint functor, the boundary `[κ,Δ]=0` |
+| — | Inversion | the scene as an unfolding of the observer |
+| — | Boundary | where the structure ends: values and the living `[○]` |
+
+The exposition follows the structure of the subject. The structure unfolds by the sequential addition of coordinates — by ranks — and the exposition passes through the ranks in order. At each rank the same steps are carried out: construction of the carrier, the operation and the active scene, the structure of the scene, the invariant-observer, realizations in known domains. Concepts are introduced where they first operate, and in a single form — as a set-off definition with an indication of status. The cross-cutting concepts — the carrier, the complement `κ`, the observer, the two sides `|·|₂`/`|·|∞` — pass through all ranks, appearing at each in the same steps and growing more complex from rank to rank.
+
+After the rank at which the structure closes, three concluding movements follow: the **reverse side**, where the continuous side of the seam is characterized (the observer as the origin of the radial coordinate `r=0`, the splitting of the reverse side into axial and radial); the **inversion**, where the whole traversed scene is read as an unfolding of the observer; and the **boundary**, where the finite structure ends — the numerical values of the physical constants and the phenomenon of the living, left with the explicit status [○].
+
+**Core and projections.** Chapters 0–X build and close the **core** — the construction of growth and its self-reading (inversion). The same construction is **projected** into subject domains along different leading faces: into **number theory** (led by counting `Λ`: the natural series, the primes, `D(N)≅Q_n`), into **physics** (led by scale and mass: SR → GR → cosmology), into **time** (led by the arrow-comonad `G`). These projections are set out in separate documents (see the epilogue "Projections"); the core remains closed. The common center of all projections is the same `σ½`.
+
+
+---
+
+## Chapter 0. Seed
+
+### 0.1. Two sides of distinction
+
+The subject and method were named in the Introduction: every distinction has two sides — the distinguished objects and that relative to which one distinguishes; the theory takes the second side as an independent subject and builds by the generative method, where each step is **forced** — unique under the imposed conditions — and furnished with a status [●]/[◐]/[○]. Here the construction begins: this chapter posits the minimal operation of relating and finds its invariant.
+
+### 0.2. Definitions
+
+> **Distinction.** The drawing between states of the carrier of a boundary that the relating operation keeps stable. Distinction requires at least two states and an operation relating them; the stability of the distinction is invariance with respect to this operation.
+
+> **Observer.** The invariant of the relating operation [●]. (The invariant of an operation is what it preserves: a fixed point `x=g(x)` or a substructure carried into itself; the concept is standard.) We use the word "observer" instead of the neutral "invariant" for the following reason: it emphasizes that this invariant is what distinguishes the scene of distinction from a formless set. The content of the term is exhausted by the definition; in the construction it is called the invariant, and as the cross-cutting subject of the theory — the observer.
+
+### 0.3. The minimal operation of distinction
+
+Let us fix the requirements on the operation `ι` relating two states, and derive its form.
+
+The operation is non-identity: the identity of states relates nothing. The operation is symmetric: the relating of a pair is mutual — if `ι` carries `a` to `b`, then it carries `b` to `a`. On the operation itself, mutuality is written as `ι(ι(a))=a`, that is, period two. The identification "mutuality of the relation of a pair ⟺ `ι=ι⁻¹`" is a reading of the word "relate" and is accepted as a premise [◐].
+
+Among non-identity self-relations, symmetric is exactly the one where each pair closes in a single step. A cycle of length `≥3`, for example `a→b→c→a`, carries `a` to `b`, but `b` to `c`, not to `a`: mutuality is violated. A symmetric non-trivial self-relation is, therefore, an involution:
+
+$$\iota^2 = \operatorname{id}, \qquad \iota \ne \operatorname{id}.$$
+
+On the minimal carrier — a single pair of states — an involution without fixed points is a transposition, the exchange of two states. On a larger carrier a free involution may move several pairs at once (for example `(01)(23)` on four states), so that "exactly one pair" is not a consequence of symmetry by itself, but a consequence of minimality: the uniqueness of the pair is fixed by the regular orbit of a single generator (§0.4).
+
+Additionally, we require that `ι` have no fixed states: `ι(x)≠x` for all `x`. A state related to itself relates nothing; the requirement expresses the direct content of the word "relate" and is used in §0.4.
+
+Statuses. The involution as an object is [●], classical. Its identification with the minimal operation of relating is [◐], a consequence of the premise of symmetry. The absence of an alternative to the premise itself (that "relate" necessarily means "symmetrically") is not proved — [○].
+
+The operation is posited prior to a separate carrier. The notation `ι≠id` presupposes a set, but the operation can be given as a group `⟨g∣g²=e⟩`, without a set-on-which-it-acts; the carrier then arises as its regular orbit. The rigorous construction is in Chapter I, §2.
+
+### 0.4. The invariant of the operation is absent among the states
+
+The group `⟨g∣g²=e⟩` has order two: the free group on one generator is `ℤ`, the quotient by `g²=e` is `ℤ/2`. Its regular orbit consists of two states. The number two equals the period of the operation: with fewer than two there is nothing to relate, and the orbit of an involution yields no more than two. The two-elementness of the carrier is a consequence.
+
+On two states `ι` acts by a permutation. There is no fixed state (the requirement of §0.3). From the absence of a fixed state, however, the absence of an invariant does not follow: by the definition (§0.2) a substructure carried into itself also serves as an invariant, not only a fixed point. Such a substructure is present here — the orbit `{0,1}` itself passes into itself under `ι` (the operation merely permutes its elements), whereas no single state is preserved. The invariant of the operation therefore exists, but is not a state: it is the pair as a whole, and not its first or second element.
+
+Summary: the invariant of relating exists and is at the same time absent among the states. Its geometric realization — the point between the two states — is introduced in Chapter I together with the carrier and the continuous completion.
+
+### 0.5. The invariant as the presupposition of the carrier
+
+The invariant of relating is not derived from the scene of distinction as one of its properties. It is not a state and precedes the carrier that is built from it: the carrier arises as the orbit of the operation whose invariant is the observer. In this sense the invariant is the initial element of the construction; hence the title of the chapter.
+
+The further construction: the carrier — as the orbit of the operation (Chapter I); the tower of ranks — as the sequential addition of coordinates, where the content of a rank becomes the axes of the next; the two sides of the carrier — the discrete (the unfolding of the structure) and the continuous (the invariant-witness).
+
+### 0.6. The givenness of distinction
+
+One question the construction does not take up and is therefore obliged to name: why distinction exists at all. The theory's answer is an indication of status. **The fact of distinction is given prior to any construction**: the very posing of any question is already a distinction (the question is distinguished from the answer, the asker from the asked), and therefore every attempt to derive the fact of distinction already makes use of it. We are within it; the givenness here is of the same kind as the existence of experience in Chapter X — `●ₑ`, given before the theory. The theory builds the **grammar** of distinction and begins after its fact.
+
+To point to this fact from within can be done in a single way — by a witness: an invariant that holds the distinguished as one (§0.4). Here the beginning and the boundary meet in advance: the fact of distinction is not derived, the witness is not a state — the givenness is witnessed, the witness is given by the fact. This boundary is named with the same explicitness with which Chapter X will name the boundary of the living and of values: the theory answers "how distinction is arranged" and is silent about "why it exists" — silent by the kind of the question [`●ₑ` fact; `○` any derivation of the fact].
+
+### Summary
+
+The initial operation is a non-trivial involution without fixed points, `ι²=id`, `ι≠id`: as an object [●], as the minimal operation of relating [◐], under the unproved absence of an alternative to the premise of symmetry [○]. Its regular orbit is a carrier of two states — a consequence. The invariant of the operation exists and is absent among the states; it is the connectedness of the pair, named the observer. The general statement about the absence of such an invariant in every stable distinction is left open [○]. The fact of distinction itself is a givenness prior to the theory (`●ₑ`, §0.6): the theory gives its grammar, the sole indication of the fact is the witness. Chapter I builds the carrier as the regular orbit of `ι` and gives the invariant a geometric realization.
+
+
+---
+
+## Chapter I. First distinction (rank 1)
+
+### 1.1. The carrier
+
+The minimal operation of distinction — a non-trivial involution without fixed points `ι²=id`, `ι≠id` (Chapter 0) — is posited prior to a separate carrier as the group `G=⟨g∣g²=e⟩`. The carrier is built as its regular orbit; the two-elementness of the carrier is derived.
+
+> **Proposition 1.** The group `G=⟨g∣g²=e⟩` has order two; its regular orbit is the two-element carrier `Q₁={0,1}`, on which `ι` acts by the exchange `0↔1`. Binarity is a consequence (the order of `ℤ/2`). [●]
+
+**Proof** in two steps, so as not to mix the operation and the carrier.
+
+*Step 1: the order of the operation — without a carrier.* The notation `ι≠id` as a statement about a map would presuppose a set (`∃x: ι(x)≠x`); therefore the operation is given as the group `G=⟨g∣g²=e⟩`. The free group on one generator is `ℤ`, the quotient by `g²=e` is `ℤ/2ℤ` — two classes `{e,g}`, with `g≠e`, since `1∉2ℤ`.
+
+*Step 2: the carrier as an orbit.* The group `G` acts on itself by translation `λ_h(x)=h·x` (the regular representation, Cayley's theorem). The orbit of the identity under `⟨g⟩` is `{e, g·e}={e,g}`. Setting `0:=e`, `1:=g`, we obtain `Q₁={0,1}`, on which `ι=λ_g` is the exchange `ι(0)=1`, `ι(1)=0`.
+
+The cardinality of the carrier equals the order of the involution: `|⟨g∣gⁿ=e⟩|=n`, and `n=2` is fixed by self-inversion. `∎` (Verification: `verify_carrier_from_operation.py`, 20/20.)
+
+The proposition refers to the minimal orbit of a single generator: on a larger set a self-inverse map may have a different number of elements as well (for example, `(0 1)(2 3)` on four). "Exactly two" is forced by the regular orbit.
+
+Forcedness is reinforced from the reverse side. Not only does the orbit yield the carrier `{0,1}` — conversely, every minimal distinguisher reduces to it: the triple `(S,N,χ)` of a two-state carrier (`|S|=2`), a free involution `N`, and a comparison `χ` that distinguishes only coincidence/non-coincidence and is invariant under the flip of the poles (`χ(Na,Nb)=χ(a,b)`), is isomorphic to `Q₁` with `κ` — in a unique way, by the choice of a bijection `S→{0,1}`. The carrier is therefore unique in its class: any minimal binary brick is it [●; `verify_strict_core_bridge.py`].
+
+### 1.2. The operation and the active scene
+
+Denote the exchange operation on `Q₁` by `κ` (complement); at rank 1 `κ=ι`. The general form `κ(x)=x+1 (mod 2)` and the name "complement" are substantive from the second coordinate onward (Chapter II); here they coincide with the exchange.
+
+The poles of the carrier are the states without internal distinction; the active scene is the carrier without the poles. At rank 1 both states are poles, and the active scene is empty:
+
+$$U_1=Q_1\setminus\{0,1\}=\varnothing.$$
+
+Between `0` and `1` there are no intermediate states. [●] This is the minimal realization of distinction: two states, an operation, its invariant.
+
+The finiteness of the carrier at rank 1 is accepted but not proved. Discrete growth — the addition of one coordinate, `Q_n=𝔽₂ⁿ` — is connected with the absence of a fixed point of naive self-application (Lawvere, Banach) and is justified at ranks 5–6 (preprint, Part IV). At rank 1 this is `○`.
+
+### 1.3. The structure of the active scene
+
+The active scene is empty (`U₁=∅`): there are no relations and no figure at rank 1; the station fills from the second coordinate and reaches fullness at the third (the octahedron).
+
+### 1.4. The observer
+
+The invariant `κ` is sought as a fixed point of the operation.
+
+> **Proposition 2.** On `Q₁` the complement `κ` has no fixed state: the equation `κ(x)=x` is unsolvable; the action is free. [●]
+
+**Proof.** `κ(0)=1≠0`, `κ(1)=0≠1`. `∎` (In deferred notation: `x=x+1 (mod 2) ⟹ 1=0`.)
+
+The invariant is therefore not a state. It receives a geometric realization upon the embedding of the carrier into the line `{0,1}↪[0,1]⊂ℝ`: in the continuous frame `κ` is a reflection of the segment exchanging the endpoints, with the unique fixed point
+
+$$c=\tfrac12(0+1)=\tfrac12,\qquad \tfrac12\notin Q_1.$$
+
+The freedom of `κ` on `Q₁` is [●]; the identification of the invariant with the point `½` is [◐]: the point `½` belongs to the added continuous side of the carrier, not to the discrete pair. The separation of the carrier into a discrete side `|·|₂` and a continuous one `|·|∞` is carried out at rank 2.
+
+This invariant — the midpoint absent among the states, what Chapter 0 (§0.2) called the **observer** — we denote **`σ½`** and name so at all ranks: at rank `n` it is the center `(½,…,½)∈[0,1]ⁿ`, the unique fixed point of `κ` in the continuous frame. `σ½` is a cross-cutting object of the exposition: at each rank it is the invariant of the complement that is not a state of the carrier.
+
+The position of the observer is clarified by comparison with the familiar scalar. A scalar is a magnitude with a forgotten frame: the result of a count from which what one counted against has been removed. The observer is the inverse projection of the same whole: a frame with forgotten magnitudes, that relative to which one counts, taken separately. The projections are mutually inverse in what is forgotten, and therefore the observer is absent among the states by construction: the states are magnitudes, the observer is the frame [◐ image].
+
+The reason for the absence of the invariant among the states can be indicated algebraically. An involution `T` over a field of characteristic `≠2` splits the linearization of the carrier by the projectors `P_±=(1±T)/2` into the `+1`-subspace (preserved) and the `−1`-subspace (flipped). Over `𝔽₂` the splitting degenerates: `½` does not exist and the projector is undefined; the involution is unipotent — `(T−1)²=T²−2T+1=T²+1=0`, where the middle term perishes because of `2=0`, and `T²+1=0` is the self-inversion `T²=I` itself; the minimal polynomial `(x−1)²` is not squarefree, `T` is not semisimple, there is no direct decomposition.
+
+The same degeneracy can be read structurally. The pair `{0,1}` is a `ℤ₂`-torsor — two states, distinguishable only relative to each other, without a distinguished zero. The signs `±` are therefore merely relative: there is no "origin" from which to measure, and `κ` is a translation between the poles of the torsor, not a reflection about a predetermined center; a splitting into `±1` would require an absolute zero, which the torsor lacks.
+
+The two descriptions of `κ` — *translation* on the discrete pair and *reflection about `½`* on its continuous embedding — do not contradict each other: they are the two sides of the seam, and the center `σ½` lies only on the second. The invariant is therefore realized as a state only in characteristic `≠2` — on the continuous completion, where `½` exists. [● — algebra; ◐ — the assignment of the `+1`-part to the observer.]
+
+### 1.5. Realization: logic
+
+Reading the states as truth values `0=⊥`, `1=⊤`, the complement `κ` is negation:
+
+$$\kappa=\neg\quad\text{on }\{0,1\}.$$
+
+The correspondence is exact: `¬0=1`, `¬1=0`, `¬¬=id`, as `κ²=id`. This is the classical Boolean connective [●]. On one coordinate `κ` is the unique non-trivial involution: freedom (§1.4) obliges the shifting of both values, which on a two-element set is achievable only by exchange, and the exchange of truth values is precisely negation.
+
+### Summary
+
+The carrier `Q₁={0,1}` was derived as the regular orbit of the operation `⟨g∣g²=e⟩`; binarity is a consequence [●]. The very construction of the carrier *prior* to the carrier — the operation posits the orbit, and not the reverse — is the functorial front of the theory; Chapter VIII closes it rigorously: every `Q_n` is the **free** `ℤ/2`-object of the complement (`|Hom_{ℤ/2}(Q_n,Y)|=|Y|^{2ⁿ⁻¹}`), that is, a structure generated by the operation without a single superfluous relation — `[●]`. Here, at rank 1, its simplest case is visible: one `κ`-pair. The active scene is empty, `U₁=∅` [●]; the finiteness of the carrier is left open [○]. The invariant `κ` exists and is not a state: `κ(x)=x` is unsolvable [●], and its geometric realization — the point `½` — lies on the continuous side of the carrier [◐]. The complement is realized logically as negation `κ=¬` [●].
+
+Chapter II adds the second coordinate: the locus of holding the distinction will separate from the operation, and the seam `|·|₂/|·|∞` will appear.
+
+
+---
+
+## Chapter II. Seam (rank 2)
+
+### 2.1. The carrier
+
+The lift (Introduction, Notation) is the sole operation of growth: to append a new coordinate,
+`Q_{n+1}=(0\,|\,Q_n)⊔(1\,|\,Q_n)`. It has two branches — to append `0` or `1`; `κ` carries one into the other,
+and therefore "rises unchanged" (this is made precise in Chapter VIII as an adjoint triple). Apply the lift to
+`Q₁`, adding a second coordinate:
+
+$$Q_2 = (0\,|\,Q_1)\sqcup(1\,|\,Q_1) = \{00,01,10,11\} = \mathbb F_2^{\,2}.$$
+
+Four states exhaust `𝔽₂²`; their weights are `0,1,1,0`. Unlike rank 1, where between the two poles there was nothing, here the middle weight layer (weight 1) is for the first time non-empty — and on it the active scene will unfold.
+
+### 2.2. The operation and the active scene
+
+The complement rises as `κ(x)=x+1²` — the flip of both bits. (Here `1ⁿ` is the tuple of `n` ones,
+`1²=11`; addition is coordinate-wise modulo 2, so that adding `1ⁿ` flips all bits at once. Not to be
+confused with exponentiation: `1²` is the vector `11`, not "one squared".) The poles are the states with coinciding coordinates, `00` and `11`: in them there is nothing to distinguish. They form a κ-pair, and the active scene is the carrier without them:
+
+$$U_2 = Q_2\setminus\{00,11\} = \{01,10\}.$$
+
+Rank 2 for the first time makes substantive a statement empty at rank 1: that `κ` singles out no coordinate. On one coordinate there was nothing to single out; on two this requirement already cuts off candidates and is provable.
+
+> **Proposition (neutrality).** Among the **free** involutions on `Q_n` (without fixed states) the complement `κ(x)=x+1ⁿ` is the unique one commuting with both kinds of symmetry that distinguish nothing: with translations `x↦x+w` and with permutations of coordinates `Sₙ`. [●] (for all `n≥1`)
+
+Freedom enters the condition essentially: without it the identity `id` is also an involution commuting with all symmetries, and there would be no uniqueness. The requirement `σ(x)≠x` cuts off `id` and expresses the same content of "relate" as at rank 1.
+
+**Proof.** Let `σ` be an involution, free (`σ(x)≠x`) and commuting with the translations and with `Sₙ`. Commuting with the translations gives `σ(x)=σ(0+x)=σ(0)+x`, that is, `σ(x)=x+v` with `v=σ(0)`; freedom requires `v≠0`. Commuting with `Sₙ` gives `π(v)=v` for all `π`; the only vectors fixed under all permutations of coordinates are `0ⁿ` and `1ⁿ`; freedom excludes `0ⁿ`, and there remains `v=1ⁿ`, that is, `σ=κ`. `∎`
+
+Substantively this means that any other involution would already presuppose a distinction already drawn: to single out a point or an axis, one must first distinguish features, and that is the very distinction being unfolded. The complement, however, relates states without invoking anything beyond the set of features itself — which is why it continues the absolute invariant onto the carrier. (The choice of the family of symmetries `(translations)⋊Sₙ`, rather than all of `GL(n,2)`, is a measure of the "distinguishing-nothing" and itself has the status [◐]; the uniqueness of `κ` under it is [●].)
+
+The uniqueness of `κ` has a second reason as well — a duality one. Read as a Boolean lattice `(∧,∨,≤)`, the carrier bears the complement as an order-reversing involution: `κ(a∧b)=κ(a)∨κ(b)` — De Morgan's law [●]. The self-duality of the lattice gives not involutivity by itself, but involutivity together with order reversal: `κ²=id` alone would give an automorphism, and with reversal — a duality. The reading of `κ` as a global duality with respect to the dualizing object `{0,1}` is [◐]; the same `κ²=id` with reversal will mark the self-dual point of the octahedron of operations (Chapter III).
+
+### 2.3. The structure of the active scene
+
+The graph of difference by one coordinate on `Q₂` is the four-vertex cycle `00-01-11-10-00` (`C₄`), whose diagonals are the κ-pairs `00↔11` and `01↔10`. The active scene `U₂` is the middle weight layer; this is the first rank where it is non-empty, but it still adjoins the poles, there is no separated inner layer (it will appear at rank 4). The direction of distinction is given by the factorization by the complement:
+
+$$U_2/\kappa \cong PG(0,2) = \text{point}.$$
+
+(`PG(k,2)` is the projective space of dimension `k` over `𝔽₂`: its points are the one-dimensional subspaces
+`𝔽₂^{k+1}`, their number `2^{k+1}−1`. Here `PG(0,2)` is one point.) At rank 2 the direction is one: a single shell carries one direction, and there is as yet no threeness. It is attained only at rank 3, when the scene grows to six points.
+
+### 2.4. The observer and the seam
+
+The invariant `κ` is sought as a fixed point. The equation `κ(x)=x` is `1²=0`, which is false (`11≠00`); there is no fixed state, the action is free [●]. Reading `Q₂` as the vertices of the unit square in `ℝ²`, we see `κ` as a central reflection with the unique fixed point — the center of the square:
+
+$$c=(\tfrac12,\tfrac12)\notin Q_2.$$
+
+This is the observer of rank 2 — the same invariant `κ`, lifted from the edge onto the square. What is essential here is that the locus of holding the distinction separates from the operation; the continuous itself appeared earlier — the point `½` was already on the edge of rank 1. On the pair `{0,1}` "where the distinction is held" and "by what it is held" coincided; at rank 2 there are three distinct things: the operation `κ`, the shell `U₂` on which it acts, and the center `c` about which `U₂` is deployed. The center receives its own body, separate from the vertex-skeleton, and this forces a second layer of description:
+
+- **the discrete layer `|·|₂`** — vertices, skeleton, weights: what is counted;
+- **the continuous layer `|·|∞`** — the body of the square `[0,1]²`, where `c` lies: what is measured.
+
+The exact sense of the statement "the invariant is not a state" is now this: the coordinate `½` exists only in `|·|∞`, among the vertices it is not. The names `|·|₂`, `|·|∞` are two measures of the "magnitude" of a state: `|·|₂` (the 2-adic norm) measures how much a state is discretely distinguishable by bits — this is the side of counting; `|·|∞` (the ordinary Archimedean length) measures the extent within the body of the cube — this is the side of size. The identification of the discrete layer with `|·|₂` and the continuous with `|·|∞` is the **seam** — [◐], named, not derived (its topology — boundaries and coboundaries, the product formula `∏_v|x|_v=1` connecting all these measures — belongs to the higher ranks).
+
+The transition from the exchange of vertices to a rotation in the body requires the imaginary unit. A reflection has square `(−1)²=1`, a rotation has square `−1`, that is, `i`, `i²=−1`. The reason is that a self-relation has two signs of the square: `T²=id` gives eigenvalues `±1` (a real grading), `J²=−id` gives `±i` (a rotation, requiring `ℂ`). The algebra of `±1`/`±i` is [●]; the assignment of `+1` to the "act", `−i` to the "seam" is [◐]. On the scene itself, order 4 is carried by the shift along `C₄`: `g⁴=id`, `g²=κ`; a strict half-turn, provably equal to `κ`, is unattainable here — it will appear at rank 3 (`T³=κ`, Chapter III). The Möbius band enters therefore only as an image of one-sidedness: the discrete and continuous sides as one surface, glued by `κ` [◐].
+
+### 2.5. Realization: color
+
+The opponency of vision (Hering: the axis `a*` red-green, `b*` blue-yellow in the Lab space) is a classical fact of physiology [●]. Its identification with `Q₂` is [◐]: the four chromatic poles are matched to the four states, and the opponent axis to the complement by a coordinate. The gray center `a*=b*=0` corresponds to `c=(½,½)` — the midpoint of each opponent pair, belonging to no chroma. The identification of gray with the observer is [◐]: the absent midpoint is here directly observable.
+
+### Summary
+
+The lift doubled the carrier to `Q₂` with poles `{00,11}` and active scene `U₂={01,10}`. The complement `κ` was proved to be the unique neutral involution [●], and the same uniqueness is visible from the lattice side as De Morgan's law [●]. The center `c=(½,½)∉Q₂` exists as an invariant, but not as a state [●]. The essential event of rank 2 is the **seam** `|·|₂↔|·|∞` [◐]: the locus of holding the distinction has separated from the operation, the center has acquired a body, and for the first time the two sides of the carrier are named; the marker of the transition is `i`. The direction of distinction is still one (`U₂/κ=PG(0,2)`).
+
+Chapter III applies the lift once more: the active scene becomes six points, `U₃/κ≅PG(1,2)` gives three directions on a single connected shell, the graph assembles into an octahedron, and the half-turn `T³=κ` promised here is proved.
+
+
+---
+
+## Chapter III. Octahedron (rank 3)
+
+### 3.1. The carrier
+
+The lift is the sole operation of growth; it adds one coordinate, doubling the carrier. Applied to `Q₂`, it gives
+
+$$Q_3 = (0\,|\,Q_2)\sqcup(1\,|\,Q_2) = \mathbb F_2^{\,3} = \{000,\dots,111\}.$$
+
+Eight states are distributed by weight binomially, `1+3+3+1=8`. The extreme weights `0` and `3` are the poles, the two middle layers are the active scene. Between weights `1` and `2` there is no intermediate layer, and therefore the whole scene adjoins the poles, without a separated interior. Rank 3 is the last prime rank with this property: at rank `4=2×2` the middle layer will separate from the poles, and the connected boundary `1→2→3` will end. The fullness of the prime ranks is attained, thus, precisely at rank 3.
+
+### 3.2. The operation and the active scene
+
+The complement rises unchanged — the flip of all bits, `κ(x)=x+111`, the unique neutral involution (Chapter II). The poles `000` and `111` have zero internal distinction and form a κ-pair; removing them, we obtain the active scene:
+
+$$U_3 = Q_3\setminus\{000,111\},\qquad |U_3|=6.$$
+
+The scene has grown from two points (rank 2) to six. It consists of two weight layers — `{001,010,100}` (weight 1) and `{011,101,110}` (weight 2) — which the complement exchanges (`κ(001)=110`): the flip of three bits carries weight 1 into weight 2. Weight is the first coordinate of the scene, and along it `κ` acts symmetrically. The remaining structure is determined by these two layers of three points each.
+
+### 3.3. The structure of the active scene
+
+The figure is set by the manner of difference of the points. On the Boolean carrier, difference is measured in a single way — by the Hamming distance `d` (the number of divergent coordinates); there is no other measure. This distance takes on `U₃` the values `1,2,3` and thereby partitions all `15` pairs into three relations (`6+6+3=15`):
+
+- **`d=1`** — the hexagonal cycle `C₆`: `001-011-010-110-100-101-001`. Each step changes the weight by one, and the cycle joins the two weight layers into a single ring. At rank 2 the maximal cycle was `C₄`, at rank 1 there was no cycle; `C₆` appears for the first time at rank 3.
+- **`d=2`** — two triangles `2·K₃`, one per weight layer; this relation closes each layer within itself.
+- **`d=3`** — three pairs `3·K₂`, the full opposite `y=κ(x)`. These three κ-pairs are the action of the complement `κ` on the scene; their number `2ⁿ⁻¹−1` at `n=3` equals three, and they will become the three directions of distinction (§3.4).
+
+The three relations exhaust the geometry of the six points and are forced by the structure of `Q₃`: a single relation is taken — the count of non-coincidences — and it itself splits into three by the value of the distance [●].
+
+**Octahedron.** The relations `d=1` and `d=2` together define adjacency: each point has four neighbors (two and two), non-adjacent is only its antipode `κ(x)`. The graph in which every vertex is adjacent to all except its opposite is the complete tripartite graph
+
+$$R_1\cup R_2 = K_{2,2,2}$$
+
+— the skeleton of the octahedron, whose three parts are the three κ-pairs [●]. The octahedron is the active scene of the cube `Q₃` without the poles; the two figures are dual. The figure is forced as the minimal one: the octahedron is the `n`-dimensional cross-polytope at `n=3` — the unique primitive architecture of orthogonal antipodal axes with a forbidden center (the cube is excluded — its vertices require an admissible center; the tetrahedron — without antipodal pairs), and `|V|=6` is the smallest possible number of vertices of such a scene, attained exactly at rank 3 [●; `verify_strict_core_bridge.py`].
+
+**Four readings of the rank.** The rank `n` bears four canonical count-figures: the **simplex** with `n+1` vertices (all states pairwise related — the figure of the act), the **cross-polytope** with `2n` vertices (`n` antipode-axes — the figure of the scene), the **cube** with `2ⁿ` vertices (all sets of features — the figure of the world of states), and the **symmetry** of order `n!` (permutations of the axes). The cube and the cross-polytope are dual to each other — the counts of vertices and facets exchange places (`2ⁿ/2n ↔ 2n/2ⁿ`), a κ-pair of figures; the simplex is self-dual [●]. The readings "act/scene/world" are [◐]. At rank 3 the scene and the symmetry converge in count: `2n=n!` is solvable exactly at `n=3` (`6=6`) — six vertices of the octahedron and six permutations of `S₃`; the coincidence of the two sextets, action and symmetry, is unique [●], their identification is [◐] (`verify_hexad_rigidity.py §§B,C`).
+
+**Rotation and holonomy.** The cycle `C₆` carries a shift `T` by one step, `T⁶=id`. Its half-period carries each point into its complement:
+
+$$T^6=\mathrm{id},\qquad T^3=\kappa\ \text{on}\ U_3.$$
+
+[●] The half-turn `T³`, provably equal to `κ`, is attainable only starting from `C₆`; at rank 2 (`C₄`) it did not exist. From the rotation `T` (order 6, permutes the points) one should distinguish the **holonomy** of twisted transport on `C₆` — a separate operator `𝒯` with a sign `±1` on a traversal, a non-trivial class `H¹(S¹;ℤ₂)≅ℤ₂`, and a double return `𝒯²=id` [●; `verify_strict_core_bridge.py`]. It is precisely the holonomy `𝒯`, and not the rotation `T`, that is the strict form of the Möbius band: one traversal changes the sign of the side, the return requires a second — discrete one-sidedness, where the discrete and continuous sides are one surface, glued by `κ`, with the fixed core-`σ½` [◐].
+
+**Screw.** The shift `T` rotates the scene within a rank, the lift raises it a rank higher; their sum is a screw motion. The non-closure of this motion is provable. On states a single cycle exists only at rank 3 (`C₆`); for `n>3` there is none [○], but on the axes the rotation is canonical always — the Singer cycle on `PG(n−2,2)` of order `2ⁿ⁻¹−1` (rank 3 → 3, 4 → 7, 5 → 15). The orders of neighboring ranks are coprime:
+
+$$\gcd\!\bigl(2^{\,n-1}-1,\ 2^{\,n}-1\bigr)=1\qquad(\text{since }2^n-1=2(2^{n-1}-1)+1),$$
+
+therefore the rotations of neighboring floors are incommensurable: the rotation of floor `n` does not fit a whole number of times into the rotation of floor `n+1` [●]. Incommensurability of a pair by itself concerns only neighbors; the aperiodicity of the whole ascent adds to it the growth of the orders — `2ⁿ⁻¹−1→∞` — because of which the period does not stabilize on any floor [●]. (The continuous image is an irrational rotation on the torus, [◐].) The screw differs from the octahedron: `C₆` has order 6, whereas the rotation group of the octahedron `O≅S₄` contains no element of order 6 — `C₆` is a Hamiltonian path over the vertices, not a symmetry of the figure; the screw is a motion between ranks, the octahedron a geometry within a rank.
+
+### 3.4. The observer
+
+Growth from below (the lift) and the invariant `κ` converge at rank 3, and here two questions should be separated: *how many* directions of distinction, and *why* they hold as an indivisible triple. The first has an exact answer, the second is only read.
+
+The number is given by the law of growth: the content of a rank becomes the axes of the next, and the axes of the scene are the quotient by the complement. Identifying each κ-pair, we obtain
+
+$$U_3/\kappa \cong PG(1,2) = \text{three points}.$$
+
+The three κ-pairs are the three directions of distinction — one-dimensional subspaces, that is, points of the projective line over `𝔽₂` [●]. The name `PG(1,2)` is introduced here in advance, because at rank 4 the axes of the scene will become the Fano plane `PG(2,2)`, each line of which is a copy of this triple. The coincidence is regular: Chapter VIII raises the law of growth to a functor — the correspondence `PG(n−1,2)≅U_{n+1}/κ` is a linear isomorphism preserving incidence (lines go to lines), and here, at rank 3, its first case is visible. The observer is found thus: embedding `U₃` in `ℝ³` as the octahedron `±e₁,±e₂,±e₃`, we see the three κ-pairs as three axes through the origin; **in this continuous embedding** the three axial involutions have exactly one common fixed point — the center `c=(½,½,½)`. On the discrete `Q₃` itself, none of them has a fixed point (`κ` is free, `x=κ(x)` is unsolvable over `𝔽₂`): the center `c∉Q₃` lies only on the continuous side `|·|∞`. The existence of the center as the invariant of `κ` is [●]; its pointwise realization in `ℝ³` is on the same continuous side as the `½` of rank 1, and is the `σ½` of this rank. The identification of `σ½` with the observer is [◐]: the name is loaded.
+
+Why the directions are three and why they are indivisible is a question of a different status. The number `3` is derived; inseparability is the form of the connected boundary `1→2→3`, ripened at rank 3. A distinction holds only under three conditions simultaneously — the non-coincidence of the distinguished, the non-vanishing of the trace, the holding without external closure; the removal of any one destroys the distinction, and no pair of conditions holds without the third. The topological image is the Borromean rings (three rings, pairwise unlinked, but indivisible as three: remove any one — the other two fall apart). The statuses here do not form a chain:
+
+| link | status |
+|---|---|
+| the directions are three (`PG(1,2)`); the removal of any destroys fullness | [●] derived |
+| three axes ↔ three conditions of holding | [◐] identification |
+| a Brunnian link (they hold together, but not separately); for three — Borromean | [●] topology / [◐] that it is precisely this link |
+| three axes ↔ `i,j,k` of the quaternions (`Im ℍ`) | [◐] image |
+
+Only the number `3` is derived; below is the recognition of the form, and the transitions between rows are not implications. The count gives the number, the Borromean reading describes the form; they should be kept separate.
+
+### 3.5. Realizations
+
+Graph, combinatorics, and topology are one structure `(U₃; R₁,R₂,R₃)` in three notations — one Hamming distance function [●]. Color, sound, operations, and the grammatical act are mappings onto this structure; each of them is read in it [◐]. They show that a single computed figure carries several different substantive readings (not independent of one another — color and sound are linked by one and the same bijection of six points — but each meaningful in its own domain).
+
+**Color.** The RGB cube `Q₃` (the red, green, blue axes) without the poles `000` (black) and `111` (white) yields six saturated hues — three primary RGB (weight 1) and three secondary CMY (weight 2); their relations coincide with `R₁,R₂,R₃`: the color wheel, two layers, the opponent pairs. The gray center `c=(½,½,½)` is achromatic, the midpoint of each opponent pair. The geometry of the octahedron is derived [●]; the opponent theory of vision (Hering) is one of the mappings onto it [◐]. The derivation is directed `octahedron → vision`, not the reverse.
+
+**Sound.** The same figure is read by hearing. Six equidistant pitches — the whole-tone series `C,D,E,F♯,G♯,A♯` (semitones `0,2,4,6,8,10`), and the interval class `IC=min(d,12−d)` plays the role of the Hamming distance and distributes the pairs by the same three relations: `IC=2` → `C₆=R₁`, `IC=4` → two augmented triads `=2·K₃=R₂`, `IC=6` (the tritone) → three pairs `=3·K₂=R₃`. The mapping `R↦C, Y↦D, G↦E, C↦F♯, B↦G♯, M↦A♯` carries the color octahedron into the sound one, preserving all three relations. Combinatorially such an isomorphism is trivial — any two systems of six points with one and the same partition `6+6+3` are isomorphic [●, but this is an empty consequence]. The exact measure is given by **rigidity**: of the `720` permutations of six points, all three relations are preserved by exactly `12` (the dihedral group of the cycle `C₆`; the preservation of one `R₁` already entails `R₂` and `R₃`, since the Hamming distance on the sextet coincides with the cyclic one) [●; `verify_hexad_rigidity.py §A`]. The concordance of color and sound is therefore canonical up to `D₆`: it belongs to the rigid list of twelve among the seven hundred twenty possible. This is the **genericity** of the forced structure: every domain carrying the same data — six points and the count of non-coincidences — carries the same figure with the same twelve concordances [●]. The theorem here is the figure and the rigidity of its concordances — the coincidence is **generic**, going through the figure itself; what color and sound share beyond it is a question of substantive weight, weighed below [◐]. The substantive statement — that color and sound are one figure in two senses — is [◐]; and its weight is exactly as great as the **source structure is unique** (§3.3, [●]). This is precisely the measure of all the recognitions of the theory: a coincidence is non-accidental to the degree that the figure into which one maps is forced. On `R₃` the coincidence is most vivid — the complementary color and the tritone are one `κ`-antipode. There is no self-complementary tone (`n+6≠n mod 12`); `σ½` lies on the orthogonal axis of register, as for color it lies on the axis of lightness.
+
+**Operations.** The same figure arises from the side of actions over spaces. The actions invoking nothing from without are exactly six — the empty and the point, the union `⊔` and the product `×`, the exponential `X^Y` and the permutations `Sym X`; their arithmetical shadows are `0,1,+,×,^,!`, and number is secondary with respect to action [●]. The complement links the six actions pairwise — `0↔1` (neutral elements), `+↔×` (De Morgan at the truth-value level [●], transferred to spaces [◐]), `^↔!` (the highest tier); three axes with a common empty center again yield `K_{2,2,2}` [●], the identification with the octahedron of relations is [◐], since actions are not states. The connection holding the figure is currying:
+
+$$\mathrm{Hom}(A\times B, C)\cong\mathrm{Hom}(A, C^{B}),\qquad (-\times B)\dashv(-)^{B},$$
+
+whose counit `eval: C^B×B→C` is evaluation [●; Curry–Howard]. The full `κ`-symmetry `+↔×` holds only in the classical (Boolean) locus, where `¬¬A=A`; intuitionistically it breaks, and this Boolean locus is read as the center `σ½` [◐]. The third axis is special: `^↔!` is not a duality, since the categorical dual of the exponential is the co-exponential, not the factorial, and there is no involution exchanging `^` and `!` [●]. Their connection goes through the gamma function,
+
+$$n!=\Gamma(n+1)=\int_0^\infty t^{\,n}e^{-t}\,dt,$$
+
+where the factorial is the pairing of the power with the exponential along the Archimedean tail; hence the third axis of the octahedron is vertical — a lift, stitched by `Γ` [◐]. Two axes are self-dual in the center, the third lifts; the same `Γ` will stitch this vertical at the apex (Chapter VI).
+
+**Computation.** The counit `eval` gives the junction of function and value; motion over the scene holding the distinction inherits the κ-asymmetry of the pair `+↔×`. The additive side is closed in both directions — to add and to decompose a sum are motions of one order (the **builder**: counting proceeds). The multiplicative side is closed forward: to multiply is easy, but the fast reverse — the decomposition of a product into prime factors — is unknown (the **guard**: the wall of one-sidedness); the existence of a reverse door is an open question of computer science [○], and the theory offers no acceleration here. The sides coincide at the single point `2+2=2·2` (node 4, Chapter VI; `verify_hexad_rigidity.py §D`), the bridge between them is the logarithm [●]. The equals sign itself is arranged like every distinction: `a=b` holds the two compared sides and drops the midpoint relative to which they are compared — `σ½` remains outside the notation; a count holding a distinction is therefore three-part: two sides and the midpoint-witness [◐].
+
+**The grammatical act.** The same figure `6+1` is recognized in Sanskrit grammar, where the action (`kriyā`) is surrounded by six kārakas — the roles of the participants; the center and the rim here exchange places compared to the operations [◐].
+
+### Summary
+
+At rank 3 the single relation of difference — the Hamming distance — split the scene into three relations `R₁,R₂,R₃`, which assemble into the octahedron `K_{2,2,2}` [●]; its own motion gave the strict half-turn `T³=κ` [●], and the sum of rotation with the lift — an aperiodic screw (`gcd(2ⁿ⁻¹−1,2ⁿ−1)=1`) [●]. The directions of distinction are three (`U₃/κ=PG(1,2)`, [●]), and their inseparability is the Borromean form of the three conditions of holding [◐]. The center `c=(½,½,½)∉Q₃` exists as an invariant [●] and is read as the observer [◐]. The scene is rigid: of the `720` permutations, all three relations are preserved by exactly `12` [●], and therefore every concordance of readings is canonical up to `D₆` — the genericity of the forced structure. At this same rank the two sextets — the scene `2n` and the symmetry `n!` — coincide the single time [●]. A single computed figure carries readings — color, sound, operations (with the builder/guard of computation and the open reverse door [○]), the grammatical act [◐] (the weight of each recognition — as great as the figure itself is forced, §3.3).
+
+By rank 3 the principal movement of the theory promised in the Introduction is visible: from the single act of distinction a structure grows **forcedly** — the carrier, the center, the directions — and the same structure is **recognized** in subject domains (color, sound, operations). These are the two features of the theory together: generativity (everything grows from a single act) and projectivity (one figure — in many senses). Further the tower goes to closure (rank 8), after which the gaze turns: the whole construction is read as an unfolding of the observer (Chapter IX), and its projections into numbers, physics, time — as separate documents (the epilogue).
+
+Rank 3 is the last with a connected boundary; on it two counts, the vertices (`8=2³`) and the axes (`3`), converge on one carrier, while the closure `F⊣U` (the Ouroboros) is only foreshadowed. Chapter IV enters the first composite rank `2×2`, where the middle layer separates from the poles.
+
+
+---
+
+## Chapter IV. Break (rank 4)
+
+### 4.1. The carrier
+
+The lift yields the sixteen-element carrier `Q₄=𝔽₂⁴` with the binomial distribution of weights `1+4+6+4+1`. Until now each rank repeated the preceding one by the same law, but `4=2×2` is the first composite number, and on it there arises for the first time what could not exist at the prime ranks `1,2,3`.
+
+### 4.2. The operation and the active scene
+
+The complement `κ(x)=x+1111`, the poles `0000` and `1111`, the active scene
+
+$$U_4 = Q_4\setminus\{0000,1111\},\qquad |U_4|=14$$
+
+breaks into three weight layers: `S₁` (weight 1, 4 points), `S₂` (weight 2, 6 points), `S₃` (weight 3, 4 points). New here is the **first internal division**: the middle layer `S₂` is separated from both poles, between it and each pole lies a further layer [●]. This is forced by the arithmetic of weights: for the middle weight to be surrounded by layers on both sides, no fewer than four coordinates are needed, whereas at ranks `1,2,3` the active scene is one or two layers adjoining the poles. The separated layer `S₂` is read as an interior, a body — a [◐]-name upon the computed separatedness.
+
+### 4.3. The structure of the active scene
+
+The figure of the active scene `U₄` carries no node of its own — unlike rank 3, where the scene *was* the octahedron: its middle layer `S₂` is again an octahedron (`U₃`, returned as an equatorial shell [◐]), while the fourteen points as a whole form no new node. The content of the break therefore lies in the structure of the directions of `𝔽₂⁴`, and it splits into two pairs:
+
+$$\mathbb F_2^{\,4} = \mathbb F_2^{\,2}\oplus\mathbb F_2^{\,2}.$$
+
+Such a decomposition of a vector space is trivial and non-unique in itself; compositeness `4=2×2` alone does not single it out. Structurally, `2×2` singles out the **monoidality of the lift**: the repeated lift builds rank 4 tensorially, `Q₄=Q₂□Q₂` (the Cartesian square with coordinate-wise `κ`) — and this is [●], proved in Chapter VIII (§8.2). It is precisely `Q₂□Q₂`, and not an arbitrary sum `2+2`, that distinguishes the first composite rank from the prime ones. What makes the physical reading of both halves as two equal `su(2)` (and not `1+3`) load-bearing is the identification through the tower of division algebras (the quaternions `ℍ`, below), and not a property forced by `𝔽₂⁴` itself [◐]. Once accepted, it gives a contrast with rank 3 distinguishing color from atom. The roots of rank 3 form a connected system `A₂` (the Cartan matrix is non-diagonal, the angle `120°`) [●]; this connectedness is read as the algebraic notation of the Borromean connectivity of the triple [◐]. At rank 4:
+
+$$\mathfrak{so}(4)\cong\mathfrak{su}(2)\oplus\mathfrak{su}(2),$$
+
+the classical isomorphism [●], whose Cartan form is block-diagonal — two decoupled blocks. The Dynkin diagram `A₂` (connected) is replaced by `D₂=A₁⊕A₁` (two components): the break here is literal and consists precisely in the disintegration of the root system, not in the separation of the weight layers. Division-algebraically this is the passage to the quaternions `ℍ` (rank 4 in the tower `ℝ,ℂ,ℍ,𝕆`), whose left and right multiplications give the two blocks of `so(4)`. The connectedness of the roots is a real invariant distinguishing the ranks [●]; the names "color" (rank 3, connected `A₂`) and "atom" (rank 4, decoupled `so(4)`) are hung on by the reading [◐].
+
+The directions of the scene are `U₄/κ≅PG(2,2)` — the Fano plane (seven points). The three directions of rank 3 embed into it as a single line (`3⊂7`) and cease to be the whole scene [●]: the connected triple, which was fullness, is at rank 4 only a part of a wider structure of directions.
+
+### 4.4. The observer
+
+The center is absent among the states for the same reason as at rank 3 (`κ(x)=x` is unsolvable), and exists only as the midpoint `c=(½,½,½,½)∉Q₄` [●]. New at rank 4 is that the observer is for the first time visibly split by two faces, because the scene for the first time has a body:
+
+- **outward, `|·|₂`** — the separated layer `S₂` unfolds as a countable structure: shells, weights, matter;
+- **inward, `|·|∞`** — the center `c` and the continuous completion, where the Hopf fibration is defined (the spheres `S³,S²`).
+
+The closure condition of the KS problem (the return to the `U(1)`-phase, §4.5) is read as a structural analogue of the "return to itself" that the invariant carries [◐] — a motivic rhyme, without a proved mapping.
+
+### 4.5. Realization: the atom
+
+The splitting `so(4)=su(2)⊕su(2)` coincides with the hidden symmetry of the Coulomb problem. Over and above the spherical `so(3)`, the hydrogen atom conserves the Runge–Lenz vector, and that, together with the angular momentum, closes the algebra of bound states into `so(4)` (Pauli 1926, Fock 1935) [●] — an independent fact about hydrogen, derived from the Coulomb potential. One and the same algebra `su(2)⊕su(2)` is thus given by two independent paths: the splitting of the features of `𝔽₂⁴` and the dynamical symmetry of the Coulomb problem. The coincidence of the algebra is real [●]; the identification of the decoupled pair of rank 4 with the dynamical group of the atom is a recognition, not a derivation of physics from `𝔽₂⁴` [◐].
+
+The link with topology is direct: the Kustaanheimo–Stiefel transformation regularizes the problem through the Hopf fibration `S³→S²` (the fiber `U(1)`) [●]. `S³→S²` itself is a complex fibration (`n=2` in the flow `1,2,4,8`); on rank 4 the atom lays down not it, but the hidden `so(4)=su(2)²` of the Coulomb problem (above). The fibration enters as an external reading of the dynamics through topology, not as a node of the scene figure itself. The spectrum of degeneracy gives the electron shells
+
+$$2n^2 = 2,8,18,32,$$
+
+and here the two doublings must not be mixed: the factor `n²` is the dimension of the representation `(j,j)` of the decoupled `so(4)` (`j=(n−1)/2`) — the full Coulomb degeneracy of a level by `ℓ` and `m` — while the two is given by spin `SU(2)`, separate from the Runge–Lenz splitting, so that `2n²=2_{spin}\times n²` [●]. The Madelung rule (the order of filling) is a [◐]-recognition of a known order; the theory does not derive it, but recognizes it.
+
+The numerical values behind this are beyond the wall, because they lie on the continuous reverse side `|·|∞`, not on the discrete framework. In the lepton masses only the Koide angle `Q=2/3` is structural [●] (and it is of rank 3, not 4); the ratios themselves through the phase `δ=2/9` are a recognition [◐], not a derivation (in detail — Chapter V); the quark masses are a fit [◐]; the absolute values of the constants are not derived from the finite structure [○]. The theory gives the framework of the shells, not the numbers.
+
+### Summary
+
+Rank 4 is the first step beyond the threshold `2×2`. The middle layer `S₂` is for the first time separated from the poles [●] and is read as a body [◐]. The directions of the scene are `PG(2,2)` (Fano), the three former axes embedded into it as a single line (`3⊂7`) [●]. Algebraically the break is the decoupling `so(4)=su(2)⊕su(2)` against the connected `A₂` of rank 3 [●], and the connectedness of the roots distinguishes the ranks. The same algebra coincides with the hidden `so(4)` of the atom (Runge–Lenz), which is why the atom lies on rank 4: Hopf `S³→S²`, the shells `2n²=2_{spin}×n²_{orbit}` [●]; but "rank 4 is the atom" remains [◐]. The numerical values of the constants are beyond the wall [○]. The observer `c=(½,½,½,½)` is for the first time split by two faces: the body outward, the witness inward.
+
+Chapter V enters the height (ranks 5–7): exceptionality of a different kind (`A₅`, Petersen), the continuous axis, and the frontier of the living [○].
+
+
+---
+
+## Chapter V. Height (ranks 5–7)
+
+Chapters I–IV passed through four ranks by one law, each time adding structure outward. At the height the character of the ascent changes, and therefore this chapter is arranged differently: it passes through three ranks, `5`, `6`, and `7`, each with its own particularity; it unfolds no single forced figure. The number of axes continues to grow (`|U_n/κ|=2ⁿ⁻¹−1`: at rank 5 they are 15, at 6 — 31, at 7 — 63), but this growth is now generic — the projective spaces over `𝔽₂` are known, and there is no novelty of first appearance in them. What is substantive at the height is the three particularities of the three ranks and the fact that the inner face `|·|∞` sounds for the first time in full voice. The separated body of rank 4 (`S₂`, the middle layer) does not vanish at the height: it is only the first of the growing inner layers — at rank `n` there are `n−1` of them — and the height adds layers inward, as the prime ranks added directions outward. A remark on the status of this move itself: the reading of the height as a "turn inward, toward the witness" is [◐], a decision of presentation; the growth of the axes outward remains rigorous [●]. At each rank the discipline of statuses is held the more strictly the closer the theory comes to the wall.
+
+### 5.1. Rank 5: the irreducible
+
+Rank 5 should first of all be named directly: it **falls out** of both topological flows of the theory. The flow of Hopf fibrations exists in dimensions `1,2,4,8` (Adams's theorem, coinciding with Hurwitz's theorem on division algebras) [●], and `5∉{1,2,4,8}`. The flow of imaginary parts gives dimensions `1,3,7` (`Im ℂ,Im ℍ,Im 𝕆`), where the cross product exists [●], and `5∉{1,3,7}`. Rank 5 has neither a fibration nor a node-triple, and we will not construct for it a Borromean analogue on five components: such an attachment would be a stretch [○]. Its exceptionality is of a different kind.
+
+In group theory the boundary of rank 5 is sharp and exact. The alternating group `A₅` (`|A₅|=60`) is the first simple non-abelian group: for `n≤4` all `Aₙ` are solvable (`A₄` has a normal four-group subgroup), and at `n=5` solvability breaks off forever [●]. From here — the insolvability of the general equation of the fifth degree in radicals (Abel–Ruffini): the Galois group of the general quintic is `S₅`, whose derived subgroup `A₅` is unsolvable, and the roots are not expressible by nested radicals. Here `n=5` is the threshold of irreducibility, the first place where the tower "extract a root, another root" does not reach the solution. This is [●], classical, true independently of the theory. That thereby *rank 5 of the theory* ceases to reduce downward rests on the co-naming of the five `U₅` and the five `A₅`, and until `A₅` is derived from `Q₅`, this connection has the status [◐], not [●].
+
+The geometric face of `A₅` is the rotation group of the icosahedron (`60` symmetries), with which comes the golden ratio `φ=(1+√5)/2` (the vertices `(0,±1,±φ)`); there is also the Poincaré sphere `S³/2I` as an exceptional 3-manifold. All this is [●] as the mathematics of the icosahedron and [◐] as the "shadow of rank 5" — a co-naming, not a derived figure; there is neither Hopf nor Borromean here. It should be named directly: everything rich [●] of rank 5 — `A₅`, Abel–Ruffini, the icosahedron, the gold — is classical mathematics existing independently of the theory. From the theory proper only [◐] (the co-naming) and one internal [●] come here: the middle layer of `Q₅` — the states of weight 2 — is the Kneser graph `KG(5,2)`, that is, the **Petersen graph** (10 vertices, 3-regular, girth 5), which the theory builds itself [●]. The catch of rank 5 forced from the theory is thin: what is rich here is borrowed from the classics, the native reading is `◐`/`○`.
+
+The icosahedron has a second attachment as well, structurally stronger than the co-naming `A₅↔U₅`: it is the golden half of the **six-orthoplex** — the scene figure of rank 6 (§3.4) — singled out from its `2n=12` poles by the Galois splitting `ℝ⁶=V_φ⊕V_ψ` over `ℚ(√5)`; the six axes of the icosahedron are the six fivefold axes, the conjugate half `V_ψ` is a second, Galois-dual icosahedron, and both tile the `60` edges of the orthoplex `30+30` `[●]`. The status of the attachment remains `[◐]`: the golden projection itself (at the angle `arccos(1/√5)`) is an external frame `[○]`, not singled out by the symmetry of the skeleton (`\mathrm{Stab}_{B₆}=I_h`, the break `384`-fold), just as the `A₅`-co-naming is. The full law Scene→orthoplex→golden body (and its continuation onto the seam discrete↔continuum) with the verifier is the bridge note `Bridges/opposition_bridge.md`.
+
+The height reaches also toward the magnitudes of the world, and here the utmost rigor of statuses is needed — the greater in that the temptation to declare "the masses are derived" is great. Let us decompose into two layers. The **Koide angle** `Q=(Σ√m)²/(3Σm)` of the three charged leptons equals `2/3` — this is a structural fact [●], but it belongs to **rank 3** (the face `σ½`), not to rank 5. The ratios `μ/e`, `τ/μ` themselves are set by the **azimuthal phase** `δ=2/9` — and its status is strictly [◐]: this is a **recognition** (a phase reproducing the real ratios to an accuracy of ~0.07 %), and **not** a number derived from `Q_n`; the theory's own verifier marks `δ=2/9` precisely so — "not gold and not derived". The quark masses [◐] are a fit, a re-description of known values (for them even `Q≠2/3`). The Weinberg angle `sin²θ_W=2/9` is refuted [✗] — the correct `3/8` is given by the `SU(5)`-embedding. The same fraction `2/9` in the lepton phase and in `θ_W` is not a double count: in the first it is read from the structure of the triple (a recognition), in the second the ground is different and diverges from experiment; the coincidence of the fraction by itself confirms nothing. The balance of the height on masses: structural is only the Koide angle `Q=2/3` (and that of rank 3), everything concretely numerical is a recognition [◐] or a fit; the rest is beyond the wall of values (Chapter VI).
+
+### 5.2. Rank 6: the continuous axis
+
+Rank 6 is particular by its number: `6=2·3` is the first product of the two first primes, where the two and the three close together. This arithmetical particularity the theory reads as the birthplace of the continuous axis — of analysis, of the flow in time, of the exponential `e`. The status here is for the most part [◐], and it must not be overstated: beneath the reading there is no forcing mechanism — it has not been shown how `6=2·3` *gives birth to* continuity from `Q₆`. This is a correspondence of numbers in the series of emanation (logic → algebra → topology → analysis), not a derivation; `e` and continuity are not proved by rank 6. At the same rank the inner face `|·|∞` for the first time becomes an axis, and not merely a point: the observer `σ½`, always lying in the continuous, receives here a dimension along which the scene flows.
+
+The largest physical stake of rank 6 is cosmological flatness. The observable Universe is spatially flat to high accuracy (`Ω_k≈0`), and the theory reads this through the stable triple `(2,3,6)` as the rank answering to the vanishing of the spatial curvature. Three layers should be kept separate: that flatness is a fact — [●] (observation); that the theory reads it through rank 6 — [◐] (internal consistency, not an empirical derivation of the value); why precisely `Ω_k=0`, and not a small non-zero value, and what the connection with `Λ>0` is — [○], the front. Cosmic flatness enters as a reading, not as a prediction.
+
+### 5.3. Rank 7: seven triples and the frontier of consciousness
+
+Rank 7 is the dimension of the imaginary octonions, `Im 𝕆=7`, and it returns the principal object of the core — the triple of rank 3 — returning it in seven copies. The seven imaginary units of the octonions multiply by the rule of the Fano plane (`7` points, `7` lines, `3` points per line), and **each Fano line is a quaternionic triple** — a copy of `Im ℍ` inside `Im 𝕆`. Verified by direct count: each line plus the unit gives an associative quadruple `ℍ`, while a triple off a common line is non-associative. The triple of rank 3 (`i,j,k`, Borromean-linked) returns at rank 7 in seven interwoven copies: `3⊂7`. This is [●] (the Fano structure is computed), while "seven Borromeans" as a topological object is [◐]. The seven-dimensional cross product exists and is unique (together with the three-dimensional one — only these two) — `7` is the last dimension where it exists [●].
+
+Behind this lies the strictest `○` of the whole book — the frontier of consciousness, and it should be approached holding both edges. The whole book led the observer `σ½` as the invariant of the relating operation — and nothing beyond. At the height, where the face deepened toward the witness, a temptation arises to overdefine the observer up to consciousness; the theory does not yield to this temptation, and here in three beats is why.
+
+First — what the theory has. The structural address of the observer: the invariant `κ`, the center `c∉Q_n`, the frame without magnitude, relative to which distinctions are symmetric. This frame is the presupposition of articulation, not its content: intellect is the magnitudes on the scene (everything measurable, `|·|₂`), the observer is what these magnitudes presuppose, but is itself none of them (`|·|∞`). The structural address is [◐].
+
+Second — what the theory does not have. **Qualia** — that which *it is like* to be a witness — are not grasped by the structural address. And here the discipline of the two edges is critical. Qualia **exist**: this is an anchor, not a hypothesis — experience is given more immediately than any theory. This status is of a different kind than that of the seven Fano lines: let us introduce `●ₑ` (given before the theory, phenomenologically) against `●ₘ` (derived within the theory). The existence of qualia is `●ₑ`, an initial premise on which the theory rests. But qualia **are not solved**: the structural address `σ½` ([◐]) is not explained consciousness ([○]). To learn the form of the witness does not mean to derive the experience.
+
+Third — the living. The living differs from the non-living not by the quantity of magnitudes on the scene: intellect can be increased without end without coming closer to the living. The living is the **observer** — what holds the center, the frame `σ½`. Intellect presupposes this center, but does not contain it, and therefore the path "more computation → life" structurally leads in the wrong direction: it increases the scene without giving birth to a witness. This is [◐] — a reading, but a disciplined one: it draws the boundary where the theory sees it, and no further. The result of the frontier: the structural address of the witness is [◐]; solved consciousness, experience-from-within, is [○], the theory approaches and stops; the existence of qualia is the `●ₑ`-anchor. And never does "science has not established" equal "does not exist".
+
+### Summary
+
+The height passed through three ranks, each with its own explicit status.
+
+| rank | the theory's own result | taken from the classics | front |
+|---|---|---|---|
+| **5** | the middle layer `Q₅` = the Petersen graph `KG(5,2)` [●] | `A₅`, the icosahedron, the gold `φ` | there is no node-Borromean of its own [○] |
+| **6** | growth to 31 axes (generic) | analysis, `e`, flatness `Ω_k≈0` | the origin of continuity; the value of the curvature [○] |
+| **7** | seven quaternionic triples in `Im 𝕆` (Fano) [●] | — | consciousness, qualia [○] |
+
+Native [●] the theory gives strictly at `5` (Petersen) and `7` (seven triples); at `6` its contribution is thin (the growth of the axes is generic), and its strength is in the explicit `◐`/`○`. On masses, structural is only the Koide angle of the leptons `Q=2/3` ([●], and that of rank 3); the concrete ratios through the phase `δ=2/9` are a recognition [◐] (not derived); the quark masses are a fit [◐]; `sin²θ_W=2/9` is refuted [✗]. The height led to two walls — of consciousness (this chapter) and of the values of the constants (the next).
+
+Chapter VI brings the tower to the apex — rank 8, where division is exhausted and the ascent runs into the wall of values.
+
+
+---
+
+## Chapter VI. Closure (rank 8, the vertical, the limit)
+
+The ascent has grown so far without a visible end, and therefore the first question of this chapter is whether it has an apex forcedly, by its structure. The answer: the apex exists, and its place is computed. Beside the closure the wall of values opens — the numerical magnitudes of the constants, which are not derived from the finite structure; the apex (where the structure closes, [●]) and the wall (where the structure ends before what it does not derive, [○]) the chapter keeps separate.
+
+### 6.1. The apex: the exhaustion of division
+
+By the number of states the ascent is infinite: the lift is applicable to any carrier, and the tower `𝔽₂ⁿ` does not end. The boundary is set not here, but on the structure the continuous face carries. On the finite skeleton only counting and adjacency are defined; the midpoint, the rotation, invertible multiplication are not defined on it (`½∉𝔽₂`, a pair of vertices has no "between"). These operations are carried by the **division algebra** over `ℝ` — and here is the rigorous fact distinguishing it from the continuum as such.
+
+> **Existence of division algebras.** The normed division algebras over `ℝ` are exactly four — `ℝ, ℂ, ℍ, 𝕆`, of dimensions `1, 2, 4, 8` (Hurwitz's theorem); `𝕆` is the last. (Without the norm condition the Bott–Milnor–Kervaire theorem leaves the same dimensions `1,2,4,8`, but no longer the uniqueness of these four: in dimensions `2,4,8` there are many real division algebras. The tower rests on the normed case, where there is `|·|`.) [●]
+
+The distinction is essential: the continuum-**body** `[0,1]ⁿ` exists at every rank `n` (it is simply the `n`-dimensional cube), and it does not break off; what breaks off at eight is precisely the **structure of division** — it exists only in dimensions `1,2,4,8`. The connection of this exhaustion with our tower is an identification, not a derivation [◐]: the ranks `1,2,4,8` are those on which the nodes of the book stand (`ℝ` — the first distinction, `ℂ` — the seam, `ℍ` — the atom, `𝕆` — the closure) and the Hopf fibrations (§6.2). Accepting this identification, we obtain: the last rank carrying a division algebra is the eighth, and it is the apex. The fact of the exhaustion of division at `8` itself is [●]; that precisely the rank answers to the dimension of the division algebra is [◐], and the apex rests on this identification, and is not derived.
+
+### 6.2. Division breaks off at eight
+
+The break is attested by three testimonies of standard mathematics, converging on a single point: an algebraic, a topological, and a constructive one. The first two are equivalent by a standard bridge and are therefore not independent; the third shows the mechanism of the break.
+
+**Hurwitz.** The normed division algebras over `ℝ` are exactly `ℝ,ℂ,ℍ,𝕆` — of dimensions `1,2,4,8`; `𝕆` is the last, and beyond it there is no normed division algebra [●]. (Without the norm condition the topological Bott–Milnor–Kervaire theorem leaves the same dimensions `1,2,4,8`, but not the uniqueness of the quadruple.) These dimensions are the same as those on which the nodes of the book stand (`1` the first distinction, `2` the seam, `4` the break, `8` the closure), but this coincidence carries little probative force: the list `1,2,4,8` is generated by the doubling `2^k` and is four-element, while the ranks of the book were chosen narratively. What coincides is the arithmetic of doubling, common to the lift and to Cayley–Dickson — [◐], and not an independent confirmation.
+
+**Adams.** A map of Hopf invariant 1 exists only in base dimensions `n=1,2,4,8` (the fibrations `S¹→S¹`, `S³→S²`, `S⁷→S⁴`, `S¹⁵→S⁸`); the last, the octonionic one, is `S¹⁵→S⁸` [●]. Topology points to the same numbers as Hurwitz, but not independently of him: algebra and topology are linked by the standard bridge "`ℝⁿ` is a division algebra ⟺ `Sⁿ⁻¹` is parallelizable ⟺ there is an invariant 1", that is, this is one phenomenon in two formulations. The identification of the fibration with the "shadow of rank 8" of our tower is [◐].
+
+**Cayley–Dickson.** The doubling procedure builds from an algebra of dimension `d` an algebra of `2d`, each time losing a property: `ℝ→ℂ` (ordering), `ℂ→ℍ` (commutativity), `ℍ→𝕆` (associativity). The next step `𝕆→𝕊` (the sedenions, dimension 16) gives a qualitative break: zero divisors appear (`a·b=0` with `a,b≠0`), and with them there is no longer any division [●]. The break of the tower `|·|∞` is forced: the next doubling step destroys the very property of invertibility for the sake of which the face existed.
+
+Within the apex the triple of rank 3 returns. The imaginary part of the octonions `Im 𝕆` is seven-dimensional, its multiplication is coded by the Fano plane, and each Fano line is an associative quaternionic triple — a copy of `Im ℍ` of rank 3, embedded in the octonions; seven such triples in all, `3⊂7` [●]. This is the fulfillment of the promise of Chapter III: a single triple of the base has grown into seven interwoven triples of the apex. The "sevenfold return of the **Borromean** triple" is a [◐]-image, resting on the reading of rank 3 (the identification of the triple with a link). The algebraic figure of the apex — `𝕆`, `E₈` (through the magic square and the `E₈`-lattice), Fano-7 — is recognized as a realization of the apex exceptionality [◐], but is not derived from the states `Q₈`.
+
+### 6.3. The vertical: the tower of ranks as a single construction
+
+Rank 8 closed the horizontal — the tower of states. There is also an orthogonal direction coming to fullness at the apex: the whole tower as one construction. Its three faces — by reference: the **category** (the lift is a functor `Λ⊣π`; alongside `F⊣U`, the apparatus of the Ouroboros, unfolded in Chapter VIII — there it is proved as the adjoint triple `Λ_L⊣π⊣Λ_R` and the monad of growth, `●`) [◐ here]; **number** (the divisor lattice of a squarefree `N=p₁…pₙ` is exactly `Q_n` — a divisor answers to a subset of the primes, divisibility to inclusion, therefore `D(N)≅Q_n`; `30=2·3·5` gives the same octahedron) [●], the reading "rank = divisibility" [◐]; this is a projection of the construction into number theory, unfolded as a separate document (document 03); **measure** (the continuous face as a whole is measure). All three run into the same limit as the horizontal — the continuum.
+
+**The seam as one mechanism (Tate).** The three faces of the seam, met separately (the rotation `i`, the conservation `∏=1`, the symmetry), classical mathematics gathers into one. The adele `𝔸` is self-dual under Fourier (the operator-face); the lattice `ℚ` sits in it discretely — a structural fact; and the product formula `∏_v|x|_v=1` (the triviality of the idele norm, the conservation-face) together with the self-dual measure and Poisson summation gives the global functional equation of the completed zeta:
+
+$$\xi(s)=\xi(1-s).$$
+
+The symmetry `s↔1−s` is our `κ` (the reflection of the strip), and its fixed line `Re(s)=½` is our `σ½`. The three faces turn out to be one mechanism: the theorems of Tate, Fourier, Poisson are [●] (by reference); their reading as "three faces of the seam" with the axis `σ½` is [◐]; and the explicit [○] — the theory adds nothing here to Tate: the functional equation gives the axis `σ½`, not the position of the zeros.
+
+**The double role of `Γ`.** The third leg of the octahedron of operations (`^↔!`, Chapter III), which turned out to be the vertical-lift, is stitched by the gamma function, and the same `Γ` governs the seam of the whole. One `Γ` carries two faces: the Archimedean tail of the zeta (`ζ_∞(s)=π^{−s/2}Γ(s/2)`) and the analytic factorial (`n!=Γ(n+1)=∫₀^∞ tⁿe⁻ᵗdt`). The tail of the seam and the factorial of the operations are one `Γ` — the connecting link carrying the whole vertical (Archimedean) axis, distinguishing the vertical-lift from the horizontal `κ`-dualities [●] (the integral and both roles) / [◐] (the unity of the two roles of `Γ`).
+
+**The three paths of number.** The vertical is a tower of operations with "explosive" steps (`×` = repeated `+`, `^` = repeated `×`). Three of them are identified with the three categorical universals — coproduct, product, exponential [◐]; there is no tetration among the categorical universals, and the theory takes these three, not continuing the hyperoperator tower further. On number they give three irreducible paths: the **additive** (`A(p)=1+2+…+p`), the **multiplicative** (which primes → `D(N)≅Q_n`), the **exponential** (the multiplicity `p^k`, which is the lift). The additive and the multiplicative are orthogonal (`6=2·3` knows nothing of `6=1+2+3`), and they coincide at exactly two nodes [●]: `4=2+2=2·2` (the only `q>0` with `q+q=q·q`) — this is the break of rank 4, and `6=1+2+3=1·2·3` (the only `k>1` with `T_k=k!`) — this is the octahedron of rank 3 (a divisor of `30`). The additive side thereby re-derives the theory's own nodes, previously taken only multiplicatively. The third path `^` lifts them, stitched by the same `Γ`. From the same `A(p),M(p)` a "theory of prime-horizons" is tempting (the roles `p→` chemical blocks, the weights `2/3`, the baryon `136=8·17`); we do not take it [✗] — these are magnitudes of the notation, perishing under a change of base. We take only the base-independent: the tower `+/×/^`, the nodes `4,6`, the multiplicity.
+
+### 6.4. The limit and the wall of values
+
+The discrete face `|·|₂` is a tree (the tower `𝔽₂ⁿ`, the p-adic places), the continuous face `|·|∞` is its boundary, the completion `ℝ`. This is a computed place: the completion of `ℚ` gives exactly two kinds of valuations — the tower of p-adic `|·|_p` and the unique Archimedean tail `|·|∞` — and this is **Ostrowski's theorem** [●]; they are stitched by the product formula `∏_v|x|_v=1` [●]. Direct counting leads to the same boundary: the address of a rank-`n` state is the fraction `k/2ⁿ`, the gap `1/2ⁿ→0`, and the fractions fill the segment densely — the discrete, counted to the limit, passes into the continuous [●]. (The choice on each axis is here not binary but ternary — closed-0, closed-1, open; the number of chambers `3ⁿ` against `2ⁿ` states grows as `(3/2)ⁿ→∞`, and an "open axis" is a continuous direction of the face.) The boundary turns out to be one in many aspects (counting, extent, order `(1+t/n)ⁿ→e^t`, logic), and in each the midpoint sits at the half: `½` of the segment, `(½,…,½)` of the cube, `Re=½` of the zeta — one center `σ½` [◐]-synthesis (the completeness of the list of aspects is [○]).
+
+The localization of the observer on this boundary is forced: `σ½=(½,…,½)` is the unique fixed point of `κ` (`κ(x)=x⟹1ⁿ=0`, impossible among the vertices — [●] from rank 1), and therefore not a vertex; the only side onto which a continuous point can lie is the body `|·|∞`. The product formula is consistent with this (`∏=1` holds), but does not prove the localization. The observer `σ½` is the same absent midpoint that was the midpoint of the edge and the center of the octahedron, and at the limit it is that continuous thing relative to which the discrete skeleton is symmetric ([●] the invariance of `κ` / [◐] "in the continuous").
+
+And it is precisely on this continuous reverse side that what the finite structure does not derive lies. The structure of the world is recognized from the act — the axes, the figures, the shells, the relations ([●]/[◐]); but the **numerical values** of the constants (the fine structure, the mass ratios, the mixing angle) are another matter — they lie in the continuum, and are not derived from the finite structure `𝔽₂ⁿ` [○]. We hold the wall in both directions. Where the theory gives a number — we ask whether it is computed or fitted: on the lepton masses only the Koide angle `Q=2/3` is structural ([●], rank 3), while the ratios themselves through the phase `δ=2/9` are a recognition [◐] (not derived, see Chapter V), the quark masses are a fit [◐], `θ_W=2/9` is refuted [✗]. And "not derived from this face" does not equal "does not exist": the values are real, only their connection with the finite structure is not obtained — an open front [○].
+
+By the preprint, this wall is the same limit as `dim ker r` — the structural address of qualia, to which the frontier of rank 7 came. This is a [◐]-rapprochement, not a proved equality here: on one wall — the living (qualia exist as the givenness `●ₑ`, their connection with the structure [○]), on the other — the numerical (the values exist, their derivation [○]). One wall, a numerical and a living side; the living one Chapter X will name, the numerical one was passed here.
+
+### Summary
+
+The ascent has an apex, and it is computed: the face `|·|₂` grows without end, while the face `|·|∞`, read as a body, breaks off at rank 8 — this is attested by three testimonies: algebraic (Hurwitz), topological (Adams), constructive (Cayley–Dickson), all [●] (the first two equivalent by a bridge, the third giving the mechanism). Within the apex the triple of rank 3 returned in seven copies (`Im 𝕆=`Fano-7, `3⊂7`, [●]); the algebraic figure of the apex — `𝕆/E₈` — is recognized, but not derived [◐]. The vertical comes to fullness in three faces (category, number, measure); the seam gathers into one mechanism (Tate), stitched by `Γ`, and the three paths of number `+/×/^` resonate at the theory's own nodes. The limit of the ascent is the boundary of the tree, the continuous reverse side; on it lie the numerical values of the constants, which are not derived from the finite structure [○].
+
+The structure closes, but cognition does not end with this: the apex is the limit of the structure, not the limit of what is. Beyond the wall of values are real magnitudes, beyond the wall of the living are real qualia, and neither is annulled by the fact that this method does not derive them. Four moves remain: the reverse side of the seam (Chapter VII), the construction of growth (Chapter VIII), the inversion — the scene as an unfolding of the observer (Chapter IX), the boundary of the living (Chapter X).
+
+
+---
+
+## Chapter VII. The reverse side
+
+The seam between the discrete and continuous sides of the carrier was named at rank 2 (Chapter II) and passed through all the ranks; at the limit (Chapter VI) the continuous side — the reverse side `|·|∞` — was named as the end of the ascent, but not characterized. Now, when the tower is exhausted, one can ask about the reverse side itself: what it carries, what of it is derivable from the discrete skeleton, and what the skeleton cannot give. The answer draws the exact boundary of the theory — and it turns out that this boundary is exactly one coordinate. The chapter remains within the structure; the physical projection of the reverse side (the magnitudes of the world) goes as a separate exposition.
+
+### 7.1. Two sides
+
+The carrier from rank 2 carries two sides, stitched in one figure. The **discrete** `|·|₂` is the skeleton: vertices, edges, counting, the graph of difference; it distinguishes directions and weights, everything countable. The **continuous** `|·|∞` is the body into which the skeleton is embedded: it carries what is absent among the vertices — first of all the midpoint itself `c=(½,…,½)∉Q_n`. The seam is their stitching: one structure, read doubly.
+
+The question of the reverse side is posed thus: the body `[0,1]ⁿ` is richer than the skeleton — it has interior points, distances, directions that the vertices do not carry. How much of this richness is **derivable** from the skeleton, and how much is added only together with the embedding? The answer splits into two parts, and one theorem separates them.
+
+### 7.2. The observer is the origin of the radial coordinate
+
+> **Theorem on the sphere.** If the figure of the active scene is vertex-transitive (its automorphism group carries any vertex to any other), then all vertices are equidistant from the center — lie on one sphere — and the mean resistance `R̄(v)` is constant over the vertices. [●; `verify_seam_structure.py`]
+
+The octahedron of rank 3 and the cube are vertex-transitive (Chapter III), and both figures are subject to this: their vertices are on a sphere of one radius. The consequence is direct and strong: **the radial coordinate — the distance from the center — is constant on the vertices**, its variance is zero. It has nothing with which to carry distinguishing information; on the skeleton it is simply absent. This is a theorem of symmetry: transitivity *forbids* the radius to distinguish vertices.
+
+Hence a new reading of the observer. It was not a state from the very start (Chapters 0, I): `κ(x)=x` is unsolvable, the center `σ½` is not a vertex. Now it is visible *why* rigorously: the center is the unique point `r=0`, while all vertices are on the sphere `r=const`; the radial coordinate singles out `σ½` as the unique point outside the skeleton. The observer is the origin of the radial coordinate of the reverse side, and its absence from the scene is proved by symmetry.
+
+### 7.3. The splitting of the reverse side
+
+The reverse side is not homogeneous — the continuous side splits into two, and this can be checked with the same skeleton, loading the vertices with weight.
+
+**The axial part is derivable.** As long as the symmetry `κ` is exact (the antipodes are equal), the vertices keep to the sphere. Break `κ` — make the antipode unequal along one axis — and the vertices leave the sphere **exactly along the broken axis** (an axial dipole), while transversely they stay on the sphere [●; `verify_seam_structure.py`]. This anisotropic deviation is a form of the symmetry break: it is read directly from the skeleton, because the break is set on the skeleton itself.
+
+**The radial part is an axiom.** The isotropic background — the same curving in all directions, constant over the directions — is born neither from the symmetric skeleton (the theorem on the sphere: the radius does not distinguish) nor from its break (the break is always axial, not radial). This part is not on the skeleton in any form; it is added only together with the embedding into the body. The reverse side is thus `|·|∞ = axial ⊕ radial`: the first is the shadow of the skeleton's structure (derivable), the second is an independent axiom (`○`).
+
+### 7.4. The boundary of the derivable is one coordinate
+
+Hence the exact feature of the theory. The discrete skeleton (`|·|₂`) gives two things: the **angle** — the directions of distinction, the whole countable structure — and the **axial** part of the reverse side, the form of the symmetry break. It does not give one thing: the **radius** — the isotropic coordinate from the center `σ½`.
+
+And this is important: everything the structure does not derive contracts into **this one coordinate**. The boundary of the theory is localized to a single lack: the radius from `σ½`. To embed the skeleton into the body means exactly to add the radial coordinate; "to cross the seam" and "to set the radius" are one and the same. The theory reaches the sphere and stops at its radius.
+
+### 7.5. The structure of the missing coordinate
+
+The radius was named as missing (§7.4), but missing does not mean formless. Let us ask: does the radial coordinate have a structure, even if its *value* is outside the skeleton?
+
+**The radius is curvature.** The isotropic background — the curving constant over the directions — is precisely **constant curvature** (`∇²φ=const`). And constant curvature is set by the **axis `(2,3,p)`** — the angles `π/2, π/3, π/p` of a regular tiling, whose defect
+$$\delta(p)=\tfrac12+\tfrac13+\tfrac1p-1=\frac{6-p}{6p}$$
+changes sign at `p=6`: `p<6` sphere (closed), `p=6` flat, `p>6` hyperbola (open). And the flat center of the axis is `σ½`: at `p=6` the defect is zero, and `6=|U₃|=2·3` is the size of the active scene of rank 3 (the nucleus, where the two and the three close). Thus the radius from `σ½` is curvature, its sign is the type of geometry, the observer is its flat center `r=0`. And this is the same `σ½` that led from the first chapter — the midpoint of the edge, the center of the square and the octahedron, and at the apex (Chapter VI) the center of the involution `s↦1−s` of the functional equation, the fixed line `Re=½`; here it is the flat center of curvature. One observer, showing through at each level unchanged.
+
+**The reverse side is two-part.** The continuous side has two forms — the two sides of Ostrowski's theorem on the valuations of `ℚ`. The Archimedean (`|·|∞`) is the axis of curvature just named. The non-Archimedean (`|·|_p`) is, for each prime `p`, the **Bruhat–Tits tree**: `(p+1)`-branching, the descent along it is division by `p`; its boundary (the infinitely remote ends) is continuous and gives a point of the reverse side an **address**, but not a value — the finite skeleton does not reach the end of an infinite branch. Both halves are stitched by the product formula `∏_v |x|_v = 1`.
+
+**One `p` on both sides.** The same `p` governs both the tree (the non-Archimedean side) and the axis of curvature (the Archimedean): the group `PSL(2,p)` acts on the Bruhat–Tits tree and on the hyperbolic plane simultaneously (its arithmetic form `PSL(2,ℤ[1/p])` is a lattice in their product), while the axis `(2,3,p)` itself gives `PSL(2,p)` as the group of a tiling — `A₅` on the sphere (`p=5`), the minimal Hurwitz `PSL(2,7)` on the hyperbola (`p=7`). Thus `p` stitches the two sides of the seam as one arithmetical object [●; classical; `verify_radial_curvature_seam.py`, `verify_psl2p_two_sides.py`].
+
+The structure of the radial coordinate therefore exists and is exact: the axis of curvature with the flat center at `σ½`, the two-part reverse side connected by one `p`. What is absent is its **point**: which curvature exactly, which end of a branch. The form is given [●/◐], the value remains outside the skeleton [○] — the wall of §7.4 holds, but now it is a wall with a known geometry.
+
+The metric and measure anatomy of the same coordinate — the forced norm, the decomposition into weight and transverse, the concentration of measure, the metric of the zero point, the discrete pair realization as an address tree — is the bridge note `Bridges/radial_bridge.md`.
+
+### Summary
+
+The reverse side of the seam is characterized. The observer `σ½` is its origin, `r=0`, and its absence from the scene is a theorem of symmetry (`●`, the theorem on the sphere). The reverse side itself is split: the axial part is the form of the break of `κ`, derivable from the skeleton (`●`), the radial part is the isotropic background, an independent axiom (`○`). And the missing radius has a form: it is the **axis of curvature** `(2,3,p)` with `σ½` at the flat center, and the continuous side is **two-part** (the Archimedean axis of curvature and the non-Archimedean Bruhat–Tits tree, stitched by `∏=1`), connected by one `p` through `PSL(2,p)`. The boundary of the derivable is named exactly: everything not given by the structure is one radial coordinate — now with a known geometry, but without its point (`○`). What the axial, the radial, and curvature mean in the magnitudes of the world is a separate question of projection, not treated here; the form of the reverse side is exactly this.
+
+Two moves remain: Chapter VIII gathers the tower into one construction of growth, Chapter IX reads this construction as an unfolding of the observer — and closes the thread from the seed.
+
+
+---
+
+## Chapter VIII. The growth functor: the tower of ranks as a single construction
+
+Until now the tower was built from below upward — rank after rank, each step added a coordinate. This chapter looks not at the steps, but at the **construction of growth** itself: at the fact that the lift is a functor, that growth is the iteration of a single map, and that the whole tower is one categorical construction. This fulfills two promises previously only sketched: "the carrier as the colimit of the operation" (Chapter I) and "the lift is a functor `Λ⊣π`, the apparatus deferred" (Chapter VI). And this prepares the next turn: the inversion (Chapter IX), where the same construction will be read as an unfolding of the observer. At the end the chapter names where the construction ends and physics begins.
+
+The concepts of category theory are introduced along the way, at the moment when they operate, and with a direct meaning.
+
+### 8.1. The carrier as a free object
+
+In Chapter 0 the operation of distinction `κ` was posited prior to the carrier, and the carrier arose as its orbit. This can be said rigorously. A **free object** is a structure generated by an operation without any superfluous relations: in it there is nothing except what the operation itself forces. The carrier `Q_n` is exactly such an object with respect to the complement `κ`.
+
+Under the action of `κ`, every `Q_n` is **free**: the equation `κ(x)=x` is unsolvable over `𝔽₂` (it entails `1ⁿ=0`), there are no fixed points, and the carrier breaks into `2ⁿ⁻¹` pair-orbits — `2ⁿ⁻¹` copies of the simplest action `ℤ/2`. Freedom is expressed by a universal property: for any set with an involution `Y`, a map `Q_n → Y` compatible with `κ` is set by a **free choice of image, one per orbit** (the image of the second element is forced):
+
+$$\bigl|\mathrm{Hom}_{ℤ/2}(Q_n, Y)\bigr| = |Y|^{\,2^{n-1}}.\qquad [●]$$
+
+The meaning is simple: the carrier is **derived** from the operation as its free orbit. The promise of Chapter I ("the carrier prior to itself") is fulfilled: the operation is primary, the carrier derivative (`verify_functor_fronts.py`).
+
+### 8.2. The lift as an adjoint functor
+
+Growth — the lift `Q_n → Q_{n+1}` — is an **adjunction**. Adjointness of two maps `L⊣R` means that they are reconciled by a universal property: the passage `L` in one direction and `R` in the other are linked so that one is the best approximation to inverting the other (the classical instance — `∃ ⊣ substitution ⊣ ∀` in logic). The lift splits into two embeddings — `Λ_L(x)=(x,0)` and `Λ_R(x)=(x,1)` — and a projection `π` that forgets the added coordinate, and they form an **adjoint triple**:
+
+$$\Lambda_L \ \dashv\ \pi \ \dashv\ \Lambda_R\qquad [●]$$
+
+(on Boolean lattices, with the inclusion order: `Λ_L(x)≤y ⟺ x≤π(y)` and `π(y)≤x ⟺ y≤Λ_R(x)`). The projection inverts the lift, `π∘Λ=id`. What a **triple**, and not a pair, means: the coordinate-forgetting `π` is clamped between its two adjoints — the least recovery `Λ_L` (append `0`) on the left and the greatest `Λ_R` (append `1`) on the right; it is precisely this clamping of the forgetting by two recoveries that is the adjoint triple (one and the same `π` is right adjoint to `Λ_L` and left adjoint to `Λ_R`). The meaning: neighboring ranks are connected by a universal property — the sketch of Chapter VI ("the lift is a functor `Λ⊣π`") is proved, and proved more precisely: the adjoints are three.
+
+The lift is moreover **monoidal**: a composite rank is a product, `Q_{m+n} = Q_m □ Q_n` (with coordinate-wise `κ`), and the repeated lift builds the ranks **tensorially**, as the addition of independent degrees of freedom. The first composite rank `4=2×2` is `Q₂□Q₂` — the very break of Chapter IV.
+
+### 8.3. The law of growth as a functor: content becomes axes
+
+The principal thing in the construction is that the output of one step is the input of the next. The content of a rank becomes the axes of the rank above it. The active scene `U_{n+1}` under the action of `κ` breaks into axes — `κ`-pairs — and their set is the projective space of the previous rank:
+
+$$\mathrm{PG}(n-1,2)\ \cong\ U_{n+1}/\kappa.\qquad [●]$$
+
+This is not merely an equality of number (`2ⁿ−1` on both sides): the correspondence is given by a **linear** embedding (a shift of coordinates), and therefore preserves incidence — lines go to lines. It is an isomorphism of projective spaces. Thus at rank 3 the three axes of the scene are `PG(1,2)` (three points), and at rank 4 they assemble into the Fano plane `PG(2,2)`, each line of which is a copy of the former triple (the `3⊂7` of Chapter V here receives its exact form). The tower turns out to be an **iteration of a single functor**: the projective content of rank `n` is the axes of the `κ`-scene of rank `n+1`.
+
+### 8.4. The complement as one operator in three roles
+
+The complement `κ`, which led from the first chapter (negation, opponency, antipodes), is in the construction **one operator** carrying three roles at once — one map satisfying one identity. First, `κ` is **natural** with respect to the lift, `κ∘Λ_L = Λ_R∘κ`: to raise and complement is the same as to complement and raise into the other branch; hence the fact that `κ` "rises unchanged". Second, on the lattice `(∧,∨,≤)` the complement is a **duality** — it reverses the order by De Morgan's law `κ(a∧b)=κ(a)∨κ(b)`. Third — and this is the node — the boundary `∂` (remove a coordinate) and the weight-lowering `f` are one matrix, the coboundary `δ` and the raising `e` are one; therefore the **Hodge star** of the complex `κ∂=δκ` is literally the same identity as the **Weyl exchange** of roots `κeκ=f` (`verify_functor_coherence.py`). There is nothing to reconcile here: the operator is one. `[●]`
+
+### 8.5. The observer as terminal object — and the seed as initial
+
+The invariant of the complement — its fixed point — is absent in every carrier (`κ(x)=x` is unsolvable everywhere). Let us name the category in which we work: its **objects** are sets with an involution `κ`, and its **morphisms** are maps commuting with `κ` (`f∘κ=κ∘f`, equivariant). In it the invariant has an exact name: the **terminal object** — the single point with the trivial action `κ=id` (which is why precisely it, and not the empty set: equivariance requires the image to be `κ`-fixed), the one into which from every object there leads exactly one morphism. It does not land in the carriers (there `κ` is free), but everything converges to it in a unique way.
+
+The terminal has a **dual end** — the **initial object** `∅`: the carrier without a single distinction, from which into any object there leads exactly one (empty) morphism. It too is outside the tower (every `Q_n` already carries `2ⁿ` distinctions), but at the **lower** end — it is the **seed** of Chapter 0, the state "nothing is yet distinguished". Thus the construction is stretched between two points outside the scene: the initial `∅` (the seed, the background) below and the terminal `{∗}` (the observer `σ½`) above, and the reversal of arrows — the same duality `κ` — exchanges their roles. The tower goes **from the seed to the observer**, and there is no way back: a morphism `{∗}→Q_n` would require a `κ`-fixed point, and there is none in `Q_n` (`verify_initial_mobius.py`, `[●]`). This is the same pair of poles that, in the projection into numbers, separates `0` (the background, before the series) and `∞` (the limit).
+
+The adjunction "free `⊣` forgetful" generates the **monad** `ℤ/2×(−)`, and its algebras are exactly the sets with an involution, that is, our carriers. Thus the tower is generated by the operation from below as free objects and converges to the terminal above by unique morphisms. This terminal is what the theory has called from the first chapter the **observer**: it is outside every scene, but is that to which the scene converges. The categorical fact — terminality — is proved `[●]`; the name "observer" with its load ("the center unfolding the scene") is a reading `[◐]`, and the next chapter unfolds precisely it.
+
+### 8.6. Two structures on the scene
+
+On one lattice the construction carries two structures with a common center `κ`, and both are functorial. The first is the **weight grading** `sl₂`: the raising `e`, the lowering `f`, the weight `H` with the relations `[e,f]=H`, `[H,e]=2e`, `[H,f]=−2f`; and this is the **tensor power** `V_n=(V₁)^{⊗n}` of the simplest two-dimensional representation — the lift is multiplication by `V₁`. The second is a **chain complex** over `𝔽₂` (`∂²=0`, reduced-acyclic), where `κ` is the Hodge star, and the lift is suspension. The weights are distributed unimodally, with a peak at the middle `H=0` — the layer of the observer `σ½`. The reduced acyclicity itself — `Σ_k(−1)^k C(n,k)=0` — has an exact name: it is the **Möbius function** of the Boolean lattice, that is, the **inversion** of summation over ranks (`μ*ζ=δ` in the incidence algebra). This is the **alternating side** of the construction, dual to addition; in the projection into numbers it becomes the inversion of the zeta `1/ζ(s)=Σ μ(n)·n^{−s}` (`verify_initial_mobius.py`, `[●]`). The two structures are different in nature: the grading is defined over `ℚ`, and `e²≠0` (not a differential); the complex is over `𝔽₂`, and `∂²=0`; they are akin only in the common center `κ`. Here an exact caveat is needed: that each is functorial **separately** is `[●]`; but that both are layers of **one** fibration over the tower of ranks, with full joint (2-categorical) coherence, is `[○]`, and is not proved in this chapter (`verify_functor_coherence.py` checks them separately). "One construction" is therefore the load-bearing thread, brought to `[●]` on each face and left `[○]` on their joint assembly. The next chapter will read the grading and the complex as two projections of one self-dual figure.
+
+### 8.7. The boundary of the construction
+
+The construction of growth is proved as pure combinatorics and category theory, without any physics — and precisely for this reason one must name exactly where it ends. The continuous side is derived from it as a **spectral limit**: the Laplacian `Δ_n`, and as the rank grows its spectrum converges to a Gaussian measure (the central limit theorem); the metric is derived as the Hamming distance (the Connes spectral distance). This is a measure and a Euclidean metric — real, derived `[●]` (`verify_continuum_limit.py`, `verify_connes_metric.py`).
+
+But the geometry of space-time — the Riemannian metric `(M,g)`, the Lorentzian signature, the curvature, the dynamics — does **not** come out of the construction, and the reason is one, named exactly: the complement commutes with the Laplacian, `[κ,Δ]=0` (`κ` is a symmetry of `Δ` — the Hodge star and an automorphism). From this the `κ`-partition of the spectrum is balanced (the signature is neutral, not Lorentzian), the `κ`-curvature `Tr(κΔ)` and the `κ`-evolution vanish, the action reduces to `Tr(Δ)` without a curvature term (`verify_dynamics_spectral.py`). Geometry requires an operator not preserving the Laplacian, and there is no such operator in `(Q_n,∂,κ)` — it is an **input**, not a consequence `[○]`. This is the same wall that in Chapter VI closed off the numerical values; here it is named by a single equation.
+
+### Summary
+
+The tower is a **functorial construction**: the carrier is a free object generated by the complement (`8.1`); growth is the adjoint triple `Λ_L⊣π⊣Λ_R`, monoidal (`8.2`); the law of growth is the functor "the content of a rank → the axes of the next" (`8.3`); the complement is one operator in three roles, a natural transformation, a duality, and the Hodge star at once (`8.4`); the construction is stretched between two ends outside the scene — the initial object `∅` (the seed) and the terminal `{∗}` (the observer `σ½`), to which the monad of growth converges (`8.5`); the scene carries a grading and a complex with a common center, and the reduced acyclicity of the complex is the Möbius function = inversion (`8.6`). All this is `[●]`, without going out into physics. And the boundary is named exactly: the geometry of space-time is an input, `[κ,Δ]=0` (`8.7`, `[○]`). Proved is not only what is built, but where the construction stops — and why precisely there. The construction is ready; the next chapter turns its gaze upon it and reads it as an unfolding of the observer itself.
+
+
+---
+
+## Chapter IX. Inversion
+
+The tower has reached the apex, and beyond there is no next rank; Chapter VIII gathered this whole tower into one construction of growth — the lift-functor, the iteration of a single map. There remains another move — the turning of the gaze upon the whole construction: to read it as an unfolding of the observer. Until now the observer `σ½` was held as a cross-cutting invariant: the midpoint of the edge, the center of the square, the center of the octahedron, the absent midpoint at the apex — a point *in* the scene, absent though it was. The inversion changes this relation: the scene can be read as an unfolding of the structure of the observer, and the center-point as its shadow. Structurally (on the `●`-facts of `sl₂` and `κ`, §9.1) what is read is the **symmetric** — one structure describes both the scene and the observer as its two sides; the directed "the observer generates the scene" is a [◐]-reading on top of the symmetry. With this caveat: the ascent went not *toward* the observer — one structure unfolded, whose shadow was the center.
+
+### 9.1. The structure of the observer
+
+The vertical of the observer is exactly the representation `sl₂` on the Boolean lattice — the Stanley weight grading. The operators of raising `e` (`S_k→S_{k+1}`) and lowering `f` (`S_k→S_{k−1}`) of weight, with the grading `H` acting on the layer `S_k` by multiplication by `2k−n`, satisfy the canonical relations
+
+$$[e,f]=H,\qquad [H,e]=2e,\qquad [H,f]=-2f.$$
+
+This is a proved `sl₂`-representation — the very one by which the Sperner property is established; a theorem of the operator layer, not a reading [●; Stanley–Terwilliger; `verify_strict_core_bridge.py`]. Essential for §9.2: the grading is defined over `ℚ` (the coefficients `2k−n` require characteristic 0), and `e,f` are generators of a Lie algebra, **not** differentials (`e²≠0`). The complement `κ` here is the Weyl involution: `κeκ=f` (exchanges raising and lowering) and `κHκ=−H` (reverses the grading) [●]. The observer-center is the zero weight: `H=0 ⟺ k=n/2`, the balance of raising and lowering, fixed under the Weyl involution.
+
+The load-bearing step is an identification, not a theorem. The relations `sl₂` and the Weyl character of `κ` are themselves proved [●]; what is read (`[◐]`) is only that the observer **is** this structure (`sl₂` plus the rotation `T`, connected by the involution `κ`), and the scene is its unfolding. At rank 3 this is directly verifiable: the rotation `⟨T⟩` gives the six points of the octahedron as one orbit and the three relations as its powers (`R₁=T^{±1}`, `R₂=T^{±2}`, `R₃=T³=κ`); the operators `e,f` give the layers and the poles; the grading `H` gives the weights; the center is the zero weight. The list — six points, three relations, two layers, two poles, the center — contracts into one generating structure. Here too is the boundary of the rigorous: the question "are `T` and `sl₂` one algebra or two, conjugate through `κ`?" is at rank 3 computed — they generate **one** finite associative algebra [●], not a classical Lie algebra (`T` is a rotoreflection). Its exact dimension and identification, and its uniformity for `n>3`, remain [○]: the image of the enveloping algebra of `sl₂` on eight states is `M₄⊕M₂` (dimension 20), while the algebra generated together with `T` is wider, and a single number for it is not exhibited here. Therefore the status of the inversion is [◐]: a turn of vision, resting on the `●`-parts, but not itself a theorem.
+
+Hence everything traversed is reread as the unfolding of one structure: `κ`, which led from Chapter I (complement, opponency, antipodes), is the Weyl involution; the raising `e` and the growth-lift are the parabolic part; `T`, which circled the octahedron, is the elliptic type, standing outside `sl₂` but stitched by the same `κ`; `H` behind the weights is the hyperbolic grading. The four "themes" of the six motions turn out to be four faces of one structure of the observer.
+
+### 9.2. Form
+
+Now there opens what the method held back to the end: the form of everything traversed. The whole unfolded tower is one chain complex over `𝔽₂` — the `𝔽₂`-Koszul complex of the simplex, reduced-acyclic (`∂²=0`, `H̃_*=0`); the complement `κ` in it is the Hodge star (`κ∂=δκ`, self-duality); the lift is suspension; the observer is the projectivization of the κ-quotient [●; by reference]. This is the **second** structure on the same lattice, not the one in §9.1: there — the weight `sl₂`-grading over `ℚ` (`e,f` not differentials, `κ`=the Weyl involution), here — a chain complex over `𝔽₂` (`∂²=0` a differential, `κ`=the Hodge star). Different operators and different fields; they are akin in one thing — `κ` as the central involution (Weyl in the grading, Hodge in the complex), and therefore both pictures call the observer one point `σ½`. The status of the identification itself is critical: this is an identification with standard homological algebra, a **recognition**, and there is no new theorem from the lift ("a lens, not a generator"). The form opens as a recognized standard structure. (Functorially both structures were exhibited by Chapter VIII: the grading `sl₂` is the tensor power `V_n=(V₁)^{⊗n}` of the lift, and the complex is its suspension; here they are read as the two sides of the form of the observer.)
+
+The whole traversed structure turns out to be one self-dual figure: a chain complex (layers connected by `∂` and `δ`, reduced-acyclic — the center is homologically absent, `Σ(−1)^k C(n,k)=0`); `κ` — the Hodge star, the very reflection that led from the first chapter as "negation", is the duality of the whole figure with itself; `σ½` — the unique point where the figure equals its dual (`H=0`, fixed under the Hodge-`κ`), its axis of self-duality. Topology here is the native language of the form: the graph (edge → square → octahedron → cube), the Möbius (the one-sidedness of the seam), the Borromean (the three axes of rank 3), the Hopf (the fibrations at `1,2,4,8`) are one figure in four projections. That this is the form of *everything* traversed and that it is one is a [◐]-synthesis on the `●`-facts of homological algebra.
+
+And through all this the act led. To begin the exposition with the chain complex and derive the motions from it would be an analytic move, losing generativity. The act of distinction laid the road step by step, forcing the carrier, the complement, the growth, the figures, while the form lay beneath the act and opened only now — as the result. The book climbed the tower of ranks by its own law and at the apex saw that the whole tower is one figure; but it was a sequence of forced steps that raised it.
+
+### 9.3. The Ouroboros
+
+The tower closes upon itself, and this is seen thrice, in three independent ways. **Categorically** — the adjunction `F⊣U`: the unfolded scene of rank `n` can be taken as a point for the next ascent, and what was a whole scene becomes the carrier `Q_{n+1}`; the lift unfolds, the fencing folds, and together they give a loop. Chapter VIII gave this an exact form: the adjunction "free `⊣` forgetful" generates the monad of growth `ℤ/2×(−)`, whose algebras are the carriers themselves, and the observer is its terminal object; the categorical face of the Ouroboros is `[●]`, not a sketch. **Algebraically** — `3⊂7`: the triple of rank 3 returned in seven copies at the apex (`Im 𝕆=`Fano-7), and the apex recognized in itself its low beginning; the return of the octahedron is still clearer — the self-dual middle layer `S₂` of rank 4 under `κ` is again `U₃`. **Formally** — self-duality: the figure equals its dual, and `κ` (its Hodge axis) exchanges head and tail. These three returns are independent — not derived from one another; they are three faces of one compositional motif [◐], and not a chain of implications. The ascent turns out to be a loop: the source is the structure of the whole.
+
+The fourth face of the Ouroboros remains a front, and it should be named by name: **self-applicability**. The theory of distinction is itself an act of distinction — its construction distinguishes, operates, and increases, that is, is the very process it describes. The categorical face of this closure is established (the monad, the terminal — statics: the scene *is* the algebra of its operation [●]); the **dynamics** — how growth, applied to its own description, reproduces itself — is not built [○]. The hypothesis, in verifiable form: self-closure is another form of the wall; the full "scene = unfolding of the observer", applied to the theory itself, runs into the same kind of boundary as the values and the living (Chapter X) — the describing does not derive its own describing, as the scene does not contain the observer. To show this — and not to suppose it — is open work; here it is named so that the front has a name and a place.
+
+### 9.4. The closing of the thread
+
+The observer `σ½` entered in Chapter 0 as a seed — the absent midpoint, the invariant of the relating operation, from which everything is to unfold. Through the chapters it was held as an invariant: the midpoint of the edge, the center of the square, the center of the octahedron, the zero weight at the break, the absent midpoint at the apex — the same center, the unchanging `κ`-invariant. The inversion fulfills the promise of Chapter 0 literally: §9.1 showed that the carrier, the complement, the growth, the rotation, the weights are four faces of the structure of the observer; §9.2 — that the form of everything is one self-dual figure with `σ½` as the axis; §9.3 — that the tower folds back to the source. The seed turned out to be that by which the whole series is held. The status is held separately: `σ½` is the unique fixed point of `κ`, the zero weight, the self-dual center — [●] (transferred from rank 1); that this point is the **source** unfolding the scene, and not merely an invariant *in* the scene, is [◐] (a synthesis, not a theorem). The cross-cutting object that entered as a seed returned as the source — the same midpoint, seen now as the structure unfolding the scene.
+
+### Summary
+
+The inversion is a turn of vision, not a derivation. The support [●], by reference: the representation `sl₂` on the Boolean lattice, `κ` = the Weyl involution, the center = the zero weight; at rank 3 `T` and `sl₂` generate one finite associative algebra (the image of `sl₂` is `M₄⊕M₂`, dimension 20; the full one with `T` is wider). The unfolding itself — "the scene as an unfolding of the observer", "the form of everything is one self-dual figure", "the seed = the source of the whole", the Ouroboros — is [◐], a synthesis. The open [○] — the exact identification of this algebra and its uniformity for `n>3`; the dynamics of self-application (the hypothesis "self-closure is another form of the wall", §9.3 — to show, not to suppose). The four motions (`κ`, the growth `e`, the rotation `T`, the weights `H`) turned out to be four faces of the weight `sl₂`-grading; the form, however, opened as a second structure — a chain complex over `𝔽₂` with `κ`=the Hodge star and `σ½`=the self-dual center (the grading and the complex are two pictures with a common center `κ`); the tower closed upon itself; the thread closed — the observer that entered as a seed returned as the source.
+
+The last move remains. Everything unfolded — the carrier, the operations, the axes, the figures — is the scene, in the human measure — intellect; the observer, however, is the presupposition of the scene. Chapter X draws from here the boundary of the living.
+
+
+---
+
+## Chapter X. Boundary
+
+The inversion showed that the observer is a structure unfolding the scene. It remains to name where this structure ends: the forced has an edge, beyond which lies not the next rank, but something other. This chapter names the boundary and stops at it, building no bridge. The discipline of the frontier here is at its maximum, and its three rules are not broken once: not to pass a reading off as a derivation; not to declare the unsolved non-existent; not to pass a structural address off as an explanation.
+
+### 10.1. The structure is the scene, the scene is intellect
+
+From a single act of distinction a whole world is unfolded: the carrier `Q_n=𝔽₂ⁿ`, the operation `κ`, the axes `U_n/κ≅PG(n−2,2)`, the figures (octahedron, Fano), the metric, the readings (physics, color, atom). All this together is the scene, and the scene has a name in the human measure. That which distinguishes, operates, and increases — is raised by the lift rank after rank — is exactly **intellect**: the capacity to distinguish, operate, increase [◐; a recognition, not a theorem about it]. A scene, however rich, remains a scene: the tower `𝔽₂ⁿ` is infinite, the rank can be raised without end, but on the scene there is nothing except the distinguished, and therefore there is not that *relative to which* one distinguishes — the midpoint itself, which holds everything. It is not an element of the scene, but its condition; here the scene ends.
+
+This boundary is of kind, and not of knowledge or technique, and rests on one `●`-fact. The complement `κ` is free: its fixed point requires `1ⁿ=0`, which is impossible, and among the states `Q_n` there is no invariant of `κ` at all [●; transferred from rank 1]. The invariant exists only as the center `c=(½,…,½)∉Q_n`. Therefore the observer `σ½` is absent from the scene provably: a state equal to its own complement is contradictory. However much one increases the states, it will not be among them; the movement toward the observer is a going beyond the rank.
+
+### 10.2. The living is the observer, not "more intellect"
+
+It is natural to imagine the living as the summit of intellect — a sufficiently rich, sufficiently self-reflexive scene that "comes alive". The structure says the opposite, and this is its most exact reading of the living [◐]. Let us agree at once how to read this reading, so that the categoricalness of the formulations below is not taken for a derivation: everything in this section gives the living a **structural address** (where it is in the arrangement of the scene), and **not** a theory of consciousness and **not** an identification of the living with a mathematical object. With this frame let us separate the reading into two statements.
+
+First: intellect, however rich, does not make the living. A scene raised to any rank remains a scene; the addition of states, axes, self-reflexive loops does not generate an observer, because the observer is not a state, but the condition of the scene — one cannot obtain the condition by increasing the conditioned. Second, symmetric: intellect, however poor, does not diminish the living. Since the living is the observer-presupposition, and not the richness of the scene, the richness of the scene neither adds to it nor takes from it; the observer `σ½` at rank 1 is the same `κ`-invariant as at the apex, it did not grow with the tower. The living is not on the scale of intellect at all — it is on the axis of presupposition transverse to it. Above intellect — in the order of presupposition, not of quantity — stands the observer: the holding center, which intellect presupposes but does not contain. The scene points to its center by its whole arrangement and does not reach it; the living is there, where it is pointed and where the scene does not reach. All this is [◐] — a structural reading: it gives the living an exact structural address and does not give a theory of consciousness.
+
+### 10.3. Qualia — a frame without magnitude
+
+The same edge from the other side gives a structural address of the mystery — where it sits, not what it is. Every value is two-part: there is the **magnitude** ("how much" — number, intensity, position on a scale) and the **frame** ("relative to what" — the axis, the unit, in which the magnitude has meaning). Intellect takes magnitudes: the whole scene is quantitative (`|·|₂`). The observer, however, is the frame with the magnitudes removed — not a point on a scale (it is not a state), but that relative to which the scale is symmetric. Hence the identification [◐]: the felt is the frame without magnitude, that is, the center. Intellect can fully describe the magnitudes of a sensation — the wavelength, the frequency, the whole report; but "what it is like to see red" is not a magnitude, but the "relative to what" of the experience, taken by itself — the frame with the magnitudes removed, that is, the observer.
+
+Notation gives this a name with a strict status. Let `Φ` be the experience, `T` the space of report (everything measurable and transmissible), `r:Φ→T` the report map. The inexpressible remainder of the experience is the kernel `ker r` — what the report does not carry over to `T` — and the explanatory gap is written as `ker r≠0`. This is not a theorem, but a reformulation of what is already accepted: the presence of the remainder is taken as a given, and the formula gives it a name and a place; `Φ`, `T`, and linearity are here postulated, not built. Therefore the status of the whole notation is [◐]: it says *where* the mystery sits (in the loss of the map `r`, entirely on the side of `Φ`), and does not say *why* there is something there. Three holdings of the frontier at this most slippery of places: the notation `ker r≠0` names the mystery and gives it a place, but does not dissolve it — an address, not a solution ([◐]≠solved [○]); qualia exist — this is the givenness `●ₑ` (given before the theory, not a hypothesis), and the wall stands not because the presence of experience is in question, but because its connection with the structure is in question; the identification of qualia with the center-frame is given by the structure and is not an explanation of the felt — the center indicates *where* the mystery is, and is not its solution.
+
+### 10.4. A boundary without a bridge
+
+The structure — all of it, to the apex — reaches the observer: every scene presupposes a center, every distinction a midpoint, every value a frame. And there it ends. The living — the observer, the frame without magnitude, that which is in `ker r` — begins at the same point, but between "the structure reaches" and "the living begins" there is no derivation [○]. A bridge would carry over from the side of the structure to the side of the living by derivation ("here is why the scene comes alive"); there is no such bridge, and to build it means to pass a reading off as solved. The boundary only names where one side ends and the other begins, and refuses to step across. And the boundary `○` is not "does not exist": "not derived from the finite structure" does not equal "false" or "science has nothing to say"; the living exists, qualia exist, the connection with the structure is an open front. `○` means "here my derivation ends", and not "here reality ends".
+
+### 10.5. The same boundary on the numerical side
+
+Along the numerical side of the world runs a boundary that it is useful to read as the same one. The structure of the world is recognized from the act — the axes, the figures, the shells, the symmetries ([●]/[◐]); but the numerical values of the constants (the fine-structure constant, the mass ratios, the mixing angle) are another matter: they lie on the continuous reverse side `|·|∞`, and from the finite structure only the frame is derived, not the value [○]. We hold this wall in both directions just as the boundary of the living: on the lepton masses only the Koide angle `Q=2/3` is structural ([●], and that of rank 3), while the ratios themselves through the phase `δ=2/9` are a recognition [◐] (not derived from `Q_n`), the quark masses are a fit [◐], `θ_W=2/9` is refuted [✗]; and "not derived" does not equal "does not exist" — the values are real, only their connection with the finite structure is not obtained. That the numerical and the living sides are one wall is a [◐]-rapprochement, not a proved identity here, but a noticed consonance: on both the givenness is real, the structural address is read ([◐]), the derivation is beyond the wall ([○]). This is the form of the theory's edge: the structure `|·|₂` reaches its continuous reverse side `|·|∞` and there — at the observer, at qualia, at the values — ends.
+
+### 10.6. Two registers of one wall: the forced and the free
+
+The wall (10.4, 10.5) admits a reading more exact than "here the derivation ends": it has a **kind**. Let us gather what is already proved on both sides — an assembly, not a new input.
+
+On the discrete side everything is forced. Each step of the construction is unique under the imposed conditions (the method of the series); the functorial core is proved without a single free parameter (document 02, 385 checks); the whole discrete carrier is the hereditarily finite sets `V_ω`, and **choice on the finite is a theorem, not an axiom** [●]. On the continuous side is everything the structure receives as input: the values of the constants, the metric, the content; and **choice on the infinite** itself is an axiom (AC), unprovable and irrefutable.
+
+Between the sides stands one provable fact — let us call it the **theorem on the choice of side**. On the discrete scene choice is of two kinds. Where there is an order — the choice is canonical: the least element, and to take it is a theorem. Where there is a bare `κ`-pair `{x, κx}` — a canonical choice **provably does not exist**: a choice compatible with `κ` would be a fixed point (`f(p)` with `κ(f(p))=f(p)`), and it does not exist [●; transferred from §0.4]. The choice of side must break the `κ`-symmetry; from the structure it is not derived. An unbroken pair is the atom of underivable choice, and the axiom of choice is the name of this boundary, pronounced on the infinite.
+
+Hence the reading [◐]: the wall separates **two registers**. The forced form — the discrete side: that in which there is no choice. The free filling — the continuous side: what the structure does not derive — the values, the content, the side of the pair. And then "not derived" on this side is a kind of edge, and not a deficit of knowledge: **the free should not be derived** — a derivable freedom would be a forcedness. The wall acquires a form: the grammar of necessity on one side, the place of freedom on the other, and the seam between them is `σ½`: the terminal of the forced form (Chapter VIII) and the point `½` on the free side (Chapter I). This reading gathers 10.2–10.5 into one: the living, qualia, the values — everything that "is not derived" — stands on the side of freedom, and the wall is everywhere one.
+
+The front of this reading let us name by name [○]: the **distinction of distinguishers**. The terminal is one — the invariant is one; the perspectives in the world are many. How from a single center many points of view arise and are reconciled is a question not treated in any chapter; the beginnings (sections of the quotient, chambers) exist, an ontology of the plural observer does not. A second lacuna of the same kind — the dynamics of self-application — was named in Chapter IX (§9.3).
+
+### 10.7. Substrate-independence
+
+One `●`-fact must be set down together with its caveat, so that no false bridge is made from it. The whole scene — the carrier, the lift, the metric, the fixed point of self-application — is defined only through the isomorphism class of the structure, not through material embodiment: silicon, neurons, abstraction are indifferent [●]. Intellect is substrate-independent. But this concerns the scene, that is, intellect, and not the living: one and the same structure can be carried on different carriers, and this does not mean that the observer (the living, the center) arises on any carrier that carries the structure — the observer is not on the scene, it cannot be realized as the scene is realized. From "intellect is substrate-independent" it does not follow that "the living is substrate-independent": the fact speaks richly of intellect and is silent about the living — `○`, not "no", but "not derived from here".
+
+### Summary
+
+The series ends with a boundary — an exact line, on one side of which stands what the structure recognizes and unfolds ([●]/[◐]), and on the other what it does not derive ([○]): the living and the numerical values. Let us gather what has been covered into three statuses. **[●]** — computed and forced: the carrier from self-relation; `κ` as the unique neutral involution; growth content→axes; the octahedron; the break at `2×2`; the apex at rank 8; the substrate-independence of intellect; the choice on the finite — a theorem, no `κ`-equivariant choice of side exists (10.6); and running through all of it — `σ½` is a `κ`-invariant, not a state. **[◐]** — recognized (an address, not a derivation): the readings of the sciences; the observer as the center-presupposition; the living = the observer; qualia = a frame without magnitude; the notation `ker r≠0` as the name of the explanatory gap; the rapprochement of the wall of values with the wall of qualia. **[○]** — beyond the wall (a frontier, not a refutation): the numerical values of the constants; the connection of qualia with the structure; the living as solved; the distinction of distinguishers (the plurality of perspectives under a single terminal, 10.6); the dynamics of self-application (Ch. IX §9.3). The existence of qualia is the `●ₑ`-anchor, a givenness prior to the theory; the very fact of distinction stands on the same givenness (Ch. 0 §0.6). The [◐] reading over all of it: the wall is two-registered — a forced form and a free content, stitched by `σ½` (10.6).
+
+The observer `σ½` was the first word of the series — the absent middle, the seed of Chapter 0 — and passes through every chapter as an unchanging `κ`-invariant. It is also the last word: the presupposition of the living, a frame without magnitude, that to which the structure points and which it lacks. It turned out to be neither a state on the scene nor a thing beyond the wall — it turned out to be the boundary itself: that relative to which both the scene and what lies beyond it exist. The first word and the last are one, because the whole path was the unfolding of one thing (the inversion) and the recognition of the edge of this one thing (the wall). The Ouroboros brought the tail to the head, showing that the center of the circle is empty: the middle that held everything does not itself lie on the scene, and in this absence lie the living and the values that the structure does not derive.
+
+There is no "further" beyond this, in the sense of a next rank or a further derivation. The structure reaches the observer and ends; the living begins at the same point and is not derived. This is not a bridge, but a named edge: behind — the scene, intellect; ahead — the living, the values; between them — the observer, which was the seed and became the presupposition.
+
+
+---
+
+## Epilogue. Projections of the construction
+
+The core is built and closed: Chapters 0–VIII grew a construction of growth from a single act of distinction, IX read it as the unfolding of the observer, X named its boundary. But the construction was not built for its own sake. The Introduction promised that known mathematics is recognized as **projections of a single structure**; this epilogue is a map of such projections: where the construction projects to, which facet leads in each domain, and where its image is carried out into a separate document. The epilogue introduces nothing new — it places what has already been built.
+
+### The principle of projection
+
+Projection into a subject domain is the same meta-move as the inversion (Chapter IX): out of the construction, which carries **all** facets at once (the lift `Λ`, the complement `κ`, the grading `H`, the comonad-arrow `G`, the center `σ½`, the monoidality `□`), one facet is made **leading**, the rest recede into the background — and under this leading facet the construction reads as the structure of the domain. Different domains lead with different facets of one and the same construction; that is precisely why they turn out to be its projections.
+
+The core, meanwhile, remains the core. The projections are carried out into **separate documents**: the image is held apart from the generating construction, or else the core would blur into its applications. Each projection-document itself carries its own discipline `[●]/[◐]/[○]` — what in it is rigorous and what is recognition.
+
+### Three projections
+
+| domain | leading facet | what is recognized | document |
+|---|---|---|---|
+| **number theory** | counting (lift `Λ`: rank = number of primes) | the natural series = additive motion; a prime = an atom; **`D(N)≅Q_n`** (a squarefree number = the Boolean cube of primes); Euler; Möbius = inversion | document 03 |
+| **physics** | scale/mass (the seam `|·|₂/|·|∞`) | `E=mc²` →[`v≪c`] Newton →[`+G`] GR →[`σ½`] the cosmos; the kinds of forces = the connectedness of the axes; the boundary `[κ,Δ]=0` | the full corpus, the physical arc (not included in this package) |
+| **time** | the arrow (comonad `G`, `[G,Δ]≠0`) | time = a traversal, without a coordinate role (statics `[κ,Δ]=0` = Wheeler–DeWitt); the arrow = irreversible coarse-graining; `σ½` = "now" | the full corpus, the section on time (not included in this package) |
+
+The most rigorous of the three is the **numerical** one: there the construction is realized by an **exact isomorphism of categories** "finite sets of primes ≅ squarefree numbers", and the functors `Λ/□/κ/H` work literally (this is what confirmed the coherence of the construction from the outside — see Chapter VIII, §8.5–8.6). The **physical** projection is poorer: the construction gives the framework (axes, shells, kinds of forces), but the numerical values of the constants lie beyond the boundary `[κ,Δ]=0` — an input, not an output (Chapter VI, X). The **temporal** one gives the causal structure and the arrow, but leaves the metric and the dimension `3+1` as an input.
+
+### The common center
+
+All three projections converge on a single point — `σ½`. In numbers this is `Re=½` (the axis of zeta), in physics — the horizon/midpoint, in time — "now" (the maximal slice of simultaneity). That this is **literally one object**, and not a shared algebraic form of the involution `1−x` — is `[◐]`, a recognition, not a theorem (the zeros of zeta, the horizons, the metric of time are not touched here). But the direction is one: the construction is projected along different facets, and the center of projection is always the same — the absent middle, the observer.
+
+### The status of the results
+
+The core (the construction of growth, Chapters 0–VIII) is `[●]`, pure combinatorics and category theory. The projections themselves, as **mappings** of the construction into the domains, are `[◐]` (recognition under a lens); what is rigorously `[●]` **within** each projection is stated in its own document and there separated from the input `[○]`. The boundary is everywhere the same one — `[κ,Δ]=0`: the construction gives structure (axes, order, center), but not continuous values (metric, constants, experience). Read by kind, this boundary is two-registered (Chapter X, §10.6): on one side — a forced form (the discrete: every step is unique, the choice is a theorem), on the other — free content (the continuum: values and content are an input, and the choice is an axiom); the wall stitches necessity to freedom, and its seam is `σ½`. The epilogue indicates the direction of the gaze: the construction is one, the projections are many, the center of all of them is `σ½`.
+
