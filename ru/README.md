@@ -5,6 +5,8 @@
 
 **Языки:** [English](../README.md) | [Русский](README.md)
 
+[DOI: 10.5281/zenodo.23164605](https://doi.org/10.5281/zenodo.23164605)
+
 [![Лицензия на код: CC BY-NC-SA 4.0](https://img.shields.io/badge/Code-CC%20BY--NC--SA%204.0-yellow.svg)](LICENSE)
 [![Лицензия на теорию: CC BY-NC-SA 4.0](https://img.shields.io/badge/Theory-CC%20BY--NC--SA%204.0-blue.svg)](LICENSE-THEORY.md)
 
