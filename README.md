@@ -69,7 +69,12 @@ License terms are specified in [`LICENSE`](LICENSE) and [`LICENSE-THEORY.md`](LI
 
 ## Supporting the Research
 
-This is an independent, open research project. Support helps fund larger computational experiments, further formalization, and reproducible research tools, while allowing the work to remain independent and openly available.
+Support for this independent, open research project helps:
+
+- conduct larger computational experiments;
+- develop theoretical formalization;
+- create reproducible research tools;
+- publish “For Dummies: How to Prompt an AGI”.
 
 | Currency | Network | Address |
 |---|---|---|
