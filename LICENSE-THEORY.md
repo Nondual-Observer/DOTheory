@@ -1,27 +1,25 @@
-Theory and documentation license
-================================
+Лицензия на теорию, документацию и проверочный код (первый том ТНР)
+==============================================================
 
-Unless otherwise noted, the theory texts, explanatory documentation,
-and canonical manuscript materials in this repository are licensed under:
+Если не указано иное, все тексты теории, объяснительная документация,
+канонические рукописи и верификационный программный код в данном репозитории
+распространяются на условиях лицензии:
 
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
 (CC BY-NC-SA 4.0)
 
-License summary:
-- Attribution is required.
-- Adaptation is allowed.
-- Commercial use is not allowed without separate permission.
-- Derivative works must be distributed under the same license.
+Краткое содержание лицензии:
+- Атрибуция (Attribution) обязательна: вы должны указывать авторство.
+- Адаптация (Adaptation) разрешена: вы можете изменять и развивать теорию.
+- Некоммерческое использование (NonCommercial): коммерческое использование
+  материалов и производных работ запрещено без отдельного разрешения.
+- Сохранение условий (ShareAlike): производные работы (следствия теории,
+  расширения, программный код) должны распространяться под этой же лицензией.
 
-Canonical license text:
+Полный канонический текст лицензии:
 https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-Scope:
-- Theory documents in the repository root: `01_Exposition.md`,
-  `02_Categorical_Core.md`, `03_Number_Model.md`, and `README.md`,
-  unless a file states otherwise.
-- Any figure assets, if present, unless a file states otherwise.
-
-Executable source code in `code_core/`, `code_exposition/`, and
-`code_number_model/` is licensed separately under Apache License 2.0.
-See `LICENSE`.
+Область действия:
+- Текст первого тома и пояснительные материалы, включённые в эту публикационную папку.
+- Проверочные программы в каталоге `/verification`.
+- Для сторонних материалов и библиотек действуют их собственные условия, если они указаны отдельно.
