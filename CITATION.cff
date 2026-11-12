@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "DOT v3.3 — Distinction Observable Theory"
+message: "If you use this work, please cite it using the metadata from this file."
+type: dataset
+version: "3.3"
+authors:
+  - family-names: Zhuk
+    given-names: Igor M.
+doi: 10.5281/zenodo.23481643
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23481643
+    description: "Zenodo Concept DOI for all Canonical Book Editions (resolves to latest)"
+  - type: doi
+    value: 10.5281/zenodo.20059465
+    description: "Zenodo Concept DOI for all GitHub Releases (resolves to latest)"
+url: "https://github.com/Nondual-Observer/DOTheory"
+repository-code: "https://github.com/Nondual-Observer/DOTheory"
+date-released: 2026-11-13
+license: CC-BY-NC-SA-4.0

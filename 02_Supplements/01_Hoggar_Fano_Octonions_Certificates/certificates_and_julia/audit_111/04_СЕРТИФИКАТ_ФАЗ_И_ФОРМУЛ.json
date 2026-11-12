@@ -1,0 +1,493 @@
+{
+  "K": [
+    {
+      "enumerated": 0,
+      "formula": 0,
+      "n": 1
+    },
+    {
+      "enumerated": 9,
+      "formula": 9,
+      "n": 2
+    },
+    {
+      "enumerated": 270,
+      "formula": 270,
+      "n": 3
+    },
+    {
+      "enumerated": 5724,
+      "formula": 5724,
+      "n": 4
+    },
+    {
+      "enumerated": 106200,
+      "formula": 106200,
+      "n": 5
+    },
+    {
+      "enumerated": 1847664,
+      "formula": 1847664,
+      "n": 6
+    }
+  ],
+  "canonical_fiducials": [
+    {
+      "fixed_group_order": 168,
+      "sign": -1
+    },
+    {
+      "fixed_group_order": 168,
+      "sign": 1
+    }
+  ],
+  "checks": [
+    {
+      "details": {},
+      "name": "Фаза — целочисленное число общих единиц",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "K, n=1",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "K, n=2",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "K, n=3",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "K, n=4",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "K, n=5",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "K, n=6",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Чётность канонического фидуциала",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=1",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=2",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=3",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=4",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=5",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=6",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=7",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=8",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=9",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=10",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=11",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=12",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=13",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=14",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=15",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=16",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=17",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=18",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=19",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=20",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=21",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=22",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=23",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=24",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=25",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=26",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=27",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=28",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=29",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=30",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=31",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=32",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=33",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=34",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=35",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=36",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=37",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=38",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=39",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=40",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=41",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=42",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=43",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=44",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=45",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=46",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=47",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=48",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=49",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=50",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=51",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=52",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=53",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=54",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=55",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=56",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=57",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=58",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=59",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=60",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=61",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=62",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Тождество чистоты c=63",
+      "passed": true
+    },
+    {
+      "details": {
+        "K": 315,
+        "negative_parity": 0
+      },
+      "name": "Инвариантность равенства при смене сечения",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Буквальная нечётность не инвариантна при произвольном сечении",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Локальная смена знака Y оставляет нечётность",
+      "passed": true
+    },
+    {
+      "details": {
+        "K_mod2_dot": 336,
+        "changed_signs": 10
+      },
+      "name": "Соглашение с бинарным скалярным произведением",
+      "passed": true
+    },
+    {
+      "details": {
+        "degree": 3,
+        "monomials": [
+          17,
+          19,
+          25
+        ],
+        "top_coefficient": 0
+      },
+      "name": "Фаза CNOT имеет кубический член",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Фаза CNOT не меняет старший коэффициент степени 6",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Чётность фаз генераторов H/S/CNOT в трёх кубитах",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Канонический фидуциал -1",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Вся GL3(2) фиксирует вектор -1",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Канонический фидуциал 1",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Вся GL3(2) фиксирует вектор 1",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Пропущенный проективный случай B=0 не даёт SIC",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "Малый межразрядный прирост не ограничивает истинный остаток",
+      "passed": true
+    }
+  ],
+  "environment": {
+    "blas_threads": 1,
+    "cpu_threads": 1,
+    "gpu_bytes": 0,
+    "julia": "1.12.6",
+    "utc": "2026-11-01T00:29:22.811Z"
+  },
+  "minus_counts": [
+    3,
+    12
+  ],
+  "parity_phase_note": "Инвариантно e≡1+K, но не e=1 при произвольной смене знаков эрмитовых представителей. Фаза CNOT кубическая, не только квадратичная.",
+  "passed": 84
+}

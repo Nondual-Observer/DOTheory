@@ -1,0 +1,40 @@
+{
+  "edition": "Book_III_Canonical_English_Edition_v3_3",
+  "volume": "Book III. Domain Bridges, Verifications, and Program for the Next Step (Canonical Edition v3.3)",
+  "directory": "Book_III_EN",
+  "julia_version": "1.12.6",
+  "threads": 1,
+  "floating_point_types_used": 0,
+  "timestamp_utc": "2026-11-12T22:54:12Z",
+  "total_gates": 16,
+  "passed_gates": 16,
+  "status": "ALL_PASS",
+  "gates": [
+    {"id": "GATE-III01-01", "chapter": "III.1", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "exact rk_Q(A)=2 > max(rk_Q(P_i A P_i))=1; exact rk_F2=(2,1,1)"},
+    {"id": "GATE-III01-02", "chapter": "III.1/III.3", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "6*H_s==K_s^2-7K_s+13I_5 on all 32 orientations; exact Q(√5) idempotents & Löwdin F^T F==I_5; D_10-equivariance verified"},
+    {"id": "GATE-III01-03", "chapter": "III.1", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Rejected bridge P_7 vs PG(2,2): |GL_3(F_2)|=|Aut(PG(2,2))|=168 vs |Aut(P_7)|=2; 6 edges vs 7 lines"},
+    {"id": "GATE-III02-01", "chapter": "III.2", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Lemma III.2.1(1-3) exact over Q: sign flip, [P_23, D_α + W_*] != 0, unequal weight swap"},
+    {"id": "GATE-III02-02", "chapter": "III.2", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Registry 43-5=38, +2=40, (21,19) vs (19,19); 6-vertex bridge exact over Q: min P̃_1=5/1833>0, mass 32 vs cut 30 (2 comps)"},
+    {"id": "GATE-III02-03", "chapter": "III.2", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Prop III.2.1 exact over Q on strong & weak digraphs for τ∈{1/3,1,5/2,7}: (1-α)(I-αP)^{-1}==(I+τ(I-P))^{-1}, 100% mass conserved"},
+    {"id": "GATE-III03-01", "chapter": "III.3", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "|C|=|C^⊥|=8 in F_2^6; Q_3\\{000,111} ~= O_6; Lawvere-Cantor diagonal verified on all 512 Boolean 3x3 tables"},
+    {"id": "GATE-III03-02", "chapter": "III.3", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Spec(KG(5,2))=3^1,1^5,(-2)^4 & Spec(J(5,2))=6^1,1^4,(-2)^5; O_6∩O_6'=Δ(ME,MB,EB); 0/1024 base foldings preserve 2-subsets"},
+    {"id": "GATE-III03-03", "chapter": "III.3", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "roots(r^2=c_6 in S_6)=0/720; roots(r^2=c_8 in S_8)=12/40320 (all (4,4), inv_pair=0); 11+3-1=13"},
+    {"id": "GATE-III03-04", "chapter": "III.3", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "C_6(1,2)~=O_6; |W(B_3)|=48, 3 distinct idx-2 subgroups (24); dim Comm_Q(W(B_3))=1; dim Q[g1]=3/9 vs Alg(g1,g2)=9/9"},
+    {"id": "GATE-III04-01", "chapter": "III.4", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Prism(9 edges, 2 tris) -> O_6(12 edges, 8 tris, K_{2,2,2}); |ker p in F_2^5|=16"},
+    {"id": "GATE-III04-02", "chapter": "III.4", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Oracle-free 1LP/2LP merge on N=2537 (r_cyc=2: C1->{1,2537}, C2,C3->{43,59}); N=105; cyc_rank=3"},
+    {"id": "GATE-III04-03", "chapter": "III.4", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Exact Q HMM: P(ab)==41/200, P(aa)==59/200 witness (θ!=σ·θ) + S_3 invariance on all binary words len 1..4"},
+    {"id": "GATE-III05-01", "chapter": "III.5", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Thm III.5.1 checker (accepts valid φ, rejects 4/4 corruptions, BFS |R|=2, 0/2 unminimized morphisms) + exact Q Grönwall"},
+    {"id": "GATE-III-LINT", "chapter": "ALL", "category": "INTEGRITY/LINT", "passed": true, "details": "7/7 files checked: 0 forbidden stamps/links, chapter words = 23197"},
+    {"id": "GATE-III-SYS-FLOAT", "chapter": "SYS", "category": "EXACTNESS/NO-FLOAT", "passed": true, "details": "0 floating-point/approx tokens in 07_verify_full_book_III_v3_3.jl, threads = 1"}
+  ],
+  "verified_files": [
+    {"file": "00_PASSPORT_BOOK_III_V3_3_EN.md", "sha256": "e93ae40818b8fe2be854780611e669b78bc5d72a0747a2b152a3435c63d05443", "words": 1398},
+    {"file": "01_CHAPTER_III_01_HOW_TO_CONSTRUCT_A_DOMAIN_BRIDGE_V3_3_EN.md", "sha256": "2230d676cece9d819d61092cb87c53fbf78277340006671439bd6562fbe8540f", "words": 4848},
+    {"file": "02_CHAPTER_III_02_DIRECTED_WEIGHTED_GRAPHS_AND_FILTRATION_V3_3_EN.md", "sha256": "7906dba370b778faa27886d5ac67b5774c8c54ba21bb9377078295b77a5fab8f", "words": 3489},
+    {"file": "03_CHAPTER_III_03_SAMKHYA_YOGA_ADVAITA_AND_PANINI_V3_3_EN.md", "sha256": "3827a0b1b0eb4c7de2e46e3d59842404de1da7e7aa76ad937ff9cfa2b7a3df98", "words": 7022},
+    {"file": "04_CHAPTER_III_04_PRISM_REBUILDING_COFACTOR_GRAPHS_AND_HIDDEN_MARKOV_MODELS_V3_3_EN.md", "sha256": "f77775452ef39e9e10aee15a24ae65761a9e2cb56efcfaeb2f01a51d491da9e3", "words": 3899},
+    {"file": "05_CHAPTER_III_05_VERIFICATION_PROGRAM_AND_CRITERIA_FOR_THE_NEXT_STEP_V3_3_EN.md", "sha256": "ad56764292f64f736951ae08e90fd0102e88cb56d9da63a89ac5e64afba9b339", "words": 3939},
+    {"file": "06_APPENDICES_PM_GR_VP_AD_BOOK_III_V3_3_EN.md", "sha256": "0b6947bf37a80b23ec8d6ecc38e78f293528f1f8cbaf767be64cb112841a079a", "words": 3670},
+    {"file": "07_verify_full_book_III_v3_3.jl", "sha256": "f5e1d583ed01bf57856209ca002a622c3832c2c72f9da6df732aa74d444f7f58", "words": 0}
+  ]
+}

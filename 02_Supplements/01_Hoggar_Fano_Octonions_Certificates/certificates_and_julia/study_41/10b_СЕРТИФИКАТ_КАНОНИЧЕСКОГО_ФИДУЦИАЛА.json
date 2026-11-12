@@ -1,0 +1,24 @@
+{
+  "note": "Канонический вид фидуциала Хоггара: ψ(0) = −1±2i, ψ(x) = 1 при x ≠ 0 (нормировка √12). По-видимому, известен в литературе (вероятный источник — Jedwab–Wiebe 2015, требуется сверка); поисковая сводка давала опечатку −1±i (не SIC, см. 10, F5).",
+  "results": {
+    "+1+2i (контроль)": {
+      "sic": false,
+      "cnot_fixed": true,
+      "overlap_with_psi_prime": 0.600925212593014,
+      "overlap_with_conj_psi_prime": 0.8975274679039172
+    },
+    "−1+2i": {
+      "sic": true,
+      "cnot_fixed": true,
+      "overlap_with_psi_prime": 0.47140452083408596,
+      "overlap_with_conj_psi_prime": 1.0000000000623257
+    },
+    "−1−2i": {
+      "sic": true,
+      "cnot_fixed": true,
+      "overlap_with_psi_prime": 1.0000000000623257,
+      "overlap_with_conj_psi_prime": 0.47140452083408596
+    }
+  },
+  "script": "10b_КАНОНИЧЕСКИЙ_ФИДУЦИАЛ_ХОГГАРА.jl"
+}

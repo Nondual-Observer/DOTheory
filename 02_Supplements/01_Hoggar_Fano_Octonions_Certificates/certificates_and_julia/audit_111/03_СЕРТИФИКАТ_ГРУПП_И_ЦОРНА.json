@@ -1,0 +1,360 @@
+{
+  "Q0_stabilizer_equals_standard_Levi": true,
+  "Q0_stabilizer_order": 168,
+  "Sp_order": 1451520,
+  "all_basis_products_checked": 774144,
+  "all_group_pairs_checked": 146313216,
+  "all_lift_compositions_checked": 146313216,
+  "antiunitary_involution_index": 169,
+  "antiunitary_order": 6048,
+  "aut_equals_hoggar_image": true,
+  "aut_order": 12096,
+  "bases_per_idempotent": [
+    168
+  ],
+  "bijection": true,
+  "center_order": 1,
+  "centralizer_unitary_order": 1,
+  "commutator_order": 6048,
+  "complementary_unordered_pairs": 4320,
+  "completeness": "Любой автоморфизм переводит e в идемпотент следа 1 и базис U_e в базис U_f. Образы V вынуждены попарными произведениями U. Перебраны все идемпотенты и все упорядоченные базисы U; каждый линейный кандидат проверен на 64 произведениях базиса.",
+  "conjugacy_order_size": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      63
+    ],
+    [
+      3,
+      56
+    ],
+    [
+      3,
+      672
+    ],
+    [
+      4,
+      63
+    ],
+    [
+      4,
+      63
+    ],
+    [
+      4,
+      378
+    ],
+    [
+      6,
+      504
+    ],
+    [
+      7,
+      864
+    ],
+    [
+      7,
+      864
+    ],
+    [
+      8,
+      756
+    ],
+    [
+      8,
+      756
+    ],
+    [
+      12,
+      504
+    ],
+    [
+      12,
+      504
+    ]
+  ],
+  "elapsed_s": 4.505828142166138,
+  "environment": {
+    "blas_threads": 1,
+    "cpu_threads": 1,
+    "gpu_bytes": 0,
+    "julia": "1.12.6",
+    "utc": "2026-11-01T00:27:41.967Z"
+  },
+  "form_orbit_sizes": [
+    28,
+    36
+  ],
+  "form_stabilizer_orders": [
+    168,
+    216
+  ],
+  "generators_full": [
+    2,
+    3,
+    5,
+    9,
+    25,
+    169
+  ],
+  "generators_unitary": [
+    2,
+    3,
+    5,
+    9,
+    25,
+    1513
+  ],
+  "idempotents": 72,
+  "index2_homomorphism": true,
+  "lagrangians": 135,
+  "levi_pairs": [
+    {
+      "form": "10825627592855169536",
+      "lagrangian_1": "255",
+      "lagrangian_2": "72340172838076673",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "4365941161549234346",
+      "lagrangian_1": "43605",
+      "lagrangian_2": "4629704832432734465",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "6552902645118428876",
+      "lagrangian_1": "13369395",
+      "lagrangian_2": "2306441152397643777",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "14080802914723823786",
+      "lagrangian_1": "579355665",
+      "lagrangian_2": "289426919950123265",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "11893841430000461516",
+      "lagrangian_1": "1143113745",
+      "lagrangian_2": "153124724061310977",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "17319221931960618086",
+      "lagrangian_1": "1711276185",
+      "lagrangian_2": "612630321188311041",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "7621116480008792576",
+      "lagrangian_1": "2283947025",
+      "lagrangian_2": "1157442765156581633",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "1127522137476353126",
+      "lagrangian_1": "2286166545",
+      "lagrangian_2": "9225633182535127041",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "7407482406614883056",
+      "lagrangian_1": "1030792151055",
+      "lagrangian_2": "577028104732673025",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "14081049980153954474",
+      "lagrangian_1": "11682311065605",
+      "lagrangian_2": "1157429520538534145",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "11039354030366350064",
+      "lagrangian_1": "88003879936005",
+      "lagrangian_2": "146371390265099265",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "14728460362522751066",
+      "lagrangian_1": "98956046500005",
+      "lagrangian_2": "2341872925073736705",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "7621034983849961984",
+      "lagrangian_1": "175964810137605",
+      "lagrangian_2": "289357379932520705",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "3718003700793995354",
+      "lagrangian_1": "176265457830405",
+      "lagrangian_2": "9232380353346274305",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "11957172718513723852",
+      "lagrangian_1": "3378524357394435",
+      "lagrangian_2": "1153502055873191937",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "3703648109644549978",
+      "lagrangian_1": "6794982966952065",
+      "lagrangian_2": "324260412269010945",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "1106263080147694438",
+      "lagrangian_1": "10205667331670145",
+      "lagrangian_2": "1189091107850946561",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "11082326243305891312",
+      "lagrangian_1": "13510850434301955",
+      "lagrangian_2": "288802126560364545",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "12249904014332827196",
+      "lagrangian_1": "16888498602639555",
+      "lagrangian_2": "4612108241630019585",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "6125007863964199228",
+      "lagrangian_1": "18603737345949825",
+      "lagrangian_2": "144537677570507265",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "7583034894770722048",
+      "lagrangian_1": "18616931284156545",
+      "lagrangian_2": "9223655161124126721",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "7583118325376111872",
+      "lagrangian_1": "54043247071199235",
+      "lagrangian_2": "144398866404409857",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "6125064597460248892",
+      "lagrangian_1": "54043401687662595",
+      "lagrangian_2": "9223723890239504385",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "10825709090705222144",
+      "lagrangian_1": "72409713714659585",
+      "lagrangian_2": "2918895508489507905",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "10863709178073142528",
+      "lagrangian_1": "74318194256906241",
+      "lagrangian_2": "6917529055826804745",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "24150330780074902",
+      "lagrangian_1": "74344854177449985",
+      "lagrangian_2": "5188166561948762145",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "10863625749199082752",
+      "lagrangian_1": "81066030780194817",
+      "lagrangian_2": "5188291906266857505",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "23981890237481878",
+      "lagrangian_1": "81135196535005185",
+      "lagrangian_2": "6917529646217035785",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "47907478526311574",
+      "lagrangian_1": "90080926616797185",
+      "lagrangian_2": "2887933261051363905",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "48075488531987606",
+      "lagrangian_1": "90107211415568385",
+      "lagrangian_2": "10808639105689190505",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "17340480989278057318",
+      "lagrangian_1": "432345978960347145",
+      "lagrangian_2": "580981978501775361",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "7364323276698658288",
+      "lagrangian_1": "577588855662969345",
+      "lagrangian_2": "10376293568842039305",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "14742815223527640922",
+      "lagrangian_1": "1297181828222287905",
+      "lagrangian_2": "2306970558457217025",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "12249959433539393084",
+      "lagrangian_1": "1477743627730954305",
+      "lagrangian_2": "4611970242225127425",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "6489571353753065932",
+      "lagrangian_1": "2310381861966250497",
+      "lagrangian_2": "9511681577844867105",
+      "stabilizer_order": 168
+    },
+    {
+      "form": "4365694090991960234",
+      "lagrangian_1": "4629718077909762305",
+      "lagrangian_2": "9378746223999063105",
+      "stabilizer_order": 168
+    }
+  ],
+  "levi_subgroups": 36,
+  "lift_unique": true,
+  "nonassociative_triples": 14999040,
+  "norm_and_trace_preserved": true,
+  "norm_does_not_descend_counterexample": [
+    0,
+    129,
+    0,
+    1
+  ],
+  "normal_closure_orders": [
+    6048,
+    6048,
+    6048,
+    6048,
+    6048,
+    6048,
+    6048,
+    6048,
+    6048,
+    6048,
+    6048,
+    6048,
+    6048
+  ],
+  "plus_forms": 36,
+  "unitary_order": 6048,
+  "unitary_simple": true
+}

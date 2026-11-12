@@ -1,0 +1,7 @@
+# Attribution Passport of the First Volume ("Book I v3.3")
+
+> *Neti, neti* — not this, not this.
+>
+> — Yājñavalkya, *Bṛhadāraṇyaka Upaniṣad* (2.3.6)
+
+This book comprises an Introduction, nine chapters, and a consolidated Appendix (`GR`, `VP`, `AD`). Edition `v3.3` organizes the exposition around two constructive engines (see [`../../00_Methodology/README.md`](../../00_Methodology/README.md)): the five-beat shift of the observer window ($\Pi_k \to \Pi_{k+1}$) whenever an admissible continuation $T$ splits a shadow witness pair $(s, t) \in \ker m_{\mathrm{acc}}$, and the three-regime solution-count classification $|\mathcal{R}| \in \{1,\, >1,\, 0\}$ (forced canonical invariant / gauge freedom of frame / boundary obstruction forcing the next tier of structure). Immediately beneath the heading of each of the `57` formal statements (`Theorems`, `Lemmas`, `Propositions`), `*Classical foundation.*` and `*Contribution of this book:*` are explicitly separated, and Appendix `VP` (`Section II.3`) provides an article-by-article certification registry across the five epistemic statuses together with an academic bibliography of classical primary sources. All `23` gates of the single-threaded verifier [`11_verify_full_book_I_v3_3.jl`](11_verify_full_book_I_v3_3.jl) (`19` mathematical chapter gates and `4` system/text integrity gates) pass in exact integer, rational, and modular arithmetic without floating-point approximations.

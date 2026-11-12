@@ -1,0 +1,40 @@
+{
+  "edition": "Book_III_Canonical_Russian_Edition_v3_3",
+  "volume": "Книга III. Предметные мосты, проверки и программа следующего шага (Каноническая редакция v3.3)",
+  "directory": "Книга_III",
+  "julia_version": "1.12.6",
+  "threads": 1,
+  "floating_point_types_used": 0,
+  "timestamp_utc": "2026-11-12T22:55:01Z",
+  "total_gates": 16,
+  "passed_gates": 16,
+  "status": "ALL_PASS",
+  "gates": [
+    {"id": "GATE-III01-01", "chapter": "III.1", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "exact rk_Q(A)=2 > max(rk_Q(P_i A P_i))=1; exact rk_F2=(2,1,1)"},
+    {"id": "GATE-III01-02", "chapter": "III.1/III.3", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "6*H_s==K_s^2-7K_s+13I_5 on all 32 orientations; exact Q(√5) idempotents & Löwdin F^T F==I_5; D_10-equivariance verified"},
+    {"id": "GATE-III01-03", "chapter": "III.1", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Rejected bridge P_7 vs PG(2,2): |GL_3(F_2)|=|Aut(PG(2,2))|=168 vs |Aut(P_7)|=2; 6 edges vs 7 lines"},
+    {"id": "GATE-III02-01", "chapter": "III.2", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Lemma III.2.1(1-3) exact over Q: sign flip, [P_23, D_α + W_*] != 0, unequal weight swap"},
+    {"id": "GATE-III02-02", "chapter": "III.2", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Registry 43-5=38, +2=40, (21,19) vs (19,19); 6-vertex bridge exact over Q: min P̃_1=5/1833>0, mass 32 vs cut 30 (2 comps)"},
+    {"id": "GATE-III02-03", "chapter": "III.2", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Prop III.2.1 exact over Q on strong & weak digraphs for τ∈{1/3,1,5/2,7}: (1-α)(I-αP)^{-1}==(I+τ(I-P))^{-1}, 100% mass conserved"},
+    {"id": "GATE-III03-01", "chapter": "III.3", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "|C|=|C^⊥|=8 in F_2^6; Q_3\\{000,111} ~= O_6; Lawvere-Cantor diagonal verified on all 512 Boolean 3x3 tables"},
+    {"id": "GATE-III03-02", "chapter": "III.3", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Spec(KG(5,2))=3^1,1^5,(-2)^4 & Spec(J(5,2))=6^1,1^4,(-2)^5; O_6∩O_6'=Δ(ME,MB,EB); 0/1024 base foldings preserve 2-subsets"},
+    {"id": "GATE-III03-03", "chapter": "III.3", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "roots(r^2=c_6 in S_6)=0/720; roots(r^2=c_8 in S_8)=12/40320 (all (4,4), inv_pair=0); 11+3-1=13"},
+    {"id": "GATE-III03-04", "chapter": "III.3", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "C_6(1,2)~=O_6; |W(B_3)|=48, 3 distinct idx-2 subgroups (24); dim Comm_Q(W(B_3))=1; dim Q[g1]=3/9 vs Alg(g1,g2)=9/9"},
+    {"id": "GATE-III04-01", "chapter": "III.4", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Prism(9 edges, 2 tris) -> O_6(12 edges, 8 tris, K_{2,2,2}); |ker p in F_2^5|=16"},
+    {"id": "GATE-III04-02", "chapter": "III.4", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Oracle-free 1LP/2LP merge on N=2537 (r_cyc=2: C1->{1,2537}, C2,C3->{43,59}); N=105; cyc_rank=3"},
+    {"id": "GATE-III04-03", "chapter": "III.4", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Exact Q HMM: P(ab)==41/200, P(aa)==59/200 witness (θ!=σ·θ) + S_3 invariance on all binary words len 1..4"},
+    {"id": "GATE-III05-01", "chapter": "III.5", "category": "PROOF/EXHAUSTIVE", "passed": true, "details": "Thm III.5.1 checker (accepts valid φ, rejects 4/4 corruptions, BFS |R|=2, 0/2 unminimized morphisms) + exact Q Grönwall"},
+    {"id": "GATE-III-LINT", "chapter": "ALL", "category": "INTEGRITY/LINT", "passed": true, "details": "7/7 files checked: 0 forbidden stamps/links, chapter words = 20469"},
+    {"id": "GATE-III-SYS-FLOAT", "chapter": "SYS", "category": "EXACTNESS/NO-FLOAT", "passed": true, "details": "0 floating-point/approx tokens in 07_verify_full_book_III_v3_3.jl, threads = 1"}
+  ],
+  "verified_files": [
+    {"file": "00_ПАСПОРТ_ЧИСТОВОЙ_РЕДАКЦИИ_КНИГИ_III_V3_3.md", "sha256": "ec56b401282bd154dcda605ef1594f2f9493c8aac472b7e6a7fd9f8511b13c75", "words": 1225},
+    {"file": "01_ГЛАВА_III_01_КАК_СТРОИТЬ_ПРЕДМЕТНЫЙ_МОСТ_V3_3.md", "sha256": "98c21d4379055a39e4a8b4304208376474ac69fbf2a136155e53c4dd92bfc6e5", "words": 4221},
+    {"file": "02_ГЛАВА_III_02_ОРИЕНТИРОВАННЫЕ_ВЗВЕШЕННЫЕ_ГРАФЫ_И_ФИЛЬТРАЦИЯ_V3_3.md", "sha256": "5ba339a7f454387bb5085b10ae7e13b6422d87860455bc74c168865e06ad63e3", "words": 3041},
+    {"file": "03_ГЛАВА_III_03_САНКХЬЯ_ЙОГА_АДВАЙТА_И_ПАНИНИ_V3_3.md", "sha256": "0b72c83d1ecb501c3fc86f0ee8c3941cc2e59e6e8b56ba178db659fd9b0d1244", "words": 6072},
+    {"file": "04_ГЛАВА_III_04_ПЕРЕСТРОЙКА_ПРИЗМЫ_ГРАФЫ_КОФАКТОРОВ_И_СКРЫТЫЕ_МАРКОВСКИЕ_МОДЕЛИ_V3_3.md", "sha256": "ffd9a2799449308e41a7bfff90babcbf90a2369aee31774d75d759650106e464", "words": 3548},
+    {"file": "05_ГЛАВА_III_05_ПРОГРАММА_ПРОВЕРОК_И_КРИТЕРИИ_СЛЕДУЮЩЕГО_ШАГА_V3_3.md", "sha256": "2914ff44cd04143e911f0e066ca534986f496b20477e1dac4196283e7ed9b2c0", "words": 3587},
+    {"file": "06_ПРИЛОЖЕНИЯ_ПМ_ГР_ВП_АД_КНИГИ_III_V3_3.md", "sha256": "5ffc99f4948f8050c3c8062025b1ca162f3d8688571b6a7ea1c94eed1c4b3883", "words": 3359},
+    {"file": "07_verify_full_book_III_v3_3.jl", "sha256": "20a8654648461d90b0fbd837b287cdd50627e44b67d8276089bd6e2cad5e2d6a", "words": 0}
+  ]
+}
