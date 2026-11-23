@@ -1,4 +1,4 @@
-# DOT / TNR — BOOK II: MEMORY, CONTINUOUS CONTINUATION, GLUING, AND THE QUANTUM SCENE (Full Canonical Volume v3.3, English Edition)
+# DOT — BOOK II: MEMORY, CONTINUOUS CONTINUATION, GLUING, AND THE QUANTUM SCENE (Full Canonical Volume v3.3, English Edition)
 
 > **Author**: I. M. Zhuk (`2026`, Canonical Release `v3.3`)
 > **Structure**: Edition Passport + Chapters `II.1–II.9` (`31` verified statements) + Appendices (`OPER`, `Q`, `GR`, `VP`, `AD`).

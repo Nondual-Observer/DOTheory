@@ -2,7 +2,7 @@
 
 [Русская версия](README_RU.md) · [Methodology v3.3](../00_Methodology/README.md)
 
-This directory contains the **Canonical Three-Volume Edition v3.3** of **Distinction Observable Theory (DOT / ТНР)** (`103` numbered statements, `77/77` exact single-threaded zero-`Float64` `Julia` verification gates per language = `154/154` total gates):
+This directory contains the **Canonical Three-Volume Edition v3.3** of **Distinction Observable Theory (DOT)** (`103` numbered statements, `77/77` exact single-threaded zero-`Float64` `Julia` verification gates per language = `154/154` total gates):
 
 1. **English Edition (`103` Annotated Statements, `77/77` Julia Gates)**:
    - **[`Book_I_EN/`](Book_I_EN/)** — *Book I: Observer, Distinction, and the Finite Core* (`Introduction E0`, `Chapters I.1–I.9`, `57` numbered statements, standalone verifier [`11_verify_full_book_I_v3_3.jl`](Book_I_EN/11_verify_full_book_I_v3_3.jl) — `23/23 GATES PASS`).

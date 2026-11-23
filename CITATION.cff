@@ -6,6 +6,7 @@ version: "3.3"
 authors:
   - family-names: Zhuk
     given-names: Igor M.
+    orcid: "https://orcid.org/0009-0003-1670-8388"
 doi: 10.5281/zenodo.23481643
 identifiers:
   - type: doi

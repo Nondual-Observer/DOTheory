@@ -9,9 +9,9 @@
 [![Book Concept DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23481643.svg)](https://doi.org/10.5281/zenodo.23481643)
 [![Release Concept DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20059465.svg)](https://doi.org/10.5281/zenodo.20059465)
 
-**[Русская версия (README_RU.md)](README_RU.md)** · **Methodology v3.3:** [`00_Methodology/README.md`](00_Methodology/README.md) · **Book Concept DOI (all editions):** [10.5281/zenodo.23481643](https://doi.org/10.5281/zenodo.23481643) · **GitHub Release Concept DOI:** [10.5281/zenodo.20059465](https://doi.org/10.5281/zenodo.20059465)
+**[Русская версия (README_RU.md)](README_RU.md)** · **Author:** Igor M. Zhuk ([ORCID 0009-0003-1670-8388](https://orcid.org/0009-0003-1670-8388)) · **Methodology v3.3:** [`00_Methodology/README.md`](00_Methodology/README.md) · **Book Concept DOI (all editions):** [10.5281/zenodo.23481643](https://doi.org/10.5281/zenodo.23481643) · **GitHub Release Concept DOI:** [10.5281/zenodo.20059465](https://doi.org/10.5281/zenodo.20059465)
 
-**Distinction Observable Theory (DOT / ТНР)** is a deductive mathematical corpus with a combinatorial and operational core. The work rests on a single premise: **the act of distinction comes first, and objects arise as stable forms of held, presented, and recoverable distinction**.
+**Distinction Observable Theory (DOT)** is a deductive mathematical corpus with a combinatorial and operational core. The work rests on a single premise: **the act of distinction comes first, and objects arise as stable forms of held, presented, and recoverable distinction**.
 
 Two sealed boxes both show a green signal. Pressing the same button leaves the first box green and turns the second red. The current reading does not separate them; a sequence of questions and admissible actions does ([`Chapter I.1`](00_Core/Book_I_EN/01_CHAPTER_I_01_OPERATIONAL_CONTRACT_QUESTION_AND_FOUR_STATE_SCENE_V3_3_EN.md)). DOT studies how such a distinction is drawn, retained through relations, recovered from a finite trace (continuation memory), carried across rank lifts, and connected to external problems without category mistakes (domain bridges).
 
@@ -137,8 +137,10 @@ Edition `v3.3` eliminates all single-letter internal bracket codes: directly ben
 
 1. **In-Repository Supplement ([`02_Supplements/01_Hoggar_Fano_Octonions_Certificates`](02_Supplements/01_Hoggar_Fano_Octonions_Certificates/))** — **Hoggar Sign-Table Parity ($K_n$), Zorn Octonions $\mathrm{Oct}(\mathbb{F}_2)$, and `36` Fano Subgroups (`11/11` Julia Certificates)**:
    - Supplements `Book II (Chapters II.5 & II.7)` with the closed analytical Walsh–Hadamard parity formula $K_n = \frac{1}{4}\bigl(\frac{16^n + 4^n}{2} - 10^n\bigr)$ ($K_3 = 270$), constructive generation of all $12\,096$ automorphisms of $\mathrm{Aut}(\mathrm{Oct}(\mathbb{F}_2)) \cong G_2(2)$ verified across all $12\,096^2 = 146\,313\,216$ ordered pairs, and an explicit coordinate bijection between `36` Zorn idempotent pairs, `36` symplectic plus-forms, `36` maximal Fano/Levi subgroups $\mathrm{GL}_3(2) \subset \mathrm{PSU}_3(3)$, and `36` real Pauli structures.
-2. **Companion Published Repository — [`Nondual-Observer/total-collapse-primes-oeis`](https://github.com/Nondual-Observer/total-collapse-primes-oeis)**:
-   - Complete catalogue of `20` families of Total Collapse Primes over finite fields (accompanying `Book I, Chapter I.8, Proposition I.8.1`), including published sequence **[`OEIS A401173`](https://oeis.org/A401173)**, cards `00–19`, article, and standalone `Julia`/`C` verifiers.
+2. **Companion Published Repository — [`Nondual-Observer/total-collapse-primes-oeis`](https://github.com/Nondual-Observer/total-collapse-primes-oeis)** ([DOI: `10.5281/zenodo.23856837`](https://doi.org/10.5281/zenodo.23856837)):
+   - Complete catalogue of `20` families of Total Collapse Primes over finite fields (accompanying `Book I, Chapter I.8, Proposition I.8.1`), including `9` published OEIS sequences ([`A401173`](https://oeis.org/A401173), [`A401959`](https://oeis.org/A401959), [`A399326`](https://oeis.org/A399326), [`A399684`](https://oeis.org/A399684), [`A402659`](https://oeis.org/A402659), [`A402158`](https://oeis.org/A402158), [`A401667`](https://oeis.org/A401667), [`A398745`](https://oeis.org/A398745), [`A401666`](https://oeis.org/A401666)), cards `00–19`, companion paper, and standalone `Julia`/`C` verifiers.
+3. **Companion Web Essays — [`Nondual-Observer/ObserverInterfece`](https://github.com/Nondual-Observer/ObserverInterfece)** ([Live Web Edition](https://nondual-observer.github.io/ObserverInterfece/)):
+   - Introductory essays on the interface of observation, combinatorial synesthesia on the icosahedron, and scenario essays in English and Russian.
 
 ---
 

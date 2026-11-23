@@ -2,7 +2,7 @@
 
 **[Русская версия (README_RU.md)](README_RU.md)** · **[Back to Repository Root](../README.md)** · **[Go to Core Volumes (`00_Core/`)](../00_Core/README.md)**
 
-This document sets out the methodological key to Edition `v3.3` of the Canonical Three-Volume **Distinction Observable Theory (DOT / ТНР)**. Before the reader opens the first chapter, it clarifies four structural questions:
+This document sets out the methodological key to Edition `v3.3` of the Canonical Three-Volume **Distinction Observable Theory (DOT)**. Before the reader opens the first chapter, it clarifies four structural questions:
 
 1. **why the deductive order of exposition is reversed** (proceeding from the operational conditions of an act of distinction to mathematical objects rather than from ready-made objects to their properties);
 2. **by what five-beat rule each chapter forces the transition to the next** ($\Pi_k \to \Pi_{k+1}$), so that no expansion of mathematical language — from Boolean tables to signed chains, finite fields, Hankel matrices, complex amplitudes, spinor double covers, and cohomology — enters by an *ad hoc* postulate;

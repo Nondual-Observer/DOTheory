@@ -1,6 +1,6 @@
 #!/usr/bin/env julia
 # ==============================================================================
-# MASTER VERIFICATION SUITE — DOT / TNR Canonical Trilogy v3.3 (EN & RU)
+# MASTER VERIFICATION SUITE — DOT Canonical Trilogy v3.3 (EN & RU)
 # Runs without external packages on standard Julia 1.12+ (Printf, SHA, LinearAlgebra)
 #
 # Usage:
@@ -180,7 +180,7 @@ end
 
 function main()
     println("========================================================================================================")
-    println("DOT / TNR v3.3 — MASTER VERIFICATION SUITE (Julia $(VERSION), Single-Threaded, Zero-Float Core)")
+    println("DOT v3.3 — MASTER VERIFICATION SUITE (Julia $(VERSION), Single-Threaded, Zero-Float Core)")
     println("Repository root: $(REPO_ROOT)")
     println("========================================================================================================")
 

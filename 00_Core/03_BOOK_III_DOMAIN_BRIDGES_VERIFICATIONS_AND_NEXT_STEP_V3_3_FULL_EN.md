@@ -1,4 +1,4 @@
-# DOT / TNR — BOOK III: DOMAIN BRIDGES, VERIFICATIONS, AND PROGRAM FOR THE NEXT STEP (Full Canonical Volume v3.3, English Edition)
+# DOT — BOOK III: DOMAIN BRIDGES, VERIFICATIONS, AND PROGRAM FOR THE NEXT STEP (Full Canonical Volume v3.3, English Edition)
 
 > **Author**: I. M. Zhuk (`2026`, Canonical Release `v3.3`)
 > **Structure**: Edition Passport + Chapters `III.1–III.5` (`15` verified statements) + Appendices (`PM`, `GR`, `VP`, `AD`).

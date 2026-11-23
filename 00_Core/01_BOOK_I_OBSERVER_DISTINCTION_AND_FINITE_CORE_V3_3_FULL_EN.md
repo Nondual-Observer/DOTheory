@@ -1,4 +1,4 @@
-# DOT / TNR — BOOK I: OBSERVER, DISTINCTION, AND THE FINITE CORE (Full Canonical Volume v3.3, English Edition)
+# DOT — BOOK I: OBSERVER, DISTINCTION, AND THE FINITE CORE (Full Canonical Volume v3.3, English Edition)
 
 > **Author**: I. M. Zhuk (`2026`, Canonical Release `v3.3`)
 > **Structure**: Attribution Passport + Introduction (`E0`) + Chapters `I.1–I.9` (`57` verified statements) + Appendices (`GR`, `VP`, `AD`).
