@@ -142,7 +142,7 @@
 3. **Опубликованный сопутствующий репозиторий — [`Nondual-Observer/riemann-lean4-blueprint`](https://github.com/Nondual-Observer/riemann-lean4-blueprint)** ([Hexagon: `2611.01031v1`](https://hexagonmath.org/abs/2611.01031v1) · [DOI препринта: `10.5281/zenodo.24459320`](https://doi.org/10.5281/zenodo.24459320) · [DOI кода: `10.5281/zenodo.24459582`](https://doi.org/10.5281/zenodo.24459582)):
    - Математический чертёж, указатель `240` записей ядра `Lean 4`, автономный модуль `Lean 4` из `44` теорем (`0` импортов, `0 sorry`), проверочный стенд `Julia` и сопроводительный раздел ТНР с теоремой о проекторах гиперкуба $[0, 1]^4$ ($\operatorname{tr}(E - E^2) = \sum_{i=1}^{4} q_i(1 - q_i)$) и октаэдральной двойственностью $O_6 \leftrightarrow Q_3$.
 4. **Сопутствующее веб-издание очерков — [`Nondual-Observer/ObserverInterfece`](https://github.com/Nondual-Observer/ObserverInterfece)** ([Русская веб-версия](https://nondual-observer.github.io/ObserverInterfece/ru/)):
-   - Вводные очерки об интерфейсе наблюдателя, комбинаторной синестезии на икосаэдре и сценарные эссе на русском и английском языках.
+   - [«Интерфейс наблюдателя»](https://nondual-observer.github.io/ObserverInterfece/ru/), [«Комбинаторная синестезия на икосаэдре»](https://nondual-observer.github.io/ObserverInterfece/ru/synesthesia.html) и [«Серая стена сингулярности»](https://nondual-observer.github.io/ObserverInterfece/ru/gray-wall.html) ([Markdown](https://github.com/Nondual-Observer/ObserverInterfece/blob/main/ru/gray-wall.md) · [Хабр](https://habr.com/ru/articles/1096618/) · [English edition](https://nondual-observer.github.io/ObserverInterfece/gray-wall.html)).
 
 ---
 

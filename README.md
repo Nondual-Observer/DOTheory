@@ -142,7 +142,7 @@ Edition `v3.3` eliminates all single-letter internal bracket codes: directly ben
 3. **Companion Published Repository — [`Nondual-Observer/riemann-lean4-blueprint`](https://github.com/Nondual-Observer/riemann-lean4-blueprint)** ([Hexagon: `2611.01031v1`](https://hexagonmath.org/abs/2611.01031v1) · [Preprint DOI: `10.5281/zenodo.24459320`](https://doi.org/10.5281/zenodo.24459320) · [Software DOI: `10.5281/zenodo.24459582`](https://doi.org/10.5281/zenodo.24459582)):
    - Mathematical blueprint, `240`-entry `Lean 4` kernel index, standalone `44`-theorem `Lean 4` module (`0` imports, `0 sorry`), `Julia` verification suite, and `DOT` structural companion proving the $[0, 1]^4$ hypercube projector characterization $\operatorname{tr}(E - E^2) = \sum_{i=1}^{4} q_i(1 - q_i)$ and $O_6 \leftrightarrow Q_3$ octahedral duality.
 4. **Companion Web Essays — [`Nondual-Observer/ObserverInterfece`](https://github.com/Nondual-Observer/ObserverInterfece)** ([Live Web Edition](https://nondual-observer.github.io/ObserverInterfece/)):
-   - Introductory essays on the interface of observation, combinatorial synesthesia on the icosahedron, and scenario essays in English and Russian.
+   - [*The Interface of Observation*](https://nondual-observer.github.io/ObserverInterfece/), [*Combinatorial Synesthesia on the Icosahedron*](https://nondual-observer.github.io/ObserverInterfece/synesthesia.html), and [*The Gray Wall of Singularity*](https://nondual-observer.github.io/ObserverInterfece/gray-wall.html) ([Markdown](https://github.com/Nondual-Observer/ObserverInterfece/blob/main/gray-wall.md) · [Russian edition](https://nondual-observer.github.io/ObserverInterfece/ru/gray-wall.html) · [Habr](https://habr.com/ru/articles/1096618/)).
 
 ---
 
